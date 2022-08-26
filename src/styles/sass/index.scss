@@ -1,6 +1,7 @@
 @import './variables';
 @import './type/fonts.scss';
 
+@import './api-method.scss';
 @import './banner';
 @import './button/button.scss';
 @import './collapse';
@@ -33,10 +34,3 @@
 @import './tooltip';
 @import './utils/utils.scss';
 @import './wizard';
-
-
-@import './api-method.scss';
-
-// Apps
-// Specific css for Ether Apps
-@import './apps/console/console.scss';

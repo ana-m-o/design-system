@@ -1,7 +1,10 @@
-# uiverse-components
+# Storybook Design System
 Modulo de componentes basados en react 17+ y ant design
 
 ## Documentación y Storybook
+Instalación: `npm i`
+Compilación: `npm run build`
+Watch (compilación automática al guardar): `npm run watch`
 Para ejecutar Storybook: `npm run storybook`
 
 ## UX Docs
@@ -26,6 +29,14 @@ export default {
     ...
 
 ````
+
+## Añadir prototipp de figma a mdx
+
+Configurar el prototipo para que se adapte al ancho.
+
+Copiamos el código `iframe` para incrustar en Figma.
+
+Al pegar dentro de un MDX eliminar el atributo `style` del `iframe`.
 
 ## Ocultar tabs
 
