@@ -1,0 +1,67 @@
+
+import toolbar01 from './assets/content/Toolbar-Default_Filterbar-Default.png';
+import toolbar02 from './assets/content/Toolbar-Default.png';
+import toolbar03 from './assets/content/Toolbar-Medium.png';
+import toolbar04 from './assets/content/Toolbar-Small.png';
+import toolbar05 from './assets/content/Filterbar-Medium.png';
+import toolbar06 from './assets/content/Filterbar-Small.png';
+import toolbar07 from './assets/content/Filterbar-Small-dropdown-panel.png';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+
+<Meta title="UX Patterns/Patterns/Toolbar" />
+
+# Toolbar
+
+The toolbar is a **grouping container of interactive elements** that allows users execute the commands available in an application.
+
+
+## Anatomy
+
+### Basic Toolbar
+
+<img src={toolbar02} width={'100%'} />
+
+A toolbar contains different interactive elements that may appear organized in sub-groups depending on their functionality.
+
++  Icon
++  Label
++  Label + Icon
++  Combobox/Select
++  Dropdown  Button
++  Tag
+
+
+### Filterbar
+
+The toolbar functionality can be extended by including an add-on toolbar that includes filtering tools.
+
+<img src={toolbar01} width={'100%'} />
+
+## Functionality
+
+A grouping of commands or tools that are most commonly used in an application and provide users with quick access to the most frequently used operations.
+
+We can group the different elements that composes a toolbar according to their functionality. 
+
+### Visualization Tools
+
+These are the tools that modify the way in which we visualize the information on screen, both the layout or the data; collapse, group, filter, etc.
+
+**Layout configuration tools** 
+
+Minimize, maximize, etc. They are usually included in the panel header, next to the generic title, for example "Products".
+
+**Data visualization tools**
+
+Grouping records, Filtering, Searching... They can be included in the header of the list or dataGrid or in the footer.
+
+- Grouping tools (Grouping/ungrouping columns) 
+- Filtering/search tools (Filter by words) 
+- Navigation tools (Pagination, BreadCrumbs) 
+
+
+### Action/Commands Tools
+
+These are the tools that perform actions on the entities; add, delete, deploy, etc.
+
