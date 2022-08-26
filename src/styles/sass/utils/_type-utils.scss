@@ -1,0 +1,72 @@
+
+// Font utils
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-regular {
+    font-weight: 400 !important;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-black {
+    font-weight: 900 !important;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+}
+
+.font-lowercase {
+    text-transform: none !important;
+}
+
+.font-capitalize {
+    text-transform: capitalize;
+}
+
+.font-line-through {
+    text-decoration: line-through;
+}
+
+// Align
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+// Rotate
+.text-rotate-90-cw {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.text-rotate-45-cw {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.text-rotate-180 {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.text-rotate-90-ccw {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+// Spacing
+.letter-spacing-1 {
+    letter-spacing: 1px;
+} 

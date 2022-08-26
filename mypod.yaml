@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: uiversepod-uiverse-styles
+spec:
+  containers:
+  - name: uiversecontainer-node-14-npm-7
+    image: globaldevtools.bbva.com:5000/hub/xcpim/microfrontends-builder:1.0.9
+    workDir: /home/jenkins/agent
+    resources:
+      limits:
+        memory: "2Gi"
+        cpu: 1
+      requests:
+        memory: "2Gi"
+        cpu: 1
+    command:
+    - cat
+    tty: true
+  - name: kaniko
+    image: gcr.io/kaniko-project/executor:debug
+    imagePullPolicy: Always
+    securityContext:
+      runAsUser: 0
+    command:
+    - /busybox/cat
+    tty: true
+    volumeMounts:
+    - name: 'docker-cfg'
+      mountPath: /kaniko/.docker
+  volumes:
+  - name: 'docker-cfg'
+    secret:
+      secretName: registrypullsecret
+      items:
+      - key: .dockerconfigjson
+        path: config.json
+  imagePullSecrets:
+  - name: registrypullsecret

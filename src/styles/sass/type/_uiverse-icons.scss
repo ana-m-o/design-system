@@ -1,0 +1,516 @@
+[class^="ui-icon-"],
+[class*=" ui-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'uiverse-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-icon-collapse-panel:before {
+    content: "\e903";
+}
+
+.ui-icon-collapsed-panel:before {
+    content: "\e904";
+}
+
+.ui-icon-arrow-up:before {
+    content: "\e908";
+}
+
+.ui-icon-go-to-arrow:before {
+    content: "\e920";
+}
+
+.ui-icon-ellipsis:before {
+    content: "\e90e";
+}
+
+.ui-icon-chart:before {
+    content: "\e905";
+}
+
+.ui-icon-list:before {
+    content: "\e906";
+}
+
+.ui-icon-rich-list:before {
+    content: "\e907";
+}
+
+.ui-icon-view-tree:before {
+    content: "\e921";
+}
+
+.ui-icon-group:before {
+    content: "\e931";
+}
+
+.ui-icon-view-grid:before {
+    content: "\e922";
+}
+
+.ui-icon-view-stacked:before {
+    content: "\e923";
+}
+
+.ui-icon-megaphone-line:before {
+    content: "\e901";
+}
+
+.ui-icon-play:before {
+    content: "\e90c";
+}
+
+.ui-icon-trash:before {
+    content: "\e90d";
+}
+
+.ui-icon-copy:before {
+    content: "\e910";
+}
+
+.ui-icon-cloud-deploy-config:before {
+    content: "\e914";
+}
+
+.ui-icon-cloud-off:before {
+    content: "\e915";
+}
+
+.ui-icon-cloud-lock:before {
+    content: "\e91c";
+}
+
+.ui-icon-briefcase:before {
+    content: "\e91b";
+}
+
+.ui-icon-exception-alert:before {
+    content: "\e924";
+}
+
+.ui-icon-go-to-notebook:before {
+    content: "\e925";
+}
+
+.ui-icon-bell-alarm:before {
+    content: "\e926";
+}
+
+.ui-icon-tick:before {
+    content: "\e927";
+}
+
+.ui-icon-stalled:before {
+    content: "\e928";
+}
+
+.ui-icon-dashboard:before {
+    content: "\e929";
+}
+
+.ui-icon-location:before {
+    content: "\e92a";
+}
+
+.ui-icon-location-solid:before {
+    content: "\e938";
+}
+
+.ui-icon-locations:before {
+    content: "\e939";
+}
+
+.ui-icon-compare:before {
+    content: "\e92b";
+}
+
+.ui-icon-calendar:before {
+    content: "\e92c";
+}
+
+.ui-icon-add-user:before {
+    content: "\e93a";
+}
+
+.ui-icon-search-add:before {
+    content: "\e950";
+}
+
+.ui-icon-graph:before {
+    content: "\e92d";
+}
+
+.ui-icon-conversation:before {
+    content: "\e92e";
+}
+
+.ui-icon-wrench:before {
+    content: "\e92f";
+}
+
+.ui-icon-CPD:before {
+    content: "\e930";
+}
+
+.ui-icon-git-commit:before {
+    content: "\e912";
+}
+
+.ui-icon-git-branch:before {
+    content: "\e913";
+}
+
+.ui-icon-namespace-line:before {
+    content: "\e902";
+}
+
+.ui-icon-resource:before {
+    content: "\e90f";
+}
+
+.ui-icon-resource-monitor:before {
+    content: "\e919";
+}
+
+.ui-icon-resource-pubsub:before {
+    content: "\e91a";
+}
+
+.ui-icon-resource-model:before {
+    content: "\e91d";
+}
+
+.ui-icon-resource-processing:before {
+    content: "\e916";
+}
+
+.ui-icon-resource-bpa:before {
+    content: "\e917";
+}
+
+.ui-icon-resource-database:before {
+    content: "\e918";
+}
+
+.ui-icon-global:before {
+    content: "\e941";
+}
+
+.ui-icon-universal:before {
+    content: "\e93b";
+}
+
+.ui-icon-local:before {
+    content: "\e93c";
+}
+
+.ui-icon-multi-local:before {
+    content: "\e93d";
+}
+
+.ui-icon-definition:before {
+    content: "\e93e";
+}
+
+.ui-icon-implementation:before {
+    content: "\e93f";
+}
+
+.ui-icon-deploy:before,
+.ui-icon-deployment:before {
+    content: "\e940";
+}
+
+.ui-icon-bitbucket-line:before {
+    content: "\e900";
+}
+
+.ui-icon-bucket-line:before {
+    content: "\e95f";
+}
+
+.ui-icon-bucket-solid:before {
+    content: "\e960";
+}
+
+.ui-icon-cloud-aws:before {
+    content: "\e909";
+}
+
+.ui-icon-cloud-azure:before {
+    content: "\e90a";
+}
+
+.ui-icon-cloud-google:before {
+    content: "\e90b";
+}
+
+.ui-icon-ether-api:before {
+    content: "\e911";
+}
+
+.ui-icon-event-line:before {
+    content: "\e91f";
+}
+
+.ui-icon-event-solid:before {
+    content: "\e91e";
+}
+
+.ui-icon-cells:before {
+    content: "\e932";
+}
+
+.ui-icon-ether:before {
+    content: "\e933";
+}
+
+.ui-icon-mirrorgate:before {
+    content: "\e934";
+}
+
+.ui-icon-bbva:before {
+    content: "\e935";
+}
+
+.ui-icon-salesforce:before {
+    content: "\e936";
+}
+
+.ui-icon-webex:before {
+    content: "\e937";
+}
+
+.ui-icon-form-line:before {
+    content: "\e942";
+}
+
+.ui-icon-form-solid:before {
+    content: "\e943";
+}
+
+.ui-icon-binary-line:before {
+    content: "\e947";
+}
+
+.ui-icon-binary-solid:before {
+    content: "\e948";
+}
+
+.ui-icon-cactus:before {
+    content: "\e944";
+}
+
+.ui-icon-deploy-package:before {
+    content: "\e94f";
+}
+
+.ui-icon-deploy-rollback:before {
+    content: "\e94d";
+}
+
+.ui-icon-redeploy:before {
+    content: "\e94e";
+}
+
+.ui-icon-deploy-waiting:before {
+    content: "\e945";
+}
+
+.ui-icon-download-globe:before {
+    content: "\e946";
+}
+
+.ui-icon-lab:before {
+    content: "\e949";
+}
+
+.ui-icon-sand-clock:before {
+    content: "\e94b";
+}
+
+.ui-icon-notebook:before {
+    content: "\e94a";
+}
+
+.ui-icon-list-line:before {
+    content: "\e94c";
+}
+
+.ui-icon-alert-octagon:before, 
+.ui-icon-alert-octagon-line:before {
+    content: "\e951";
+}
+
+.ui-icon-alert-octagon-solid:before {
+    content: "\e952";
+}
+
+.ui-icon-dot:before {
+    content: "\e953";
+}
+
+.ui-icon-exclamation:before {
+    content: "\e954";
+}
+
+.ui-icon-wip:before {
+    content: "\e955";
+}
+
+/* .ui-icon-dot {
+    content:'\e9e0';
+} */
+
+.ui-icon-auth-denied:before {
+    content: "\e956";
+}
+
+.ui-icon-auth-operator:before {
+    content: "\e957";
+}
+
+.ui-icon-auth-pending:before {
+    content: "\e958";
+}
+
+.ui-icon-auth-request:before {
+    content: "\e959";
+}
+
+.ui-icon-dot-solid:before {
+    content: "\e95a";
+}
+
+.ui-icon-dot-solid-off:before {
+    content: "\e95b";
+}
+
+.ui-icon-angle-line-double:before {
+    content: "\e95c";
+}
+
+.ui-icon-equals:before {
+    content: "\e95d";
+}
+
+.ui-icon-list-back:before {
+    content: "\e95e";
+}
+  
+// ASCII ICONS
+// http://www.amp-what.com/
+
+//CUSTOM
+
+[class^="asc-icon-"],
+[class*=" asc-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: sans-serif !important;
+}
+
+span[class^="asc-icon-"],
+span[class*=" asc-icon-"] {
+    align-items: center;
+    display: inline-flex;
+    height: 16px;
+    justify-content: center;
+    padding: 0;
+    width: 16px;
+}
+
+.asc-icon-triangle-down:before {
+    content: "▾";
+    font-size: var(--font-size-default);
+}
+
+.ui-icon-loading {
+    background-image: url(../assets/images/ico-loading-animated-orange.svg);
+    background-size: 16px;
+}
+
+.ui-icon-loading-alt {
+    &:before {
+        content: '';
+        display: block;
+        width: var(--font-size-big);
+        height: var(--font-size-big);
+        border-top: 2px solid  rgba(255, 255, 255, 0.8);
+        border-left: 2px solid  rgba(255, 255, 255, 0.8);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+        border-right: 2px solid  rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        animation: rotate-icon 1s linear infinite;
+    }
+}
+
+.ui-icon-empty {
+    width: 20px;
+}
+
+// Authorizing animation
+@keyframes rotate-icon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[class^="ui-icon-"],
+[class*=" ui-icon-"],
+[class^="icon-"],
+[class*=" icon-"] {
+    &.uiv-disabled {
+        opacity: 0.5;
+    }
+}
+
+.icon-calendar-line.scheduled {
+    position: relative;
+    margin-right: 6px;
+    font-size: var(--font-size-default);
+
+    &::after {
+        content: '\e9ea'; // clock icon
+        position: absolute;
+        top: 0;
+        right: -6px;
+        font-size: var(--font-size-smaller);
+    }
+}
+
+
+// IMAGE ICONS
+[class^="ui-img-"],
+[class*=" ui-img-"] {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-img-comparator {
+    background-image: url('../assets/images/img-comparator.png');
+    width: 100px;
+    height: 70px;
+}
+
+.ui-img-resource {
+    background-image: url('../assets/images/img-resource.png');
+    width: 72px;
+    height: 70px;
+}

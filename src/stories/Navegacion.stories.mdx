@@ -1,0 +1,83 @@
+import navigationglobal01 from './assets/content/navigation-global-01.png';
+import navigationglobal02 from './assets/content/navigation-global-02.png';
+import navigationmaestrodetalle01 from './assets/content/navigation-maestro-detalle-01.png';
+import navigationmaestrodetalle02 from './assets/content/navigation-maestro-detalle-02.png';
+import navigationmaestrodetalle02b from './assets/content/navigation-maestro-detalle-02b.png';
+import navigationmaestrodetalle02b1 from './assets/content/navigation-maestro-detalle-02b-1.png';
+import navigationmaestrodetalle03 from './assets/content/navigation-maestro-detalle-03.png';
+import navigationprogramatica from './assets/content/navigation-programatica-2.png';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+
+<Meta title="UX Patterns/Patterns/Navigation" />
+
+
+# Navigation
+
+Navigation as an interaction archetype solves the need to access globally or locally to the different contents or functionalities that make up an application.
+
+We can structure the different navigation patterns within the following classification:
+
++ **Global Navigation**: Access to modules or main sections of the application.
++ **Internal or local Navigation**: Navigation between data or information of each module.
++ **Programmatic Navigation**: Application determines the target view based on user actions.
+
+
+## Global Navigation
+
+<img src={navigationglobal01} width={'50%'} />
+
+Global Navigation that allows access between the main functionalities or modules of an application. It is usually menu-based.
+
+<img src={navigationglobal02} width={'50%'} />
+
+The basic features of global navigation are:
+
++ Always accessible to the user.
++ Adjusted to the content or functionality.
++ Usually used to navigate to main functions or modules of an application.
+
+## Internal or local Navigation
+
+This is the navigation that happens within each functional module, it allows navigation between different contents, data or local functions of a specific module.
+
+In the internal or local navigation it is the content itself that allows the user to navigate through the application. For example; Access from a master list to the detail of an item or record in that list.
+
+A navigation tree, a list or a map are the most common examples of internal navigation.
+
+
+### Master · Detail [Full viewport]
+
+The detail view completely replaces the master list..
+
+<img src={navigationmaestrodetalle01} width={'50%'} />
+
+### Master · Detail [Shared/divided viewport]
+
+The detail view shares space with the master list. The detail can be displayed in split screen or floating over the initial listing.
+
+<img src={navigationmaestrodetalle02} width={'50%'} />
+
+### Master · Detail [Floating panels]
+
+This layout configuration allows you to display additional information about any element of the selected detail.
+
+<img src={navigationmaestrodetalle02b} width={'50%'} />
+
+### Master · Detail [Stacked cards]
+
+The detail overlaps the master list allowing the user to easily navigate between different items in the master list and also to keep a visual reference to the initial list.
+
+<img src={navigationmaestrodetalle03} width={'50%'} />
+
+
+## Programmatic Navigation
+
+On programmatic navigation the application automatically guides the user to specific screens or functionalities based on user´s interaction or system´s events.
+
+<img src={navigationprogramatica} width={'40%'} />
+
+
+A classic example of programmatic navigation is the access to the application for different user profiles via login. Depending on the user profile, the application can direct them to one or other screens of the system.
+
+We can find many examples of programmatic navigation on confirmation screens in purchase processes, user registration or login in the system, etc.

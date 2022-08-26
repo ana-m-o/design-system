@@ -1,0 +1,30 @@
+.lined-layout {
+    overflow: hidden;
+
+    > div,
+    .vbox > div {
+        border-bottom: 1px solid $border-color;
+        overflow: hidden;
+        
+        &:last-child {
+            border: none;
+        }
+    }
+    
+    .hbox > div {
+        border-right: 1px solid $border-color;
+        overflow: hidden;
+        
+        &:last-child {
+            border: none;
+        }
+    }
+    
+    .section {
+        border-bottom: 1px solid $border-color;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+}

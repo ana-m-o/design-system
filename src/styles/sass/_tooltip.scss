@@ -1,0 +1,84 @@
+.ant-tooltip {
+    z-index: 9999999;
+}
+
+.ant-tooltip-inner {
+    padding: var(--sp-md) 16px;
+}
+
+// Custom arrow
+.ant-tooltip-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cstyle%3E%3C/style%3E%3Cg class='st0'%3E%3Cg transform='translate(-1524 -1479)'%3E%3Cg transform='translate(180 1439)'%3E%3Cpath d='M1361 74c-3.9 0-4.5-5-12-5h24c-7.5 0-8.1 5-12 5z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg class='st0'%3E%3Cg transform='translate(-1524 -1479)'%3E%3Cg transform='translate(180 1439)'%3E%3Cpath d='M1378 57c0 3.9-5 4.5-5 12V45c0 7.5 5 8.1 5 12z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg class='st0'%3E%3Cg transform='translate(-1524 -1479)'%3E%3Cg transform='translate(180 1439)'%3E%3Cpath d='M1361 40c3.9 0 4.5 5 12 5h-24c7.5 0 8.1-5 12-5z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg class='st0'%3E%3Cg transform='translate(-1524 -1479)'%3E%3Cg transform='translate(180 1439)'%3E%3Cpath d='M1344 57c0-3.9 5-4.5 5-12v24c0-7.5-5-8.1-5-12z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: center bottom;
+    padding: 0 !important;
+    height: 10px;
+    width: 44px;
+    opacity: .9;
+
+    .ant-tooltip-arrow-content {
+        display: none;
+    }
+}
+
+.ant-tooltip-placement {
+    // tooltip at top, arrow at bottom
+    &-top, &-topLeft, &-topRight { 
+        .ant-tooltip-arrow {
+            bottom: 0;
+        }
+    }
+
+    // tooltip at right, arrow at left
+    &-right, &-rightTop, &-rightBottom {
+        .ant-tooltip-arrow {
+            background-position: left center;
+            height: 44px;
+            width: 10px;
+            left: 0;
+        }
+    }
+    
+    &-rightTop {
+        .ant-tooltip-arrow {
+            top: 0
+        }
+    }
+
+    &-rightBottom {
+        .ant-tooltip-arrow {
+            bottom: 0
+        }
+    }
+
+    // tooltip at bottom, arrow at top
+    &-bottom, &-bottomLeft, &-bottomRight { 
+        .ant-tooltip-arrow {
+            top: 0;
+            background-position: top center;
+        }
+    }
+
+    // tooltip at left, arrow at right
+    &-left, &-leftTop, &-leftBottom {
+        .ant-tooltip-arrow {
+            background-position: right center;
+            height: 44px;
+            width: 10px;
+            right: 0;
+        }
+    }
+    
+    &-leftTop {
+        .ant-tooltip-arrow {
+            top: 0
+        }
+    }
+
+    &-leftBottom {
+        .ant-tooltip-arrow {
+            bottom: 0
+        }
+    }
+}

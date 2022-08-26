@@ -1,0 +1,46 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import { Spin } from 'antd';
+
+<Meta title="Ant/Spin" component={Spin} />
+
+# Spin
+
+A spinner for displaying loading state of a page or a section.
+
+Read [Ant Documentation]([https://ant.design/components/spin/) for props and uses
+
+The Spin usually wraps the content like `<Spin>Content of the page</Spin>`
+
+By default the layout is horizontal for an empty `<Spin />`. In order to use a vertical layout use `className="uiv-vertical-spin"`
+
+export const Template = (args) => <Spin {...args}></Spin>
+
+<Canvas>
+  <Story 
+    name="Default"
+    args={{
+      tip: "Loading parameters...",
+      children: "Content of the page",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story 
+    name="Empty"
+    args={{
+      tip: "Loading parameters..."
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story 
+    name="Empty Vertical"
+    args={{
+      tip: "Loading parameters...",
+      className: "uiv-vertical-spin"
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

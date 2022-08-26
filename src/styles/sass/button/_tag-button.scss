@@ -1,0 +1,37 @@
+.ant-btn {
+    // Tag button
+    &.btn-tag {
+        align-items: center;
+        border-radius: 3px;
+        display: inline-flex;
+        font-size: var(--font-size-small);
+        font-weight: 600;
+        height: auto;
+        letter-spacing: normal;
+        line-height: 16px;
+        padding: 4px var(--sp-sm);
+        text-transform: none;
+
+        [class^="icon-"],
+        [class*=" icon-"],
+        [class^="ui-icon-"],
+        [class*=" ui-icon-"] {
+            font-size: var(--font-size-default);
+            line-height: 10px;
+            top: 0;
+        }
+
+        &.ant-btn-sm {
+            font-size: var(--font-size-smaller);
+            padding: 2px var(--sp-xs);
+            line-height: 1em;
+
+            [class^="icon-"],
+            [class*=" icon-"],
+            [class^="ui-icon-"],
+            [class*=" ui-icon-"] {
+                font-size: var(--font-size-small);
+            }
+        }
+    }
+}

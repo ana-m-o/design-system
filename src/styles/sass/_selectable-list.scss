@@ -1,0 +1,56 @@
+.deployment-history {
+    box-shadow: inset -26px 0px 21px -10px rgba(0, 0, 0, 0.03),
+    inset -1px 0 0 0 $border-color;
+}
+
+.uiv-selectable-list {
+    padding-bottom: var(--sp-sm);
+    max-height: 100%;
+
+    &.auto-height {
+        height: auto !important;
+    }
+
+    .list-item-wrapper {
+        padding: 0 var(--sp-md) var(--sp-xs) 0;
+        
+        .list-item {
+            border-radius: 5px;
+            padding: var(--sp-xs) var(--sp-sm);
+            background-color: $bg-gray;
+            transition: all .2s linear;
+            height: 100%;
+            
+        }
+
+        &:hover {
+            .list-item {
+                background-color: darken($bg-gray, 3);
+                cursor: pointer;
+            }
+        }
+
+        &:focus {
+            outline: none;
+            
+            .list-item {
+                box-shadow: inset 0 0 0 1px $aqua;
+            }
+        }
+
+        &.active {
+            .list-item {
+                background-color: $aqua;
+                color: #fff;
+                
+                .color-text-secondary {
+                    color: #fff !important;
+                }
+
+                .ant-typography {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

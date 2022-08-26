@@ -1,0 +1,75 @@
+import Banner from '../Banner';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+
+<Meta title="UX Patterns/Components/Banner" />
+
+<!--
++ <a href="#props">Props</a>
++ <a href="#usage">Usage</a>
++ <a href="#info">Info</a>
++ <a href="#success">Success</a>
++ <a href="#warning">Warning</a>
++ <a href="#error">Error</a>
+-->
+
+# Banner
+
+Banners will be shown to inform users of updates or **changes in system status**.
+
+Users should always receive appropriate messages **to help them complete their tasks**. Make sure your notifications are necessary and informative.
+
+## Props
+
+<ArgsTable of={Banner} />
+
+## Usage
+
+The status of the notifications **informs about the criticality** of the information we are communicating to the users. To highlight these differences we will use a specific color and icon for each different status or level of criticality.
+
+### Info
+The Info Banner provides additional information to users that may not even be related to their current action or task, **do not require immediate action** and can be closed with a delay or by user action, depending on the context.
+
+<Banner
+  description="This is the Banner message, it turns into title if there is description"
+  message="Notification title"
+  showIcon
+  type="info"
+  closable
+/>
+
+### Success
+The Success Banner confirms when a task or process has been successfully completed. In general, it also **do not require immediate action and can be closed** with a delay or via user action, depending on the context.
+
+<Banner
+  description="This is the Banner message, it turns into title if there is description"
+  message="Notification title"
+  showIcon
+  type="success"
+  closable
+/>
+
+
+### Warning
+The Banner informs users they are performing actions that may produce unexpected or undesired results.  They are usually **visible until the user dismisses** the notification or continues the task.
+
+<Banner
+  description="This is the Banner message, it turns into title if there is description"
+  message="Notification title"
+  showIcon
+  type="warning"
+  closable
+/>
+
+### Error
+The Banner informs users of a **critical error** or failure and, optionally, it displays a dialog box that **blocks interaction until the problem has been resolved or a decision has been consciously made by the user**. It always persist until the user dismisses them or resolves the error.
+
+<Banner
+  description="This is the Banner message, it turns into title if there is description"
+  message="Notification title"
+  showIcon
+  type="error"
+  closable
+/>
+
+

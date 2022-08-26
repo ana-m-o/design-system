@@ -1,0 +1,42 @@
+
+// Status colors
+$cl: (
+    green: $green,
+    red: $red,
+    red-dark: $red-dark,
+    yellow: $yellow,
+    orange: $orange,
+    orange-medium: $orange-medium,
+    orange-dark: $orange-dark,
+    gray-blue: $gray-blue,
+    light-gray: $light-gray,
+    highlight: $highlight,
+
+    medium-light-blue: $medium-light-blue,
+    medium-blue: var(--medium-blue),
+    light-blue: $light-blue,
+    navy: var(--navy),
+    blue-white: $blue-white,
+
+    aqua: $aqua,
+    aqua-medium: $aqua-medium,
+    aqua-light: $aqua-light,
+    aqua-white: $aqua-white,
+
+    white: $white,
+    transparent: transparent,
+
+    text-default: $text-default,
+    text-secondary: $text-secondary,
+    text-light: $text-light,
+    text-black: $text-black
+);
+
+@each $color-name, $value in $cl {
+    .color-#{$color-name} {
+        color: #{$value} !important;
+    }
+    .bg-color-#{$color-name} {
+        background-color: #{$value} !important;
+    }
+}

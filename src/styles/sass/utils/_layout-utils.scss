@@ -1,0 +1,231 @@
+/* LAYOUT UTILS */
+//Replace ext layout 
+
+$sp-sizes : (
+    lg: var(--sp-lg),
+    md: var(--sp-md),
+    sm: var(--sp-sm),
+    xs: var(--sp-xs)
+);
+
+.hbox,
+.vbox {
+    display: flex;
+    
+    &.pack-center {
+        justify-content: center;
+    }
+    
+    &.pack-end {
+        justify-content: flex-end;
+    }
+
+    &.pack-space-between {
+        justify-content: space-between;
+    }
+
+    &.pack-space-around {
+        justify-content: space-around;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+
+    &.align-start {
+        align-items: start;
+    }
+
+    &.align-end {
+        align-items: flex-end;
+    }
+}
+
+.vbox {
+    flex-direction: column;
+}
+
+.inline-hbox {
+    @extend .hbox;
+    display: inline-flex !important
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.scrollable-content {
+    max-height: 100%;
+    overflow: auto !important;
+}
+
+.scrollable-content-x {
+    max-height: 100%;
+    overflow-x: auto !important;
+}
+
+.scrollable-content-y {
+    max-height: 100%;
+    overflow-y: auto !important;
+}
+
+.max-height-100 {
+    max-height: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+@each $size, $value in $sp-sizes {
+    // GAPS (Flex spaces)
+    .gap-#{$size} {
+        gap: $value;
+    }
+    
+    // PADDINGS
+    .padding-#{$size} {
+        padding: $value;
+    }
+
+    .padding-horizontal-#{$size} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+
+    .padding-vertical-#{$size} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+
+    .padding-right-#{$size} {
+        padding-right: $value;
+    }
+
+    .padding-left-#{$size} {
+        padding-left: $value;
+    }
+
+    .padding-top-#{$size} {
+        padding-top: $value;
+    }
+
+    .padding-bottom-#{$size} {
+        padding-bottom: $value;
+    }
+
+    // MARGINS
+    .margin-#{$size} {
+        margin: $value !important;
+    }
+
+    .margin-horizontal-#{$size} {
+        margin-left: $value !important;
+        margin-right: $value !important;
+    }
+
+    .margin-right-#{$size} {
+        margin-right: $value !important;
+    }
+
+    .margin-left-#{$size} {
+        margin-left: $value !important;
+    }
+
+    .margin-top-#{$size} {
+        margin-top: $value !important;
+    }
+
+    .margin-bottom-#{$size} {
+        margin-bottom: $value !important;
+    }
+}
+
+// Clear
+.padding-0 {
+    padding: 0 !important;
+}
+
+.padding-top-0 {
+    padding-top: 0 !important;
+} 
+
+.padding-right-0 {
+    padding-right: 0 !important;
+} 
+
+.padding-left-0 {
+    padding-left: 0 !important;
+} 
+
+.padding-bottom-0 {
+    padding-bottom: 0 !important;
+} 
+
+.margin-0 {
+    margin: 0 !important;
+}
+
+.margin-top-0 {
+    margin-top: 0 !important;
+} 
+
+.margin-right-0 {
+    margin-right: 0 !important;
+} 
+
+.margin-left-0 {
+    margin-left: 0 !important;
+} 
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+} 
+
+// LAYOUT
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+// Dock
+.docked-top {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.docked-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+}
+
+/* Prevent containers overflow inside ext containers */
+.uiv-wizard .x-dialog-body-el > *, 
+.uiv-wizard .x-titlebar-body-el> * {
+    max-width: 100%;
+}
+
+.min-width-0,
+.x-layout-fit-item {
+    min-width: 0;
+}
+
+
+// Min widths for use in conjunction with flex-wrap for responsive effect
+$widths: 100, 150, 200, 250, 300, 400, 500, 600;
+
+@each $value in $widths {
+    .min-w-#{$value} {
+        min-width: $value + px;
+    }
+}

@@ -1,0 +1,90 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Table, Typography } from 'antd';
+import { cellRenderersData } from './data.js'
+
+<Meta title="Ant/Table/Cell renderers" component={Table}/>
+
+
+# Cell renderers
+
+Cell renderers for Ant.d Table and AG Grid
+
+
+export const Template = (args) => 
+<Table 
+    dataSource={cellRenderersData} 
+    pagination={false}
+    {...args}
+>
+     <Column 
+        title="style"
+        dataIndex="style"
+        key="name"
+        className="main-text"
+    />
+    <Column 
+        title="example"
+        dataIndex="example"
+        key="example"
+        render={(text, record, index) => <div className={ record.className }>{ text }</div>}
+    />
+    <Column 
+        title="renderer"
+        dataIndex="renderer"
+        key="renderer"
+        render={text => <div className="code-text">{ text }</div>}
+    />
+    <Column 
+        title="use"
+        dataIndex="use"
+        key="use"
+    />
+</Table>
+
+
+<Canvas>
+    <Story 
+        name="Basic renderers"
+        args={{
+            size: 'middle'
+        }}
+        argTypes={{
+            size: {
+                options: ['default', 'middle', 'small'],
+                control: {
+                    type: 'inline-radio'
+                }
+            }
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+
+## How to use them
+
+````
+// AG grid
+renderCreatedAtColumn = (data) => {
+    const {_createdAt} = data;
+    const time = moment(_createdAt).fromNow();
+
+    return (
+        `<span className="date-text">${time}</span>`
+    );
+};
+
+...
+<AgGridColumn
+    cellRenderer={renderCreatedAtColumn}
+...
+````
+
+````
+// Ant.d Table
+...
+<Column
+    render={text => <div className="secondary-text">{ text }</div>}
+...
+````

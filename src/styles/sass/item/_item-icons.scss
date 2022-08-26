@@ -1,0 +1,70 @@
+// ICONS
+.uiv-item {
+    .item-icon {
+        background-image: url(../assets/images/ico-entity.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 56px;
+        width: 56px;
+
+        // Generic font icons
+        &[class^="ui-icon-"],
+        &[class*=" ui-icon-"],
+        &[class^="icon-"],
+        &[class*=" icon-"] {
+            align-items: center;
+            color: $white;
+            display: inline-flex;
+            justify-content: center;
+            text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+
+            &:before {
+                color: inherit;
+                font-size: calc(var(--font-size-title-big) + 3px);
+                text-shadow: inherit;
+            }
+
+            // medium size-icon
+            &.medium{
+                &:before {
+                    font-size: calc(var(--font-size-title-big) - 2px);
+                }
+            }
+
+            // small size-icon
+            &.small {
+                &:before {
+                    font-size: calc(var(--font-size-bigger) + 5px);
+                }
+            }
+        }
+
+        // SHAPES
+        &.circle {
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: none;
+            border-radius: 50%;
+            color: #555;
+            height: 56px;
+            justify-content: center;
+            width: 56px;
+
+            &:before {
+                text-shadow: none;
+                color: unset;
+            }
+        }
+
+        &.hex {
+            //to-do
+        }
+    }
+}
+
+
+// MODIFIERS
+.uiv-white-border {
+    border: 2px solid #fff;
+    box-shadow: .5px .5px 3px 1px rgba(0, 0, 0, .2);
+}

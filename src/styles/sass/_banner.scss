@@ -1,0 +1,53 @@
+.uiv-banner-wrap {
+
+    .ant-alert {
+        .ant-alert-icon {
+            font-size: var(--font-size-bigger)
+        }
+    }
+    
+    &.collapsible {
+        .ant-alert {
+            align-items: flex-start;
+    
+            .ant-collapse-header {
+                padding: 0;
+            }
+    
+            .ant-collapse-item {
+                border: none;
+            }
+
+            .ant-collapse-content .ant-collapse-content-box {
+                padding-bottom: 0;
+            }
+
+            // Icon on header
+            &:not(.ant-alert-no-icon) {
+                .ant-collapse-header {
+                    padding-left: var(--sp-md);
+                }
+
+                // Expand button before icon
+                &.expand-icon-left {
+                    .expand-icon {
+                        position: absolute;
+                        left: -32px;
+                    }
+
+                    .ant-alert-icon {
+                        position: relative;
+                        left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Custom types
+.uiv-banner-wrap.secondary {
+    .ant-alert-info {
+        background-color: #EEF1F6;
+    }
+}

@@ -1,0 +1,40 @@
+.ant-drawer-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.ant-drawer {
+    &.dp-collapsed {
+        width: 52px !important;
+
+        .ant-drawer-body > * {
+            display: none
+        }
+
+        .drawer-panel-title {
+            display: flex;
+            border: none;
+            flex-direction: column-reverse;
+
+            .uiv-panel-header-title {
+                transform: rotate(90deg);
+                transform-origin: left;
+                position: absolute;
+                left: 50%;
+                padding-left: 20px;
+                white-space: nowrap;
+            }
+        }
+
+    }
+}
+
+.border-layout-panel {
+    // Bottom
+    border-top: 1px solid $border-color;
+    box-shadow: inset 0 30px 50px -50px rgba(0, 0, 0, 0.2);
+
+    .uiv-panel-header {
+        background-color: transparent;
+    }
+}

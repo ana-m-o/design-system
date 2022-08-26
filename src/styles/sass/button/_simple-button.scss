@@ -1,0 +1,210 @@
+.ant-btn {
+    align-items: center;
+    display: inline-flex;
+    font-size: 10px;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-transform: uppercase;
+
+    // Icon sizes
+    [class^="icon-"],
+    [class*=" icon-"],
+    [class^="ui-icon-"],
+    [class*=" ui-icon-"] {
+        font-size: 16px;
+        line-height: 10px;
+        margin-right: var(--sp-xs);
+    }
+    
+    &.ant-btn-icon-only {
+        [class^="icon-"],
+        [class*=" icon-"],
+        [class^="ui-icon-"],
+        [class*=" ui-icon-"] {
+            margin-right: 0;
+        }
+    }
+
+
+    //bg ripple animation
+    &::before {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 30px;
+        border: 1px dotted transparent;
+        content: '';  
+        display: block;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transition: all .2s ease-out;
+        width: 0;
+    }
+
+    //Hover & focus
+    &:hover,
+    &:focus {
+        &:not([disabled]){
+            color: $text-default;
+            border-color: #f6f6f6;
+            
+            //bg ripple animation on hover/focus
+            &::before {
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+    
+    // Disabled
+    &[disabled] {
+        // Needed to prevent hover color changes
+        color: rgba(0, 0, 0, 0.25) !important;
+        border-color: transparent !important;
+        background: transparent !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+
+        &::before {
+            content: none;
+        }
+    }
+
+    // Sizes
+    &.ant-btn-sm {
+        padding: 2.1px 7px;
+    }
+    
+    // Hover color adjustments
+    &.ant-btn-primary,
+    &.ant-btn-danger {
+        &:not([disabled]){
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+
+    &.ant-btn-danger{
+        &.readonly {
+            &:hover,
+            &:focus {
+                background-color: $red;
+            }
+        }
+    }
+
+    &.ant-btn-primary {
+        &:hover,
+        &:focus {
+            background-color: $aqua;
+        }
+    }
+
+    // COLORS
+    &[class*="color-"] {
+        &:hover,
+        &:focus {
+            box-shadow: inset 0 0 0 2px rgba(50, 50, 50, 0.15);
+        }
+    }
+
+    &.ant-btn-icon-primary,
+    &.ant-btn-icon-danger {
+        display: flex;
+        align-items: center;
+
+        [class^="ui-icon-"],
+        [class*=" ui-icon-"],
+        [class^="icon-"],
+        [class*=" icon-"] {
+            align-items: center;
+            background-color: $aqua;
+            border-radius: 50%;
+            color: #fff;
+            display: inline-flex;
+            height: 21px;
+            justify-content: center;
+            margin-right: 6px;
+            position: relative;
+            top: 0;
+            width: 21px;
+        }
+    }
+
+    &.ant-btn-icon-danger {
+        [class^="ui-icon-"],
+        [class*=" ui-icon-"],
+        [class^="icon-"],
+        [class*=" icon-"] {
+            background-color: $red;
+        }
+    }
+
+
+    // CUSTOM SHAPES
+    &.ant-btn-square {
+        border-radius: 4px;
+
+        &::before {
+            border-radius: 4px;
+        }
+    }
+    
+
+    // Readonly buttons
+    &.readonly {
+        border-color: transparent !important;
+        cursor: default;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+
+        &[class*="color-"] {
+            &:hover,
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    // Multi-line buttons
+    &.btn-multi-line {
+        line-height: 1em;
+        display: flex;
+        align-items: center;
+
+        [class^="icon-"],
+        [class*=" icon-"],
+        [class^="ui-icon-"],
+        [class*=" ui-icon-"] {
+            top: 0;
+        }
+
+        &.ant-btn-sm {
+            padding: 3.1px 7px !important// fix for link buttons
+        } 
+    }
+
+    // special icon
+    .ui-icon-loading-alt {
+        height: 10px;
+        position: relative;
+        top: -3px;
+        width: 18px;
+    }
+}
+
+// OTHERS
+.btn-label {
+    font-size: var(--font-size-mini);
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}

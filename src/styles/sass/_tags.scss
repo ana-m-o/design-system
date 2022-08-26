@@ -1,0 +1,114 @@
+.uiv-tag {
+    align-items: center;
+    border-radius: 3px;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: var(--font-size-smaller);
+    gap: var(--sp-xs);
+    height: 16px;
+    justify-content: center;
+    line-height: 1em;
+    padding: 0 6px;
+
+    // COLOR
+
+    //default
+    background-color: $blue-white;
+    color: var(--medium-blue);
+
+    &.uiv-tag-blue{
+        background-color: var(--medium-blue);
+        color: $white;
+    }
+    
+    &.uiv-tag-navy{
+        background-color: var(--navy);
+        color: $white;
+    }
+    
+    &.uiv-tag-aqua{
+        background-color: $aqua;
+        color: $white;
+    }
+    
+    &.uiv-tag-aqua-medium{
+        background-color: $aqua-medium;
+        color: $white;
+    }
+    
+    &.uiv-tag-green{
+        background-color: $green;
+        color: $white;
+    }
+    
+    &.uiv-tag-yellow{
+        background-color: $yellow;
+        color: $text-black;
+    }
+    
+    &.uiv-tag-orange{
+        background-color: $orange;
+        color: $white;
+    }
+    
+    &.uiv-tag-red{
+        background-color: $red;
+        color: $white;
+    }
+    
+    &.uiv-tag-gray-blue{
+        background-color: $gray-blue;
+        color: $white;
+    }
+    
+    &.uiv-tag-light-gray{
+        background-color: $light-gray-solid;
+        color: $text-secondary;
+    }
+    
+    &.uiv-tag-white{
+        background-color: $white;
+        color: $text-secondary;
+    }
+
+    &.uiv-tag-gray-blue-line {
+        background-color: $white;
+        color: $text-secondary;
+        border: 2px solid $gray-blue
+    }
+
+    // SIZES
+    &.uiv-tag-medium {
+        height: 24px;
+        font-size: var(--font-size-default);
+        padding: 0 8px;
+
+        &.uiv-tag-circle {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    
+    &.uiv-tag-small {
+        font-size: var(--font-size-mini);
+        height: 14px;
+        padding: 0 var(--sp-xs);
+
+        &.uiv-tag-circle {
+            height: 14px;
+            width: 14px;
+        }
+    }
+
+    // SHAPES
+    &.uiv-tag-round {
+        border-radius: 20px;
+        padding: 0 8px;
+    }
+
+    &.uiv-tag-circle {
+        border-radius: 20px;
+        height: 16px;
+        width: 16px;
+    }
+}

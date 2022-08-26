@@ -1,0 +1,116 @@
+.rsc-versions-grid {
+    .ag-row-hover {
+        .ag-cell {
+            &:hover {
+                box-shadow: inset 0 0 1px 1px $aqua-light;
+            }
+        }
+
+        .ant-btn {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.22), 0 1px 1px rgba(0,0,0,0.05);
+
+            &:hover,
+            &:focus {
+                box-shadow: 0 2px 4px rgba(0,0,0,0.22), 0 1px 1px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(50,50,50,0.15);
+                border-color: rgba(50,50,50,0.15);
+
+                // Blue border for white buttons
+                &.bg-color-white {
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.22), 0 1px 1px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(25,115,184,0.45);
+                    border-color: rgba(25,115,184,0.45);
+                }
+            }
+
+
+        }
+    }
+
+    .ag-cell-focus {
+        // Si está con focus, no hace falta marcarla además como selected
+        border: 1px solid $aqua !important;
+    }
+} 
+
+.submenu-color-icon {
+    border-radius: 6px;
+    padding: 1px 4px;
+    text-align: center;
+    width: 24px;
+    height: 20px;
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.env-btn {
+    width: 112px;
+    height: 26px;
+    margin-right: 4px;
+    margin-left: 22px; // para compensar el ancho del botón de menú y dejar el botón visualmente centrado
+    transition-property: border; // para que no haya transiciones al cambiar el ancho
+}
+
+.filter-active {
+    font-size: var(--font-size-title);
+    margin: 0 6px 0 2px;
+    color: $orange;
+    border-radius: 50%;
+}
+
+.active-traffic {
+    border: 3px solid var(--navy);
+    height: 14px !important;
+    left: 2px;
+    padding: 0 !important;
+    position: absolute;
+    top: 2px;
+    width: 14px !important;
+
+    [class^="icon-"] {
+        color: transparent;
+        font-size: 11px;
+        top: -5px;
+    }
+
+    &:hover,
+    &:focus {
+        border-width: 2px;
+    }
+
+}
+
+.schedulable-cell {
+    align-items: center;
+    display: flex;
+}
+
+.scheduled-info {
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    color: $aqua-medium;
+    font-size: var(--font-size-smaller);
+    line-height: 1em;
+    position: absolute;
+}
+
+.secondary-action-cell {
+    align-items: center;
+    display: flex;
+    height: 52px;
+    justify-content: center;
+    width: 160px;
+    gap: var(--sp-xs);
+
+    .secondary-btn {
+        opacity: 0;
+        width: 0;
+        padding: 0;
+    }
+
+    &:hover {
+        .secondary-btn {
+            opacity: 1;
+            width: 24px;
+        }
+    }
+}

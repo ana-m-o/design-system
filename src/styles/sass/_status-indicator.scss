@@ -1,0 +1,50 @@
+.uiv-status-indicator {
+    align-items: center;
+    display: inline-flex;
+    gap: var(--sp-xs);
+
+    .uiv-status-tag {
+        padding: 0;
+    }
+
+    .ui-icon-loading-alt:before {
+        height: 12px;
+        width: 12px;
+    }
+
+    .uiv-status-label {
+        text-transform: capitalize;
+    }
+
+    &.size-small {
+        .uiv-status-tag {
+            height: 12px;
+            width: 12px;
+            font-size: 9px;
+            font-weight: 600;
+        }
+    }
+
+    &.border {
+        .uiv-status-tag {
+            border: 1px solid $border-color;
+        }
+    }
+
+    &.medium {
+        .uiv-status-tag {
+            font-size: 16px;
+        }
+        &.border {
+            .uiv-status-tag {
+                border-width: 2px;
+            }
+        }
+    }
+
+    &.text-right {
+        .uiv-status-label {
+            order: 2;
+        }
+    }
+}

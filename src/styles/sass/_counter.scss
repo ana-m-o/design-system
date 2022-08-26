@@ -1,0 +1,7 @@
+.counter {
+    .uiv-divider {
+        &::after {
+            right: 0;
+        }
+    }
+}

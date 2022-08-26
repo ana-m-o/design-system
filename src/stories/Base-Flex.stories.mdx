@@ -1,0 +1,244 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+<Meta
+    title="Base/Flex utils"
+    parameters={{
+        previewTabs: {
+            'storybook/docs/panel': {
+                hidden: true,
+            }
+        }
+    }}/>
+
+# Layout utility classes
+
+## Flex
+
+### Horizontal Layout
+
+`.hbox`
+
+<div className="hbox">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="hbox">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+`.pack-center`
+
+<div className="hbox pack-center">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="hbox pack-center">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+`.pack-end`
+
+<div className="hbox pack-end">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="hbox pack-end">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+
+`.pack-space-between`
+
+<div className="hbox pack-space-between">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="hbox pack-space-between">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+
+`.align-start`
+
+<div className="hbox align-start">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+</div>
+
+```
+<div className="hbox align-start">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+`.align-center`
+
+<div className="hbox align-center">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+</div>
+
+```
+<div className="hbox align-center">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+`.align-end`
+
+<div className="hbox align-end">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+</div>
+
+```
+<div className="hbox align-end">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+
+### Vertical Layout
+
+Use `.vbox` in vertical layouts
+
+<div className="vbox">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="vbox">
+    <div>box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+
+### Flex-1
+
+Use `.flex-1` expand the container to the maximum available space
+
+<div className="hbox">
+    <div className="bg-color-light-gray flex-1">box 1</div>
+    <div className="bg-color-aqua-light">box 2</div>
+</div>
+
+```
+<div className="hbox">
+    <div className="flex-1">box 1</div>
+    <div>box 2</div>
+</div>
+```
+
+## Spacing
+
+### Gap 
+
+Space between elements inside a flex container.
+
+Sizes: 
+`gap-xs`, `gap-sm`, `gap-md`, `gap-lg`
+
+<div className="hbox gap-xs">
+    <div className="bg-color-light-gray flex-1">box 1</div>
+    <div className="bg-color-aqua-light flex-1">box 2 <br /> other line</div>
+    <div className="bg-color-blue-white flex-1">box 3</div>
+</div>
+
+```
+<div className="hbox gap-sm">
+    <div className="flex-1">box 1</div>
+    <div className="flex-1">box 2 <br /> other line</div>
+    <div className="flex-1">box 3</div>
+</div>
+```
+
+<div className="vbox gap-lg">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+    <div className="bg-color-blue-white">box 3</div>
+</div>
+
+```
+<div className="vbox gap-lg">
+    <div>box 1</div>
+    <div>box 2 <br /> other line</div>
+    <div>box 3</div>
+</div>
+```
+
+
+## Utils
+
+### Modifying classes
+
+Prevent container to be squished:
+```
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+````
+
+Make flex containers to wrap in parent container when there's not enought space:
+```
+.flex-wrap {
+    flex-wrap: wrap;
+}
+````
+
+Scroll
+```
+.scrollable-content {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.scrollable-content-x {
+    max-height: 100%;
+    overflow-x: auto;
+}
+
+.scrollable-content-y {
+    max-height: 100%;
+    overflow-y: auto;
+}
+```
+
+Sizes. Sometimes needed inside ext containers
+```
+.max-height-100 {
+    max-height: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+```
+
+Others
+```
+.inline-hbox {
+    @extend .hbox;
+    display: inline-flex !important
+}
+```

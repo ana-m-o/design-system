@@ -1,0 +1,155 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+<Meta title="Base/Spacing" />
+
+<style>
+    {`
+    .example{
+        border: 1px solid #ccc;
+    }`
+}
+</style>
+
+
+# Spacing utility classes
+
+Existen 4 tamaños estándar para los espaciados `lg`. `md`, `sm` `xs`
+
+## Gap
+
+Espaciado entre elementos dentro de un contenedor con `display: flex`.
+
+Las clases disponibles son: `gap-xs`, `gap-sm`, `gap-md`, `gap-lg`.
+
+<div className="hbox gap-md">
+    <div className="bg-color-light-gray flex-1">box 1</div>
+    <div className="bg-color-aqua-light flex-1">box 2 <br /> other line</div>
+    <div className="bg-color-blue-white flex-1">box 3</div>
+</div>
+
+```
+<div className="hbox gap-md">
+    <div className="flex-1">box 1</div>
+    <div className="flex-1">box 2 <br /> other line</div>
+    <div className="flex-1">box 3</div>
+</div>
+```
+
+<div className="vbox gap-lg">
+    <div className="bg-color-light-gray">box 1</div>
+    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+    <div className="bg-color-blue-white">box 3</div>
+</div>
+
+```
+<div className="vbox gap-lg">
+    <div>box 1</div>
+    <div>box 2 <br /> other line</div>
+    <div>box 3</div>
+</div>
+```
+
+
+## Paddings
+
+Padding todo alrededor: `.padding-lg`, `.padding-md`, `.padding-sm`, `.padding-xs`
+
+<div className="example padding-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+```
+<div className="padding-lg">
+    <div>content</div>
+</div>
+```
+
+Padding vertical u horizontal: `.padding-vertical-{size}`, `.padding-horizontal-{size}`
+
+<div className="example padding-vertical-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+```
+<div className="padding-vertical-lg">
+    <div>content</div>
+</div>
+```
+
+<div className="example padding-horizontal-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+
+```
+<div className="padding-horizontal-lg">
+    <div>content</div>
+</div>
+```
+
+Padding en un lado concreto: `.padding-top-{size}`, `.padding-right-{size}`, `.padding-left-{size}`, `.padding-bottom-{size}`
+
+<div className="example padding-bottom-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+
+```
+<div className="padding-bottom-lg">
+    <div>content</div>
+</div>
+```
+
+## Margins
+
+Funcion igual que los paddings.
+
+Margin todo alrededor: `.margin-lg`, `.margin-md`, `.margin-sm`, `.margin-xs`
+
+
+<div className="margin-lg example">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+
+```
+<div className="margin-lg">
+    <div>content</div>
+</div>
+```
+
+Margin vertical u horizontal: `.margin-vertical-{size}`, `.margin-horizontal-{size}`
+
+<div className="example margin-vertical-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+```
+<div className="margin-vertical-lg">
+    <div>content</div>
+</div>
+```
+
+<div className="example margin-horizontal-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+
+```
+<div className="margin-horizontal-lg">
+    <div>content</div>
+</div>
+```
+
+Margin en un lado concreto: `.margin-top-{size}`, `.margin-right-{size}`, `.margin-left-{size}`, `.margin-bottom-{size}`
+
+<div className="example margin-bottom-lg">
+    <div className="bg-color-light-gray">content</div>
+</div>
+
+
+```
+<div className="margin-bottom-lg">
+    <div>content</div>
+</div>
+```
