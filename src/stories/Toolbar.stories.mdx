@@ -61,12 +61,67 @@ Grouping records, Filtering, Searching... They can be included in the header of 
 - Navigation tools (Pagination, BreadCrumbs) 
 
 
-### Action/Commands Tools
+### Entities Edition Tools 
 
 These are the tools that perform actions on the entities; add, delete, deploy, etc.
 
 **Tools for editing data in master views**
 
-+ Included in a toolbar adjacent to the list. They will be specific to one or more records in the list and will be enabled depending on the selected items. 
-+ Included within the list, in the same rows. We can find, in lists, toolbars specific to each record that will be included in a column of actions.
+It is usually located over the entities master list. They will be specific to one or several records in the list and will be enabled, or not, depending on the functional rules; permissions, entity flow, selected rows, etc. 
 
+Additionally, into the rows, we can place a toolbar with some quick actions on the records, that could be included in an action column.
+
+**Tools for editing data in detail views**
+
+It is usually located under the summary or name of the entity shown in the panel/view. By default, this tools will be available and enabled, as long as the functional rules allow it, (permissions, flow or status of the entity, etc.)
+
+Depending on their scope, they may be:
+
++ Global for the Entity detail. 
++ Specific to a section of the Entity (tab, card, fieldset, execute.) In this case there will be 2 options to place the toolbar, depending on the number of actions it contains:
+  + Placed inside the section (tab, etc) and show it only when its corresponding TAB is visible/selected.
+  + Located in the global Toolbar that enables/disables or shows/hides options depending on the selected section/tab.
+
+
+
+## Interaction
+
+The toolbar component has no states or behaviors of its own as it is simply a grouping element or container, but we can suggest some behavior recommendations.
+
+By default, toolbars must always be visible so they will be placed in a parent container (header, footer) that, by default, has the docked property set to true.
+Dockable (bottom, top)
+
+It is recommended that the toolbar remains outside the scrollable area of the detail or master panel of the entity to which it belongs, as well as the summary information of the entity. In this way, users will always have available the operations they need to perform on the entity.
+
+### Responsiveness
+
+**Complete toolbar · Large.** If we have enough space in the viewport, all the elements that compose the toolbar are configured in a visible way; Text (label), icons.
+
+<img src={toolbar01} width={'100%'} />
+
+**Collapsed tool groups · Medium.** When the space is reduced the actions will be shown over a drop-down. When in the toolbar we have different groupings of buttons, each of these groups will be collapsed independently.
+
+-------------------------------------
+
+<img src={toolbar03} width={'60%'} />
+
+-------------------------------------
+
+<img src={toolbar05} width={'60%'} />
+
+-------------------------------------
+
+**Iconographic toolbar · Small.** When there is little space available in the viewport, the toolbar will display only a set of icons representing each group of actions.
+On mouse over, this icons will show a tooltip with the short description or label for the actions it represents.
+
+-------------------------------------
+
+<img src={toolbar04} width={'40%'} />
+
+-------------------------------------
+
+<img src={toolbar06} width={'40%'} />
+
+-------------------------------------
+
+When the user clicks on the icons, the toolbar will display a panel of actions related to the pressed group.
