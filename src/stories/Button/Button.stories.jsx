@@ -50,7 +50,7 @@ Primary.parameters = {
 export const Danger = Template.bind({});
 Danger.args = {
     type    : 'danger',
-    icon    : <span className="ui-icon-trash" />,
+    icon    : <span className="ds-icon-trash" />,
     children: 'Delete',
     size    : 'default',
 };
@@ -66,7 +66,7 @@ IconPrimary.args = {
 export const IconDanger = Template.bind({});
 IconDanger.args = {
     type    : 'icon-danger',
-    icon    : <span className="ui-icon-trash" />,
+    icon    : <span className="ds-icon-trash" />,
     children: 'Remove...',
     size    : 'default',
 };
@@ -74,13 +74,13 @@ IconDanger.args = {
 export const IconOnly = Template.bind({});
 IconOnly.args = {
     type: 'danger',
-    icon: <span className="ui-icon-trash" />,
+    icon: <span className="ds-icon-trash" />,
     size: 'default',
 };
 
 export const Loading = Template.bind({});
 Loading.args = {
-    icon     : <span className="ui-icon-loading-alt" />,
+    icon     : <span className="ds-icon-loading-alt" />,
     disabled : false,
     children : 'Primary Button',
     className: 'bg-color-yellow readonly',

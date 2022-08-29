@@ -35,7 +35,7 @@ const ApiMethod = ({
     };
 
     const compInner = status === 'empty' ?
-        <span className="ui-icon-dot font-size-bigger"></span>
+        <span className="ds-icon-dot font-size-bigger"></span>
         :
         <>
             <span className="method">{method ? method : '--'}</span>

@@ -15,7 +15,7 @@ const { Panel } = Collapse;
 const Template = (args) =>
     <Collapse {...args} >
         <Panel
-            header={<Header title="Panel Title" iconCls="ui-icon-deploy-package"></Header>}
+            header={<Header title="Panel Title" iconCls="ds-icon-deploy-package"></Header>}
             type="panel"
             key="1"
         >

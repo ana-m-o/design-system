@@ -10,8 +10,8 @@
     // Icon sizes
     [class^="icon-"],
     [class*=" icon-"],
-    [class^="ui-icon-"],
-    [class*=" ui-icon-"] {
+    [class^="ds-icon-"],
+    [class*=" ds-icon-"] {
         font-size: 16px;
         line-height: 10px;
         margin-right: var(--sp-xs);
@@ -20,8 +20,8 @@
     &.ant-btn-icon-only {
         [class^="icon-"],
         [class*=" icon-"],
-        [class^="ui-icon-"],
-        [class*=" ui-icon-"] {
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"] {
             margin-right: 0;
         }
     }
@@ -118,8 +118,8 @@
         display: flex;
         align-items: center;
 
-        [class^="ui-icon-"],
-        [class*=" ui-icon-"],
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"],
         [class^="icon-"],
         [class*=" icon-"] {
             align-items: center;
@@ -137,8 +137,8 @@
     }
 
     &.ant-btn-icon-danger {
-        [class^="ui-icon-"],
-        [class*=" ui-icon-"],
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"],
         [class^="icon-"],
         [class*=" icon-"] {
             background-color: $red;
@@ -182,8 +182,8 @@
 
         [class^="icon-"],
         [class*=" icon-"],
-        [class^="ui-icon-"],
-        [class*=" ui-icon-"] {
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"] {
             top: 0;
         }
 
@@ -193,7 +193,7 @@
     }
 
     // special icon
-    .ui-icon-loading-alt {
+    .ds-icon-loading-alt {
         height: 10px;
         position: relative;
         top: -3px;

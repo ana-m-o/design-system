@@ -29,16 +29,16 @@ const StatusIndicator = ({
 }) => {
 
     const statusClasses = {
-        'idle'        : { color: 'gray-blue', icon: 'ui-icon-dot' },
+        'idle'        : { color: 'gray-blue', icon: 'ds-icon-dot' },
         'ok'          : { color: 'green', icon: 'icon-check-line' },
-        'ko'          : { color: 'red', icon: 'ui-icon-exclamation' },
-        'wip'         : { color: 'orange', icon: 'ui-icon-loading-alt' },
-        'active'      : { color: 'blue', icon: 'ui-icon-play' },
-        'disabled'    : { color: 'light-gray', icon: 'ui-icon-dot' },
+        'ko'          : { color: 'red', icon: 'ds-icon-exclamation' },
+        'wip'         : { color: 'orange', icon: 'ds-icon-loading-alt' },
+        'active'      : { color: 'blue', icon: 'ds-icon-play' },
+        'disabled'    : { color: 'light-gray', icon: 'ds-icon-dot' },
         'available'   : { color: 'navy', icon: null },
         'implementing': { color: 'navy', icon: 'icon-ellipsis-horizontal-line font-weight-black' },
         'defined'     : { color: 'gray-blue-line', icon: null },
-        'not-defined' : { color: 'white', icon: 'ui-icon-dot' },
+        'not-defined' : { color: 'white', icon: 'ds-icon-dot' },
     };
 
     return (

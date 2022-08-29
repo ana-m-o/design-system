@@ -42,7 +42,7 @@ const Template = (args) =>
     width={60}
   />
   <Column
-    title={[<span className="ui-icon-location-solid header-icn" />, "Address"]}
+    title={[<span className="ds-icon-location-solid header-icn" />, "Address"]}
     dataIndex='address'
     key='address'
     render={text => <Text ellipsis={true, { tooltip: text }} className="secondary-text">{ text }</Text>}

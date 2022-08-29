@@ -70,8 +70,8 @@
             width: 32px;
 
             // Generic font icons
-            &[class^="ui-icon-"],
-            &[class*=" ui-icon-"],
+            &[class^="ds-icon-"],
+            &[class*=" ds-icon-"],
             &[class^="icon-"],
             &[class*=" icon-"] {
                 &:before {
@@ -115,8 +115,8 @@
             width: 22px;
 
             // Generic font icons
-            &[class^="ui-icon-"],
-            &[class*=" ui-icon-"],
+            &[class^="ds-icon-"],
+            &[class*=" ds-icon-"],
             &[class^="icon-"],
             &[class*=" icon-"] {
                 &:before {

@@ -150,7 +150,7 @@ const Template = (args) => <OperationStatus {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     title            : 'Deployment Progress',
-    iconCls          : 'ui-icon-deploy-package',
+    iconCls          : 'ds-icon-deploy-package',
     type             : 'accordion',
     expandedPanel    : null,
     showNumbers      : true,
@@ -163,7 +163,7 @@ Default.args = {
 export const Warning = Template.bind({});
 Warning.args = {
     title            : 'Deployment Progress',
-    iconCls          : 'ui-icon-deploy-package',
+    iconCls          : 'ds-icon-deploy-package',
     type             : 'accordion',
     expandedPanel    : 2,
     showNumbers      : true,
@@ -175,7 +175,7 @@ Warning.args = {
 export const Error = Template.bind({});
 Error.args = {
     title            : 'Deployment Progress',
-    iconCls          : 'ui-icon-deploy-package',
+    iconCls          : 'ds-icon-deploy-package',
     type             : 'accordion',
     expandedPanel    : 2,
     showNumbers      : true,
@@ -187,7 +187,7 @@ Error.args = {
 export const Cancel = Template.bind({});
 Cancel.args = {
     title            : 'Deployment Progress',
-    iconCls          : 'ui-icon-deploy-package',
+    iconCls          : 'ds-icon-deploy-package',
     type             : 'accordion',
     expandedPanel    : 2,
     showNumbers      : true,

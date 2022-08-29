@@ -14,8 +14,8 @@
 
         [class^="icon-"],
         [class*=" icon-"],
-        [class^="ui-icon-"],
-        [class*=" ui-icon-"] {
+        [class^="ds-icon-"],
+        [class*=" ds-icon-"] {
             font-size: var(--font-size-default);
             line-height: 10px;
             top: 0;
@@ -28,8 +28,8 @@
 
             [class^="icon-"],
             [class*=" icon-"],
-            [class^="ui-icon-"],
-            [class*=" ui-icon-"] {
+            [class^="ds-icon-"],
+            [class*=" ds-icon-"] {
                 font-size: var(--font-size-small);
             }
         }

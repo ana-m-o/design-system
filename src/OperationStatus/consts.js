@@ -6,7 +6,7 @@ const statusMap = {
     'error'      : { color: 'ko', icon: '' },
     'warning'    : { color: 'wip', icon: '' },
     'cancelled'  : { color: 'disabled', icon: '' },
-    'scheduled'  : { color: 'wip', icon: 'ui-icon-sand-clock' },
+    'scheduled'  : { color: 'wip', icon: 'ds-icon-sand-clock' },
     'deleted'    : { color: 'disabled', icon: 'icon-cancel-line' },
 };
 

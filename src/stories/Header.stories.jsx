@@ -16,7 +16,7 @@ const Template = (args) =>
         <Item
             pretitle="Dataproc.jobs"
             iconShape="circle"
-            iconCls="ui-icon-deploy-package"
+            iconCls="ds-icon-deploy-package"
             iconColor="#1973B8"
             title="uuaa-gl-ecq-3"
             titleTag={<Tag color="aqua-medium">rc-03-SNAPSHOT</Tag>}
@@ -30,7 +30,7 @@ const Template = (args) =>
             color="navy"
             shape="round"
             size="medium"
-            iconCls="ui-icon-location-solid"
+            iconCls="ds-icon-location-solid"
         >
             GLO
         </Tag>
@@ -65,7 +65,7 @@ MainHeader.args = {
     title     : 'Main Header',
     type      : 'main',
     navButtons: [
-        <Button icon={<span className="ui-icon-arrow-up" />} key="nav-btn" />,
+        <Button icon={<span className="ds-icon-arrow-up" />} key="nav-btn" />,
     ],
     uppercaseTitle: true,
 };
@@ -74,14 +74,14 @@ const TemplateToolbar = (args) =>
     <Header {...args} >
         <Button icon={<span className="icon-plus-line" />} type="primary">New item</Button>
         <Divider />
-        <Button icon={<span className="ui-icon-trash" />} type="danger">Remove item</Button>
+        <Button icon={<span className="ds-icon-trash" />} type="danger">Remove item</Button>
     </Header>;
 
 const TemplateCompact = (args) =>
     <Header {...args} >
         <Button size="small" icon={<span className="icon-plus-line" />} type="primary">New item</Button>
         <Divider />
-        <Button size="small" icon={<span className="ui-icon-trash" />} type="danger">Remove item</Button>
+        <Button size="small" icon={<span className="ds-icon-trash" />} type="danger">Remove item</Button>
     </Header>;
 
 const TemplateIllustration = (args) =>
@@ -126,7 +126,7 @@ const PanelHeaderTemplate = (args) =>
 export const PanelHeader = PanelHeaderTemplate.bind({});
 PanelHeader.args = {
     title  : 'Panel title',
-    iconCls: 'ui-icon-deploy-package',
+    iconCls: 'ds-icon-deploy-package',
     type   : 'panel',
 };
 

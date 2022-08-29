@@ -23,7 +23,7 @@ const { Panel } = Collapse;
 const customIcons = {
     info   : <span className="icon-info-standard-solid" />,
     warning: <span className="icon-warning-standard-solid" />,
-    error  : <span className="ui-icon-alert-octagon-solid" />,
+    error  : <span className="ds-icon-alert-octagon-solid" />,
     success: <span className="icon-success-standard-solid" />,
 };
 

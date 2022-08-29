@@ -117,7 +117,7 @@ const OperationStatus = ({
 
                                 {/*   <div className="wait-item">
                                     <Header title="Waiting to implantation scheduled date" docked={false}>
-                                        <Tag shape="circle" color="gray-blue" className="timeline-item" bold iconCls="ui-icon-sand-clock"></Tag>
+                                        <Tag shape="circle" color="gray-blue" className="timeline-item" bold iconCls="ds-icon-sand-clock"></Tag>
 
                                         <Divider />
                                         <span className="time">20/07/2021 · window 1 (10:00 AM)</span>

@@ -1,5 +1,5 @@
 
-@import './uiverse-icons';
+@import './ds-icons';
 @import './clarity-fonts';
 @import './font-sizes';
 
@@ -68,15 +68,15 @@ $clarity-path: $font-path + '/clarity';
   font-weight: normal;
 }
 
-// UIVERSE Icons
-$uiv-icons-path: $font-path + '/uiverse-icons';
+// DS Icons
+$ds-icons-path: $font-path + '/ds-icons';
 
 @font-face {
-  font-family: 'uiverse-icons';
+  font-family: 'ds-icons';
   src:
-    url($uiv-icons-path + '/Uiverse-Icons.ttf?datqm') format('truetype'),
-    url($uiv-icons-path + '/Uiverse-Icons.woff?datqm') format('woff'),
-    url($uiv-icons-path + '/Uiverse-Icons.svg?datqm#uiverse-icons') format('svg');
+    url($ds-icons-path + '/ds-icons.ttf?datqm') format('truetype'),
+    url($ds-icons-path + '/ds-icons.woff?datqm') format('woff'),
+    url($ds-icons-path + '/ds-icons.svg?datqm#ds-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,7 +1,7 @@
-[class^="ui-icon-"],
-[class*=" ui-icon-"] {
+[class^="ds-icon-"],
+[class*=" ds-icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'uiverse-icons' !important;
+    font-family: 'ds-icons' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -14,397 +14,397 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.ui-icon-collapse-panel:before {
+.ds-icon-collapse-panel:before {
     content: "\e903";
 }
 
-.ui-icon-collapsed-panel:before {
+.ds-icon-collapsed-panel:before {
     content: "\e904";
 }
 
-.ui-icon-arrow-up:before {
+.ds-icon-arrow-up:before {
     content: "\e908";
 }
 
-.ui-icon-go-to-arrow:before {
+.ds-icon-go-to-arrow:before {
     content: "\e920";
 }
 
-.ui-icon-ellipsis:before {
+.ds-icon-ellipsis:before {
     content: "\e90e";
 }
 
-.ui-icon-chart:before {
+.ds-icon-chart:before {
     content: "\e905";
 }
 
-.ui-icon-list:before {
+.ds-icon-list:before {
     content: "\e906";
 }
 
-.ui-icon-rich-list:before {
+.ds-icon-rich-list:before {
     content: "\e907";
 }
 
-.ui-icon-view-tree:before {
+.ds-icon-view-tree:before {
     content: "\e921";
 }
 
-.ui-icon-group:before {
+.ds-icon-group:before {
     content: "\e931";
 }
 
-.ui-icon-view-grid:before {
+.ds-icon-view-grid:before {
     content: "\e922";
 }
 
-.ui-icon-view-stacked:before {
+.ds-icon-view-stacked:before {
     content: "\e923";
 }
 
-.ui-icon-megaphone-line:before {
+.ds-icon-megaphone-line:before {
     content: "\e901";
 }
 
-.ui-icon-play:before {
+.ds-icon-play:before {
     content: "\e90c";
 }
 
-.ui-icon-trash:before {
+.ds-icon-trash:before {
     content: "\e90d";
 }
 
-.ui-icon-copy:before {
+.ds-icon-copy:before {
     content: "\e910";
 }
 
-.ui-icon-cloud-deploy-config:before {
+.ds-icon-cloud-deploy-config:before {
     content: "\e914";
 }
 
-.ui-icon-cloud-off:before {
+.ds-icon-cloud-off:before {
     content: "\e915";
 }
 
-.ui-icon-cloud-lock:before {
+.ds-icon-cloud-lock:before {
     content: "\e91c";
 }
 
-.ui-icon-briefcase:before {
+.ds-icon-briefcase:before {
     content: "\e91b";
 }
 
-.ui-icon-exception-alert:before {
+.ds-icon-exception-alert:before {
     content: "\e924";
 }
 
-.ui-icon-go-to-notebook:before {
+.ds-icon-go-to-notebook:before {
     content: "\e925";
 }
 
-.ui-icon-bell-alarm:before {
+.ds-icon-bell-alarm:before {
     content: "\e926";
 }
 
-.ui-icon-tick:before {
+.ds-icon-tick:before {
     content: "\e927";
 }
 
-.ui-icon-stalled:before {
+.ds-icon-stalled:before {
     content: "\e928";
 }
 
-.ui-icon-dashboard:before {
+.ds-icon-dashboard:before {
     content: "\e929";
 }
 
-.ui-icon-location:before {
+.ds-icon-location:before {
     content: "\e92a";
 }
 
-.ui-icon-location-solid:before {
+.ds-icon-location-solid:before {
     content: "\e938";
 }
 
-.ui-icon-locations:before {
+.ds-icon-locations:before {
     content: "\e939";
 }
 
-.ui-icon-compare:before {
+.ds-icon-compare:before {
     content: "\e92b";
 }
 
-.ui-icon-calendar:before {
+.ds-icon-calendar:before {
     content: "\e92c";
 }
 
-.ui-icon-add-user:before {
+.ds-icon-add-user:before {
     content: "\e93a";
 }
 
-.ui-icon-search-add:before {
+.ds-icon-search-add:before {
     content: "\e950";
 }
 
-.ui-icon-graph:before {
+.ds-icon-graph:before {
     content: "\e92d";
 }
 
-.ui-icon-conversation:before {
+.ds-icon-conversation:before {
     content: "\e92e";
 }
 
-.ui-icon-wrench:before {
+.ds-icon-wrench:before {
     content: "\e92f";
 }
 
-.ui-icon-CPD:before {
+.ds-icon-CPD:before {
     content: "\e930";
 }
 
-.ui-icon-git-commit:before {
+.ds-icon-git-commit:before {
     content: "\e912";
 }
 
-.ui-icon-git-branch:before {
+.ds-icon-git-branch:before {
     content: "\e913";
 }
 
-.ui-icon-namespace-line:before {
+.ds-icon-namespace-line:before {
     content: "\e902";
 }
 
-.ui-icon-resource:before {
+.ds-icon-resource:before {
     content: "\e90f";
 }
 
-.ui-icon-resource-monitor:before {
+.ds-icon-resource-monitor:before {
     content: "\e919";
 }
 
-.ui-icon-resource-pubsub:before {
+.ds-icon-resource-pubsub:before {
     content: "\e91a";
 }
 
-.ui-icon-resource-model:before {
+.ds-icon-resource-model:before {
     content: "\e91d";
 }
 
-.ui-icon-resource-processing:before {
+.ds-icon-resource-processing:before {
     content: "\e916";
 }
 
-.ui-icon-resource-bpa:before {
+.ds-icon-resource-bpa:before {
     content: "\e917";
 }
 
-.ui-icon-resource-database:before {
+.ds-icon-resource-database:before {
     content: "\e918";
 }
 
-.ui-icon-global:before {
+.ds-icon-global:before {
     content: "\e941";
 }
 
-.ui-icon-universal:before {
+.ds-icon-universal:before {
     content: "\e93b";
 }
 
-.ui-icon-local:before {
+.ds-icon-local:before {
     content: "\e93c";
 }
 
-.ui-icon-multi-local:before {
+.ds-icon-multi-local:before {
     content: "\e93d";
 }
 
-.ui-icon-definition:before {
+.ds-icon-definition:before {
     content: "\e93e";
 }
 
-.ui-icon-implementation:before {
+.ds-icon-implementation:before {
     content: "\e93f";
 }
 
-.ui-icon-deploy:before,
-.ui-icon-deployment:before {
+.ds-icon-deploy:before,
+.ds-icon-deployment:before {
     content: "\e940";
 }
 
-.ui-icon-bitbucket-line:before {
+.ds-icon-bitbucket-line:before {
     content: "\e900";
 }
 
-.ui-icon-bucket-line:before {
+.ds-icon-bucket-line:before {
     content: "\e95f";
 }
 
-.ui-icon-bucket-solid:before {
+.ds-icon-bucket-solid:before {
     content: "\e960";
 }
 
-.ui-icon-cloud-aws:before {
+.ds-icon-cloud-aws:before {
     content: "\e909";
 }
 
-.ui-icon-cloud-azure:before {
+.ds-icon-cloud-azure:before {
     content: "\e90a";
 }
 
-.ui-icon-cloud-google:before {
+.ds-icon-cloud-google:before {
     content: "\e90b";
 }
 
-.ui-icon-ether-api:before {
+.ds-icon-ether-api:before {
     content: "\e911";
 }
 
-.ui-icon-event-line:before {
+.ds-icon-event-line:before {
     content: "\e91f";
 }
 
-.ui-icon-event-solid:before {
+.ds-icon-event-solid:before {
     content: "\e91e";
 }
 
-.ui-icon-cells:before {
+.ds-icon-cells:before {
     content: "\e932";
 }
 
-.ui-icon-ether:before {
+.ds-icon-ether:before {
     content: "\e933";
 }
 
-.ui-icon-mirrorgate:before {
+.ds-icon-mirrorgate:before {
     content: "\e934";
 }
 
-.ui-icon-bbva:before {
+.ds-icon-bbva:before {
     content: "\e935";
 }
 
-.ui-icon-salesforce:before {
+.ds-icon-salesforce:before {
     content: "\e936";
 }
 
-.ui-icon-webex:before {
+.ds-icon-webex:before {
     content: "\e937";
 }
 
-.ui-icon-form-line:before {
+.ds-icon-form-line:before {
     content: "\e942";
 }
 
-.ui-icon-form-solid:before {
+.ds-icon-form-solid:before {
     content: "\e943";
 }
 
-.ui-icon-binary-line:before {
+.ds-icon-binary-line:before {
     content: "\e947";
 }
 
-.ui-icon-binary-solid:before {
+.ds-icon-binary-solid:before {
     content: "\e948";
 }
 
-.ui-icon-cactus:before {
+.ds-icon-cactus:before {
     content: "\e944";
 }
 
-.ui-icon-deploy-package:before {
+.ds-icon-deploy-package:before {
     content: "\e94f";
 }
 
-.ui-icon-deploy-rollback:before {
+.ds-icon-deploy-rollback:before {
     content: "\e94d";
 }
 
-.ui-icon-redeploy:before {
+.ds-icon-redeploy:before {
     content: "\e94e";
 }
 
-.ui-icon-deploy-waiting:before {
+.ds-icon-deploy-waiting:before {
     content: "\e945";
 }
 
-.ui-icon-download-globe:before {
+.ds-icon-download-globe:before {
     content: "\e946";
 }
 
-.ui-icon-lab:before {
+.ds-icon-lab:before {
     content: "\e949";
 }
 
-.ui-icon-sand-clock:before {
+.ds-icon-sand-clock:before {
     content: "\e94b";
 }
 
-.ui-icon-notebook:before {
+.ds-icon-notebook:before {
     content: "\e94a";
 }
 
-.ui-icon-list-line:before {
+.ds-icon-list-line:before {
     content: "\e94c";
 }
 
-.ui-icon-alert-octagon:before, 
-.ui-icon-alert-octagon-line:before {
+.ds-icon-alert-octagon:before, 
+.ds-icon-alert-octagon-line:before {
     content: "\e951";
 }
 
-.ui-icon-alert-octagon-solid:before {
+.ds-icon-alert-octagon-solid:before {
     content: "\e952";
 }
 
-.ui-icon-dot:before {
+.ds-icon-dot:before {
     content: "\e953";
 }
 
-.ui-icon-exclamation:before {
+.ds-icon-exclamation:before {
     content: "\e954";
 }
 
-.ui-icon-wip:before {
+.ds-icon-wip:before {
     content: "\e955";
 }
 
-/* .ui-icon-dot {
+/* .ds-icon-dot {
     content:'\e9e0';
 } */
 
-.ui-icon-auth-denied:before {
+.ds-icon-auth-denied:before {
     content: "\e956";
 }
 
-.ui-icon-auth-operator:before {
+.ds-icon-auth-operator:before {
     content: "\e957";
 }
 
-.ui-icon-auth-pending:before {
+.ds-icon-auth-pending:before {
     content: "\e958";
 }
 
-.ui-icon-auth-request:before {
+.ds-icon-auth-request:before {
     content: "\e959";
 }
 
-.ui-icon-dot-solid:before {
+.ds-icon-dot-solid:before {
     content: "\e95a";
 }
 
-.ui-icon-dot-solid-off:before {
+.ds-icon-dot-solid-off:before {
     content: "\e95b";
 }
 
-.ui-icon-angle-line-double:before {
+.ds-icon-angle-line-double:before {
     content: "\e95c";
 }
 
-.ui-icon-equals:before {
+.ds-icon-equals:before {
     content: "\e95d";
 }
 
-.ui-icon-list-back:before {
+.ds-icon-list-back:before {
     content: "\e95e";
 }
   
@@ -434,12 +434,12 @@ span[class*=" asc-icon-"] {
     font-size: var(--font-size-default);
 }
 
-.ui-icon-loading {
+.ds-icon-loading {
     background-image: url(../assets/images/ico-loading-animated-orange.svg);
     background-size: 16px;
 }
 
-.ui-icon-loading-alt {
+.ds-icon-loading-alt {
     &:before {
         content: '';
         display: block;
@@ -454,7 +454,7 @@ span[class*=" asc-icon-"] {
     }
 }
 
-.ui-icon-empty {
+.ds-icon-empty {
     width: 20px;
 }
 
@@ -468,8 +468,8 @@ span[class*=" asc-icon-"] {
     }
 }
 
-[class^="ui-icon-"],
-[class*=" ui-icon-"],
+[class^="ds-icon-"],
+[class*=" ds-icon-"],
 [class^="icon-"],
 [class*=" icon-"] {
     &.uiv-disabled {

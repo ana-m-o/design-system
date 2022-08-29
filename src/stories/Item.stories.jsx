@@ -19,7 +19,7 @@ const Template = (args) => <Item {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    iconCls      : 'ui-icon-git-branch',
+    iconCls      : 'ds-icon-git-branch',
     title        : 'Item title',
     titleChildren: [ <Tag color="aqua-medium" key="tag">v1.0.1</Tag>, <StatusIndicator status="wip" key="status" /> ],
     pretitle     : 'Pretitle',
@@ -30,7 +30,7 @@ export const Circle = Template.bind({});
 Circle.args = {
     ...Default.args,
     iconShape    : 'circle',
-    iconCls      : 'ui-icon-resource',
+    iconCls      : 'ds-icon-resource',
     titleChildren: null,
 };
 
@@ -65,7 +65,7 @@ AlignIconWithTitle.args = {
     ...Default.args,
     size              : 'small',
     iconShape         : 'circle',
-    iconCls           : 'ui-icon-resource',
+    iconCls           : 'ds-icon-resource',
     titleChildren     : null,
     pretitle          : null,
     alignIconWithTitle: true,

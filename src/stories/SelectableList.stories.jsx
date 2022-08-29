@@ -1,6 +1,6 @@
 import React from 'react';
 import SelectableList from '../SelectableList';
-import { data } from './data-examples/deployments.json';
+import { data } from './data-examples/ids.json';
 
 export default {
     title    : 'Data Display/SelectableList',
@@ -16,8 +16,7 @@ const TestComponent = ({ index, data, dataLength }) => {
     );
 };
 
-// const selectedItemKeyValue = '8b14b1d9-c79f-4b7e-9945-f2052a023fe6';
-const selectedItemKeyValue = '657f44c2-819b-45f3-a1ec-741c82d7543d';
+const selectedItemKeyValue = 'kio7lhbyt-1368-4c98-91ca-b78b4f977d78';
 
 const getSelectedIndex = () => data.map((item) => item._id).indexOf(selectedItemKeyValue);
 

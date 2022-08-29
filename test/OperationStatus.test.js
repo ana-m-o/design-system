@@ -83,11 +83,11 @@ describe('OperationStatus component', () => {
     //
     //    - wait item no ejecutado:
     //        - No es un panel, es un div con class="wait-item"
-    //        - Muestra el tag con el icono "ui-icon-sand-clock" (también cuando el operation status no tiene la prop showNumbers)
+    //        - Muestra el tag con el icono "ds-icon-sand-clock" (también cuando el operation status no tiene la prop showNumbers)
     //        - su StatusIndicator debe ser status="disabled" e IconCls="icon-ellipsis-horizontal-line"
     //
     //    - wait item en progreso:
-    //        - Muestra el tag con el icono "ui-icon-sand-clock" (también cuando el operation status no tiene la prop showNumbers)
+    //        - Muestra el tag con el icono "ds-icon-sand-clock" (también cuando el operation status no tiene la prop showNumbers)
     //        - No es un panel, es un div con class="wait-item"
     //        - su StatusIndicator debe ser status="idle" e IconCls="icon-ellipsis-horizontal-line"
 

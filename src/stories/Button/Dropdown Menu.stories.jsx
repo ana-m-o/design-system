@@ -50,17 +50,17 @@ const TemplateIcons = (args) =>
         trigger={['click']}
         overlay={
             <Menu>
-                <Menu.Item key="1" icon={<span className="ui-icon-deploy"></span>}>
+                <Menu.Item key="1" icon={<span className="ds-icon-deploy"></span>}>
                     1st menu item
                 </Menu.Item>
-                <Menu.Item key="2" icon={<span className="ui-icon-deploy-rollback"></span>}>
+                <Menu.Item key="2" icon={<span className="ds-icon-deploy-rollback"></span>}>
                     2nd menu item
                 </Menu.Item>
-                <Menu.Item key="3" icon={<span className="ui-icon-redeploy"></span>}>
+                <Menu.Item key="3" icon={<span className="ds-icon-redeploy"></span>}>
                     3rd menu item
                 </Menu.Item>
                 <Menu.Divider />
-                <Menu.Item key="4" icon={<span className="ui-icon-deploy-package"></span>} disabled>
+                <Menu.Item key="4" icon={<span className="ds-icon-deploy-package"></span>} disabled>
                     4th menu item（disabled）
                 </Menu.Item>
             </Menu>
@@ -75,17 +75,17 @@ const TemplateDropdown2 = (args) =>
         trigger={['click']}
         overlay={
             <Menu>
-                <Menu.Item key="1" icon={<span className="ui-icon-deploy"></span>}>
+                <Menu.Item key="1" icon={<span className="ds-icon-deploy"></span>}>
                     1st menu item
                 </Menu.Item>
-                <Menu.Item key="2" icon={<span className="ui-icon-deploy-rollback"></span>}>
+                <Menu.Item key="2" icon={<span className="ds-icon-deploy-rollback"></span>}>
                     2nd menu item
                 </Menu.Item>
-                <Menu.Item key="3" icon={<span className="ui-icon-redeploy"></span>}>
+                <Menu.Item key="3" icon={<span className="ds-icon-redeploy"></span>}>
                     3rd menu item
                 </Menu.Item>
                 <Menu.Divider />
-                <Menu.Item key="4" icon={<span className="ui-icon-deploy-package"></span>} disabled>
+                <Menu.Item key="4" icon={<span className="ds-icon-deploy-package"></span>} disabled>
                     4th menu item（disabled）
                 </Menu.Item>
             </Menu>

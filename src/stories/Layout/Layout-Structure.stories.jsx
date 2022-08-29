@@ -30,7 +30,7 @@ const Template = () =>
         >
             <Item
                 description="Creation of jobs and pipelines"
-                iconCls="ui-icon-deploy-package"
+                iconCls="ds-icon-deploy-package"
                 iconColor="#1973B8"
                 iconShape="circle"
                 pretitle="Dataproc.jobs"
@@ -41,7 +41,7 @@ const Template = () =>
             <Tag
                 bold
                 color="navy"
-                iconCls="ui-icon-location-solid"
+                iconCls="ds-icon-location-solid"
                 shape="round"
                 size="medium"
             >
@@ -110,7 +110,7 @@ const SimpleTemplate = () =>
             <Tag
                 bold
                 color="navy"
-                iconCls="ui-icon-location-solid"
+                iconCls="ds-icon-location-solid"
                 shape="round"
                 size="medium"
             >
@@ -269,9 +269,9 @@ const TemplateFull = () => {
                                 <div className="control-buttons">
 
                                     {collapsed ?
-                                        <Button icon={<span className="ui-icon-collapse-panel"></span>} onClick={onExpand}></Button>
+                                        <Button icon={<span className="ds-icon-collapse-panel"></span>} onClick={onExpand}></Button>
                                         :
-                                        <Button icon={<span className="ui-icon-collapsed-panel"></span>} onClick={onCollapse}></Button>}
+                                        <Button icon={<span className="ds-icon-collapsed-panel"></span>} onClick={onCollapse}></Button>}
                                 </div>
                             </Header>
                             <div className="scrollable-content">
@@ -324,7 +324,7 @@ const TemplateFull = () => {
                             >
                                 <Item
                                     description="Creation of jobs and pipelines"
-                                    iconCls="ui-icon-deploy-package"
+                                    iconCls="ds-icon-deploy-package"
                                     iconColor="#1973B8"
                                     iconShape="circle"
                                     pretitle="Dataproc.jobs"
@@ -335,7 +335,7 @@ const TemplateFull = () => {
                                 <Tag
                                     bold
                                     color="navy"
-                                    iconCls="ui-icon-location-solid"
+                                    iconCls="ds-icon-location-solid"
                                     shape="round"
                                     size="medium"
                                 >

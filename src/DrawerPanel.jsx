@@ -63,9 +63,9 @@ function DrawerPanel(props) {
                 <div className="control-buttons">
                     <Button icon={<span className="icon-times-line"></span>} onClick={onClose}></Button>
                     {props.showCollapsed && (isCollapsed ?
-                        <Button icon={<span className="ui-icon-collapse-panel"></span>} onClick={onExpand}></Button>
+                        <Button icon={<span className="ds-icon-collapse-panel"></span>} onClick={onExpand}></Button>
                         :
-                        <Button icon={<span className="ui-icon-collapsed-panel"></span>} onClick={onCollapse}></Button>)}
+                        <Button icon={<span className="ds-icon-collapsed-panel"></span>} onClick={onCollapse}></Button>)}
                 </div>
             </Header>
             {props.children}

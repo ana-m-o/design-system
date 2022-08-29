@@ -20,7 +20,7 @@ Default.args = {
 export const Icon = Template.bind({});
 Icon.args = {
     children: 'Tag example',
-    iconCls : 'ui-icon-location-solid',
+    iconCls : 'ds-icon-location-solid',
 };
 
 export const Circle = Template.bind({});

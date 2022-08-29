@@ -1,29 +1,26 @@
-import Tag from '../Tag';
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
-
+import Tag from "../Tag";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 
 <Meta title="UX Patterns/Components/Tags" />
 
 # Tags
 
-<Tag size="medium">
-  Audits
-</Tag> 
-<span style={{margin: '3px'}}></span>
-<Tag color="blue" iconCls="ui-icon-lab" size="medium">
-  Financial
-</Tag> 
-<span style={{margin: '3px'}}></span>
+<Tag size="medium">Audits</Tag>
+<span style={{ margin: "3px" }}></span>
+<Tag color="blue" iconCls="ds-icon-lab" size="medium">
+    Financial
+</Tag>
+<span style={{ margin: "3px" }}></span>
 
 <Tag color="orange" size="medium">
-  Accounts management
-</Tag> 
-<span style={{margin: '3px'}}></span>
+    Accounts management
+</Tag>
+<span style={{ margin: "3px" }}></span>
 
 <Tag color="aqua" size="medium">
-  Taxes
+    Taxes
 </Tag>
-<div style={{height: '30px'}}></div>
+<div style={{ height: "30px" }}></div>
 
 Tags are used to label, categorize or organize elements using keywords that describe them. Multiple or individual tags can be used to categorize entities.
 
@@ -38,7 +35,9 @@ From the user's perspective, it is advisable to use short tags to facilitate rea
 As designers or developers we will use tags from two different points of view, to tag or categorize contents or as a tool for data filtering, for example in multi-selection fields, filter bars, etc.
 
 ### Categorization
+
 It is recommended to use tags when the content is assigned to several categories and the user needs a way to differentiate between them or the categorization system is flexible or is not bound to predetermined categories.
 
 ### Filtering
+
 Tags can also be used as a data filtering method, to show only items in that particular category. In filtering mode they can be used in a comboBox or within a filter bar.
