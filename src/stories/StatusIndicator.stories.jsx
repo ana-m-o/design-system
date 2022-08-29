@@ -3,7 +3,7 @@ import React from 'react';
 import StatusIndicator from '../StatusIndicator';
 
 export default {
-    title    : 'Uiverse/StatusIndicator',
+    title    : 'Data display/StatusIndicator',
     component: StatusIndicator,
     argTypes : {
         size: {

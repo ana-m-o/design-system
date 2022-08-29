@@ -6,7 +6,7 @@ import { Form, Tooltip } from 'antd';
 import DisplayField from '../../DisplayField';
 
 export default {
-    title    : 'Uiverse/DisplayFields/DisplayField',
+    title    : 'Forms/DisplayFields/DisplayField',
     component: DisplayField,
 };
 

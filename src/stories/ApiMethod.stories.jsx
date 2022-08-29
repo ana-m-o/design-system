@@ -4,7 +4,7 @@ import React from 'react';
 import ApiMethod from '../ApiMethod';
 
 export default {
-    title    : 'Uiverse Business/ApiMethod',
+    title    : 'Data Display/ApiMethod',
     component: ApiMethod,
 };
 

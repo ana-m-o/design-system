@@ -2,7 +2,7 @@ import React from 'react';
 import { Checkbox, Tooltip } from 'antd';
 
 export default {
-    title    : 'Ant/Forms/Checkbox',
+    title    : 'Forms/Checkbox (Ant)',
     component: Checkbox,
     argTypes : {
         disabled: {

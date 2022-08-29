@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, InputNumber, Select } from 'antd';
 export default {
-    title    : 'Ant/Forms/InputNumber',
+    title    : 'Forms/InputNumber (Ant)',
     component: InputNumber,
     argTypes : {
         size: {

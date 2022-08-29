@@ -12,7 +12,7 @@ import { statusMap } from './consts';
 import PropTypes from 'prop-types';
 
 /**
- * OperationStage component from uiverse-components
+ * OperationStage component from design-system
  *      adds status information for everyone of the stages
  *      and real time update functionality for all started-but-not-yet-ended stage
  */

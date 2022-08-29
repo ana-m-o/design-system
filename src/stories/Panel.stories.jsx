@@ -6,7 +6,7 @@ import { CaretRightOutlined } from '@ant-design/icons';
 import Header from '../Header';
 
 export default {
-    title    : 'Ant/Collapse',
+    title    : 'Layout/Collapse (Ant)',
     component: Collapse,
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from 'antd';
 
 export default {
-    title     : 'Ant/Button/Simple Button',
+    title     : 'General/Button (Ant)/Simple Button',
     parameters: {
         componentSubtitle: <div><a href="https://ant.design/components/button/">🔗 Ant Button documentation</a></div>,
     },

@@ -11,7 +11,7 @@ import Tag from '../Tag';
 import DrawerPanel from '../DrawerPanel';
 
 export default {
-    title    : '_WIP/DrawerPanel',
+    title    : '🧪 Lab/DrawerPanel',
     component: Drawer,
 };
 

@@ -3,7 +3,7 @@ import SelectableList from '../SelectableList';
 import { data } from './data-examples/deployments.json';
 
 export default {
-    title    : 'Uiverse/SelectableList',
+    title    : 'Data Display/SelectableList',
     component: SelectableList,
 };
 

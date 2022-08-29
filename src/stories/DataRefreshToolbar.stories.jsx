@@ -3,7 +3,7 @@ import React from 'react';
 import DataRefreshToolbar from '../DataRefreshToolbar';
 
 export default {
-    title    : 'Uiverse/DataRefreshToolbar',
+    title    : 'Data Source/DataRefreshToolbar',
     component: DataRefreshToolbar,
 };
 

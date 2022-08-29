@@ -7,7 +7,7 @@ import { Button } from 'antd';
 import EmptyViewMdx from './EmptyView.stories.mdx';
 
 export default {
-    title     : 'Uiverse/EmptyView',
+    title     : 'Data display/EmptyView',
     component : EmptyView,
     parameters: {
         uxDocs: EmptyViewMdx,

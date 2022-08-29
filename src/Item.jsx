@@ -6,7 +6,7 @@ import { Button, Typography } from 'antd';
 import { parseInt } from 'lodash';
 
 /**
- * Item component from uiverse-components
+ * Item component from design-system
  *
  * TO-DO:
  * - toast on copy

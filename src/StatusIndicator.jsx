@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Status Indicator component from uiverse-components
+ * Status Indicator component from design-system
  *
  * TO-DO
  * Add tooltip prop

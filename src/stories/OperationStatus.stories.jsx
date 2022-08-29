@@ -3,7 +3,7 @@ import OperationStatus from '../OperationStatus/OperationStatus';
 import Tag from '../Tag';
 
 export default {
-    title    : 'Uiverse/OperationStatus',
+    title    : 'Data Display/OperationStatus',
     component: OperationStatus,
     argTypes : {
         type: {

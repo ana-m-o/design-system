@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Empty view component from uiverse-components
+ * Empty view component from design-system
  */
 
 const EmptyView = ({

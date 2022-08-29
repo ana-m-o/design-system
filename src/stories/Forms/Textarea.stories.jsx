@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input } from 'antd';
 export default {
-    title    : 'Ant/Forms/Textarea',
+    title    : 'Forms/Textarea (Ant)',
     component: Input,
 };
 const Template = (args) => {

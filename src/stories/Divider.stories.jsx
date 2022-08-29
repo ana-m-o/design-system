@@ -4,7 +4,7 @@ import Divider from '../Divider';
 import Header from '../Header';
 
 export default {
-    title    : 'Uiverse/Divider',
+    title    : 'Layout/Divider',
     component: Divider,
     argTypes : {
         type: {

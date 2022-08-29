@@ -5,7 +5,7 @@ import { CaretDownOutlined } from '@ant-design/icons';
 import Divider from '../../Divider';
 
 export default {
-    title     : 'Ant/Button/Dropdown Menu',
+    title     : 'General/Button (Ant)/Dropdown Menu',
     parameters: {
         componentSubtitle: <a href="https://ant.design/components/dropdown/">🔗 Ant Dropdown documentation</a>,
     },

@@ -7,7 +7,7 @@ import DockedLayoutDivider from '../DockedLayoutDivider';
 import DOCKED_LAYOUT_TEMPLATES from '../DockedLayoutTemplates';
 
 export default {
-    title    : '_WIP/DockedLayout',
+    title    : '🧪 Lab/DockedLayout',
     component: DockedLayoutDivider,
     argTypes : {
         orientation: { control: 'select', options: [ 'vertical', 'horizontal' ] },

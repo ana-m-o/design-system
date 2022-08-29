@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Input, DatePicker, Checkbox, Radio, Select, Switch } from 'antd';
 
 export default {
-    title    : 'Ant/Forms',
+    title    : 'Forms',
     component: Form,
     argTypes : {
         layout: {

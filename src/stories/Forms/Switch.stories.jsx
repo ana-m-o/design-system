@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Tooltip } from 'antd';
 export default {
-    title    : 'Ant/Forms/Switch',
+    title    : 'Forms/Switch (Ant)',
     component: Switch,
     argTypes : {
         disabled: {

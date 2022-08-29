@@ -1,15 +1,13 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
 
-<Meta title="Base/Spacing" />
+<Meta title="Layout/Spacing" />
 
 <style>
     {`
     .example{
         border: 1px solid #ccc;
-    }`
-}
+    }`}
 </style>
-
 
 # Spacing utility classes
 
@@ -23,7 +21,9 @@ Las clases disponibles son: `gap-xs`, `gap-sm`, `gap-md`, `gap-lg`.
 
 <div className="hbox gap-md">
     <div className="bg-color-light-gray flex-1">box 1</div>
-    <div className="bg-color-aqua-light flex-1">box 2 <br /> other line</div>
+    <div className="bg-color-aqua-light flex-1">
+        box 2 <br /> other line
+    </div>
     <div className="bg-color-blue-white flex-1">box 3</div>
 </div>
 
@@ -37,7 +37,9 @@ Las clases disponibles son: `gap-xs`, `gap-sm`, `gap-md`, `gap-lg`.
 
 <div className="vbox gap-lg">
     <div className="bg-color-light-gray">box 1</div>
-    <div className="bg-color-aqua-light">box 2 <br /> other line</div>
+    <div className="bg-color-aqua-light">
+        box 2 <br /> other line
+    </div>
     <div className="bg-color-blue-white">box 3</div>
 </div>
 
@@ -48,7 +50,6 @@ Las clases disponibles son: `gap-xs`, `gap-sm`, `gap-md`, `gap-lg`.
     <div>box 3</div>
 </div>
 ```
-
 
 ## Paddings
 
@@ -80,7 +81,6 @@ Padding vertical u horizontal: `.padding-vertical-{size}`, `.padding-horizontal-
     <div className="bg-color-light-gray">content</div>
 </div>
 
-
 ```
 <div className="padding-horizontal-lg">
     <div>content</div>
@@ -92,7 +92,6 @@ Padding en un lado concreto: `.padding-top-{size}`, `.padding-right-{size}`, `.p
 <div className="example padding-bottom-lg">
     <div className="bg-color-light-gray">content</div>
 </div>
-
 
 ```
 <div className="padding-bottom-lg">
@@ -106,11 +105,9 @@ Funcion igual que los paddings.
 
 Margin todo alrededor: `.margin-lg`, `.margin-md`, `.margin-sm`, `.margin-xs`
 
-
 <div className="margin-lg example">
     <div className="bg-color-light-gray">content</div>
 </div>
-
 
 ```
 <div className="margin-lg">
@@ -134,7 +131,6 @@ Margin vertical u horizontal: `.margin-vertical-{size}`, `.margin-horizontal-{si
     <div className="bg-color-light-gray">content</div>
 </div>
 
-
 ```
 <div className="margin-horizontal-lg">
     <div>content</div>
@@ -146,7 +142,6 @@ Margin en un lado concreto: `.margin-top-{size}`, `.margin-right-{size}`, `.marg
 <div className="example margin-bottom-lg">
     <div className="bg-color-light-gray">content</div>
 </div>
-
 
 ```
 <div className="margin-bottom-lg">

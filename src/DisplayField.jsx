@@ -44,7 +44,7 @@ function DisplayFieldRenderer(props) {
 
 
 /**
- * Display Field from uiverse-components.
+ * Display Field from design-system.
  */
 
 const DisplayField = (props) => {

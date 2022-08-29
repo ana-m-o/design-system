@@ -2,7 +2,7 @@ import React from 'react';
 import SelectableButtons from '../SelectableButtons';
 
 export default {
-    title    : 'Uiverse/Selectable Buttons',
+    title    : 'General/Selectable Buttons',
     component: SelectableButtons,
 };
 

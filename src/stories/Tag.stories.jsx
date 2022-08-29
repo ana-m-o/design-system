@@ -3,7 +3,7 @@ import Tag from '../Tag';
 import TagMdx from './Tag.stories.mdx';
 
 export default {
-    title     : 'Uiverse/Tag',
+    title     : 'General/Tag',
     component : Tag,
     parameters: {
         uxDocs: TagMdx,

@@ -7,7 +7,7 @@ import Header from '../Header';
 import { Button } from 'antd';
 
 export default {
-    title    : 'Uiverse/Header',
+    title    : 'Layout/Header',
     component: Header,
 };
 

@@ -7,7 +7,7 @@ import classnames from 'classnames';
 import Counter from './Counter';
 
 /**
- * Header component from uiverse-components.
+ * Header component from design-system.
  */
 
 const Header = ({

@@ -73,7 +73,7 @@ function DisplayTagListRenderer(props) {
 
 
 /**
- * Display Tag List from uiverse-components.
+ * Display Tag List from design-system.
  */
 
 const DisplayTagList = (props) => {

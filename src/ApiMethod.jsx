@@ -7,7 +7,7 @@ import classnames from 'classnames';
 import { Button } from 'antd';
 
 /**
- * Api Method component from uiverse-components
+ * Api Method component from design-system
  */
 
 const ApiMethod = ({

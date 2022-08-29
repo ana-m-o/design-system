@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, message } from 'antd';
 
 export default {
-    title    : 'Ant/Message',
+    title    : 'Notifications/Message (Ant)',
     component: message,
 };
 

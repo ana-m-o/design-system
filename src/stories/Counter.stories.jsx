@@ -4,7 +4,7 @@ import Counter from '../Counter';
 
 
 export default {
-    title    : 'Uiverse/Counter',
+    title    : 'Data display/Counter',
     component: Counter,
 };
 

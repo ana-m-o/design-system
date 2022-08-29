@@ -5,7 +5,7 @@ import BannerMdx from './Banner.stories.mdx';
 
 
 export default {
-    title     : 'Uiverse/Banner',
+    title     : 'Notifications/Banner',
     component : Banner,
     parameters: {
         uxDocs: BannerMdx,

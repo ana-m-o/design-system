@@ -1,7 +1,7 @@
 import React from 'react';
 import { Select, Space } from 'antd';
 export default {
-    title    : 'Ant/Forms/Select',
+    title    : 'Forms/Select (Ant)',
     component: Select,
 };
 const options = [{ label: 'APX', value: 1 }, { label: 'ASO LINK', value: 2 }, { label: 'ASO LITE', value: 3 }, { label: 'DATAPROC JOBS', value: 4 }];

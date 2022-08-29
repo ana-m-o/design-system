@@ -3,7 +3,7 @@ import { Table, Typography } from 'antd';
 import { dataSource } from './data';
 
 export default {
-  title: 'Ant/Table/Table',
+  title: 'Data Display/Table (Ant)',
   component: Table,
   parameters: {
     componentSubtitle: <a href="https://ant.design/components/table/">🔗 Ant Table documentation</a>,

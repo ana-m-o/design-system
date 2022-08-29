@@ -5,7 +5,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
 export default {
-    title    : 'Ant/Tabs',
+    title    : 'Layout/Tabs (Ant)',
     component: Tabs,
     argTypes : {
         tabPosition: {

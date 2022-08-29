@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Tag component from uiverse-components
+ * Tag component from design-system
  */
 
 const Tag = ({

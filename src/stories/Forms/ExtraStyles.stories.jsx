@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input } from 'antd';
 export default {
-    title    : 'Ant/Forms/ExtraStyles',
+    title    : 'Forms/ExtraStyles',
     component: Input,
 };
 const Template = (args) => {

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Divider component from uiverse-components.
+ * Divider component from design-system.
  * For use mainly inside headers and toolbars in order to divide the space and separate elements
  * [Left components] <Divider /> [Right components]
  * By default it will expand to the maximum space available.

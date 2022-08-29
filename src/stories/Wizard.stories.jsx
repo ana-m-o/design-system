@@ -13,7 +13,7 @@ import ModalPopup from '../ModalPopup';
 import ResourceImgDefault from './assets/images/logo-default.png';
 
 export default {
-    title    : 'Ant/Modal / Wizard',
+    title    : 'Layout/Modal / Wizard',
     component: ModalPopup,
 };
 

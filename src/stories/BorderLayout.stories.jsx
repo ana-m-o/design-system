@@ -4,7 +4,7 @@ import { Button } from 'antd';
 import BorderLayout from '../BorderLayout';
 
 export default {
-    title    : '_WIP/BorderLayout',
+    title    : '🧪 Lab/BorderLayout',
     component: BorderLayout,
 };
 

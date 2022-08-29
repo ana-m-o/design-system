@@ -6,7 +6,7 @@ import { Form, Tooltip } from 'antd';
 import DisplayTagList from '../../DisplayTagList';
 
 export default {
-    title    : 'Uiverse/DisplayFields/DisplayTagList',
+    title    : 'Forms/DisplayFields/DisplayTagList',
     component: DisplayTagList,
 };
 

@@ -3,7 +3,7 @@ import { Popconfirm, message, Button } from 'antd';
 import PopconfirmMdx from './Popconfirm.stories.mdx';
 
 export default {
-    title            : 'Ant/Popconfirm',
+    title            : 'Notifications/Popconfirm (Ant)',
     component        : Popconfirm,
     componentSubtitle: <div><a href="https://ant.design/components/popconfirm/">🔗 Ant Popconfirm documentation</a></div>,
     parameters       : {

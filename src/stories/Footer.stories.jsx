@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import { Button } from 'antd';
 
 export default {
-    title    : 'Uiverse/Footer',
+    title    : 'Layout/Footer',
     component: Footer,
 };
 

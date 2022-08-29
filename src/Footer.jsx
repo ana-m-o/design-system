@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 /**
- * Panel footer component from uiverse-components.
+ * Panel footer component from design-system.
  */
 
 const Footer = ({

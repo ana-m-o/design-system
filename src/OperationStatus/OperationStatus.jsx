@@ -16,7 +16,7 @@ import OperationStage from './OperationStage';
 import { CaretRightOutlined } from '@ant-design/icons';
 
 /**
- * OperationStatus component from uiverse-components
+ * OperationStatus component from design-system
  *      uses OperationStage as a deployment specific, real time updated, header
  */
 

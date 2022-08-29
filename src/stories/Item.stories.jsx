@@ -5,7 +5,7 @@ import Tag from '../Tag';
 import StatusIndicator from '../StatusIndicator';
 
 export default {
-    title    : 'Uiverse/Item',
+    title    : 'Data Display/Item',
     component: Item,
     argTypes : {
         size               : { defaultValue: 'medium' },

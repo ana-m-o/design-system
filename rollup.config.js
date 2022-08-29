@@ -71,7 +71,7 @@ export default [
                 sourcemap     : !isProd,
             },
             {
-                name          : '@ether/uiverse-components',
+                name          : 'design-system',
                 file          : 'dist/index.umd.js',
                 assetFileNames: '[name]-[hash][extname]',
                 format        : 'umd',

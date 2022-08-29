@@ -7,7 +7,7 @@ import classnames from 'classnames';
 import Divider from './Divider';
 
 /**
- * Counter component from uiverse-components
+ * Counter component from design-system
  */
 
 const Counter = ({
