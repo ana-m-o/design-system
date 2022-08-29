@@ -1,11 +1,24 @@
 # Storybook Design System
+
 Modulo de componentes basados en react 17+ y ant design
 
-## Documentación y Storybook
+## Instalación
+
+Homebrew:
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+`echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/{{ username }}/.zprofile`
+
+`eval "$(/opt/homebrew/bin/brew shellenv)"`
+
+Node: `brew install node`
+
+## Proyecto, Documentación y Storybook
+
 Instalación: `npm i`
-Compilación: `npm run build`
-Watch (compilación automática al guardar): `npm run watch`
-Para ejecutar Storybook: `npm run storybook`
+Compilación de componentes y css, necesita ejectarse al menos una vez: `npm run build`
+Watch (compilación de componentes y css automática al guardar): `npm run watch`
+Ejecutar Storybook: `npm run storybook`
 
 ## UX Docs
 
@@ -13,14 +26,14 @@ Para añadir una página de documentación .mdx a un componente se crea un archi
 
 1- En el archivo .jsx del componente hay que importar el mdx:
 
-````
+```
 import NombreDelComponenteMdx from './NombreDelComponente.stories.mdx';
 
-````
+```
 
-2- Añadir en export default { ... } 
+2- Añadir en export default { ... }
 
-````
+```
 export default {
     title: 'NombreDelComponente',
     component: NombreDelComponente,
@@ -28,7 +41,7 @@ export default {
 
     ...
 
-````
+```
 
 ## Añadir prototipp de figma a mdx
 
@@ -50,7 +63,7 @@ parameters={{
         },
         canvas: {
             hidden: true
-        } 
+        }
     }
 }}
 ```
