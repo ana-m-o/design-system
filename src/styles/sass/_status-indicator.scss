@@ -1,0 +1,50 @@
+.dx-status-indicator {
+    align-items: center;
+    display: inline-flex;
+    gap: var(--sp-xs);
+
+    .dx-status-tag {
+        padding: 0;
+    }
+
+    .dx-icon-loading-alt:before {
+        height: 12px;
+        width: 12px;
+    }
+
+    .dx-status-label {
+        text-transform: capitalize;
+    }
+
+    &.size-small {
+        .dx-status-tag {
+            height: 12px;
+            width: 12px;
+            font-size: 9px;
+            font-weight: 600;
+        }
+    }
+
+    &.border {
+        .dx-status-tag {
+            border: 1px solid $border-color;
+        }
+    }
+
+    &.medium {
+        .dx-status-tag {
+            font-size: 16px;
+        }
+        &.border {
+            .dx-status-tag {
+                border-width: 2px;
+            }
+        }
+    }
+
+    &.text-right {
+        .dx-status-label {
+            order: 2;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.dx-dockedLayout {
+    .dock-tab {
+        /* Quita el tab: podria ser solo cuando hay uno */
+        display:none;  
+    }
+    .dock-style-headless {
+        /* Evita que el top de la ventana aparezca en rollover */
+        .dock-bar {
+            display:none;  
+        }
+    }
+}

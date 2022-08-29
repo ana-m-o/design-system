@@ -1,0 +1,17 @@
+.ant-progress {
+    .ant-progress-inner {
+        background-color: $light-gray;
+    }
+
+    &.warning {
+        .ant-progress-bg {
+            background-color: $orange;
+        }
+    }
+
+    &.danger {
+        .ant-progress-bg {
+            background-color: $red;
+        }
+    }
+}

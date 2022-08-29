@@ -1,0 +1,30 @@
+
+// Ant Table
+.ant-table-thead > tr > th {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.noborder {
+    .ant-table {
+        .ant-table-cell {
+            border-color: transparent;
+        }
+    }
+}
+
+.nohover {
+    .ant-table {
+        .ant-table-tbody > tr.ant-table-row:hover > td {
+            background: inherit;
+        }
+    }
+}
+
+// Header icons
+.header-icn {
+    font-size: var(--font-size-big);
+    margin-right: var(--sp-xs);
+    vertical-align: text-top;
+}

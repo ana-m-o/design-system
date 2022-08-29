@@ -1,0 +1,516 @@
+[class^="dx-icon-"],
+[class*=" dx-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'dx-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dx-icon-collapse-panel:before {
+    content: "\e903";
+}
+
+.dx-icon-collapsed-panel:before {
+    content: "\e904";
+}
+
+.dx-icon-arrow-up:before {
+    content: "\e908";
+}
+
+.dx-icon-go-to-arrow:before {
+    content: "\e920";
+}
+
+.dx-icon-ellipsis:before {
+    content: "\e90e";
+}
+
+.dx-icon-chart:before {
+    content: "\e905";
+}
+
+.dx-icon-list:before {
+    content: "\e906";
+}
+
+.dx-icon-rich-list:before {
+    content: "\e907";
+}
+
+.dx-icon-view-tree:before {
+    content: "\e921";
+}
+
+.dx-icon-group:before {
+    content: "\e931";
+}
+
+.dx-icon-view-grid:before {
+    content: "\e922";
+}
+
+.dx-icon-view-stacked:before {
+    content: "\e923";
+}
+
+.dx-icon-megaphone-line:before {
+    content: "\e901";
+}
+
+.dx-icon-play:before {
+    content: "\e90c";
+}
+
+.dx-icon-trash:before {
+    content: "\e90d";
+}
+
+.dx-icon-copy:before {
+    content: "\e910";
+}
+
+.dx-icon-cloud-deploy-config:before {
+    content: "\e914";
+}
+
+.dx-icon-cloud-off:before {
+    content: "\e915";
+}
+
+.dx-icon-cloud-lock:before {
+    content: "\e91c";
+}
+
+.dx-icon-briefcase:before {
+    content: "\e91b";
+}
+
+.dx-icon-exception-alert:before {
+    content: "\e924";
+}
+
+.dx-icon-go-to-notebook:before {
+    content: "\e925";
+}
+
+.dx-icon-bell-alarm:before {
+    content: "\e926";
+}
+
+.dx-icon-tick:before {
+    content: "\e927";
+}
+
+.dx-icon-stalled:before {
+    content: "\e928";
+}
+
+.dx-icon-dashboard:before {
+    content: "\e929";
+}
+
+.dx-icon-location:before {
+    content: "\e92a";
+}
+
+.dx-icon-location-solid:before {
+    content: "\e938";
+}
+
+.dx-icon-locations:before {
+    content: "\e939";
+}
+
+.dx-icon-compare:before {
+    content: "\e92b";
+}
+
+.dx-icon-calendar:before {
+    content: "\e92c";
+}
+
+.dx-icon-add-user:before {
+    content: "\e93a";
+}
+
+.dx-icon-search-add:before {
+    content: "\e950";
+}
+
+.dx-icon-graph:before {
+    content: "\e92d";
+}
+
+.dx-icon-conversation:before {
+    content: "\e92e";
+}
+
+.dx-icon-wrench:before {
+    content: "\e92f";
+}
+
+.dx-icon-CPD:before {
+    content: "\e930";
+}
+
+.dx-icon-git-commit:before {
+    content: "\e912";
+}
+
+.dx-icon-git-branch:before {
+    content: "\e913";
+}
+
+.dx-icon-namespace-line:before {
+    content: "\e902";
+}
+
+.dx-icon-resource:before {
+    content: "\e90f";
+}
+
+.dx-icon-resource-monitor:before {
+    content: "\e919";
+}
+
+.dx-icon-resource-pubsub:before {
+    content: "\e91a";
+}
+
+.dx-icon-resource-model:before {
+    content: "\e91d";
+}
+
+.dx-icon-resource-processing:before {
+    content: "\e916";
+}
+
+.dx-icon-resource-bpa:before {
+    content: "\e917";
+}
+
+.dx-icon-resource-database:before {
+    content: "\e918";
+}
+
+.dx-icon-global:before {
+    content: "\e941";
+}
+
+.dx-icon-universal:before {
+    content: "\e93b";
+}
+
+.dx-icon-local:before {
+    content: "\e93c";
+}
+
+.dx-icon-multi-local:before {
+    content: "\e93d";
+}
+
+.dx-icon-definition:before {
+    content: "\e93e";
+}
+
+.dx-icon-implementation:before {
+    content: "\e93f";
+}
+
+.dx-icon-deploy:before,
+.dx-icon-deployment:before {
+    content: "\e940";
+}
+
+.dx-icon-bitbucket-line:before {
+    content: "\e900";
+}
+
+.dx-icon-bucket-line:before {
+    content: "\e95f";
+}
+
+.dx-icon-bucket-solid:before {
+    content: "\e960";
+}
+
+.dx-icon-cloud-aws:before {
+    content: "\e909";
+}
+
+.dx-icon-cloud-azure:before {
+    content: "\e90a";
+}
+
+.dx-icon-cloud-google:before {
+    content: "\e90b";
+}
+
+.dx-icon-ether-api:before {
+    content: "\e911";
+}
+
+.dx-icon-event-line:before {
+    content: "\e91f";
+}
+
+.dx-icon-event-solid:before {
+    content: "\e91e";
+}
+
+.dx-icon-cells:before {
+    content: "\e932";
+}
+
+.dx-icon-ether:before {
+    content: "\e933";
+}
+
+.dx-icon-mirrorgate:before {
+    content: "\e934";
+}
+
+.dx-icon-bbva:before {
+    content: "\e935";
+}
+
+.dx-icon-salesforce:before {
+    content: "\e936";
+}
+
+.dx-icon-webex:before {
+    content: "\e937";
+}
+
+.dx-icon-form-line:before {
+    content: "\e942";
+}
+
+.dx-icon-form-solid:before {
+    content: "\e943";
+}
+
+.dx-icon-binary-line:before {
+    content: "\e947";
+}
+
+.dx-icon-binary-solid:before {
+    content: "\e948";
+}
+
+.dx-icon-cactus:before {
+    content: "\e944";
+}
+
+.dx-icon-deploy-package:before {
+    content: "\e94f";
+}
+
+.dx-icon-deploy-rollback:before {
+    content: "\e94d";
+}
+
+.dx-icon-redeploy:before {
+    content: "\e94e";
+}
+
+.dx-icon-deploy-waiting:before {
+    content: "\e945";
+}
+
+.dx-icon-download-globe:before {
+    content: "\e946";
+}
+
+.dx-icon-lab:before {
+    content: "\e949";
+}
+
+.dx-icon-sand-clock:before {
+    content: "\e94b";
+}
+
+.dx-icon-notebook:before {
+    content: "\e94a";
+}
+
+.dx-icon-list-line:before {
+    content: "\e94c";
+}
+
+.dx-icon-alert-octagon:before, 
+.dx-icon-alert-octagon-line:before {
+    content: "\e951";
+}
+
+.dx-icon-alert-octagon-solid:before {
+    content: "\e952";
+}
+
+.dx-icon-dot:before {
+    content: "\e953";
+}
+
+.dx-icon-exclamation:before {
+    content: "\e954";
+}
+
+.dx-icon-wip:before {
+    content: "\e955";
+}
+
+/* .dx-icon-dot {
+    content:'\e9e0';
+} */
+
+.dx-icon-auth-denied:before {
+    content: "\e956";
+}
+
+.dx-icon-auth-operator:before {
+    content: "\e957";
+}
+
+.dx-icon-auth-pending:before {
+    content: "\e958";
+}
+
+.dx-icon-auth-request:before {
+    content: "\e959";
+}
+
+.dx-icon-dot-solid:before {
+    content: "\e95a";
+}
+
+.dx-icon-dot-solid-off:before {
+    content: "\e95b";
+}
+
+.dx-icon-angle-line-double:before {
+    content: "\e95c";
+}
+
+.dx-icon-equals:before {
+    content: "\e95d";
+}
+
+.dx-icon-list-back:before {
+    content: "\e95e";
+}
+  
+// ASCII ICONS
+// http://www.amp-what.com/
+
+//CUSTOM
+
+[class^="asc-icon-"],
+[class*=" asc-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: sans-serif !important;
+}
+
+span[class^="asc-icon-"],
+span[class*=" asc-icon-"] {
+    align-items: center;
+    display: inline-flex;
+    height: 16px;
+    justify-content: center;
+    padding: 0;
+    width: 16px;
+}
+
+.asc-icon-triangle-down:before {
+    content: "▾";
+    font-size: var(--font-size-default);
+}
+
+.dx-icon-loading {
+    background-image: url(../assets/images/ico-loading-animated-orange.svg);
+    background-size: 16px;
+}
+
+.dx-icon-loading-alt {
+    &:before {
+        content: '';
+        display: block;
+        width: var(--font-size-big);
+        height: var(--font-size-big);
+        border-top: 2px solid  rgba(255, 255, 255, 0.8);
+        border-left: 2px solid  rgba(255, 255, 255, 0.8);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+        border-right: 2px solid  rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        animation: rotate-icon 1s linear infinite;
+    }
+}
+
+.dx-icon-empty {
+    width: 20px;
+}
+
+// Authorizing animation
+@keyframes rotate-icon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[class^="dx-icon-"],
+[class*=" dx-icon-"],
+[class^="icon-"],
+[class*=" icon-"] {
+    &.dx-disabled {
+        opacity: 0.5;
+    }
+}
+
+.icon-calendar-line.scheduled {
+    position: relative;
+    margin-right: 6px;
+    font-size: var(--font-size-default);
+
+    &::after {
+        content: '\e9ea'; // clock icon
+        position: absolute;
+        top: 0;
+        right: -6px;
+        font-size: var(--font-size-smaller);
+    }
+}
+
+
+// IMAGE ICONS
+[class^="ui-img-"],
+[class*=" ui-img-"] {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-img-comparator {
+    background-image: url('../assets/images/img-comparator.png');
+    width: 100px;
+    height: 70px;
+}
+
+.ui-img-resource {
+    background-image: url('../assets/images/img-resource.png');
+    width: 72px;
+    height: 70px;
+}

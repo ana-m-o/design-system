@@ -1,0 +1,35 @@
+.ant-dropdown {
+    z-index: 999999;
+
+    .ant-dropdown-menu-item {
+        .icon-check-line {
+            color: transparent;
+        }
+        
+        .ant-dropdown-menu-title-content {
+            color: $text-default;
+        }
+        
+        &.selected {    
+            .icon-check-line {
+                color: $aqua;
+                font-weight: 900;
+            }
+            
+            .ant-dropdown-menu-title-content {
+                color: $text-black;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .ant-dropdown-menu-item-group-title {
+        text-transform: uppercase;
+        font-size: var(--font-size-mini);
+        letter-spacing: 1px;
+    }
+}
+
+.ant-dropdown-menu-item-icon {
+    font-size: var(--font-size-bigger);
+}

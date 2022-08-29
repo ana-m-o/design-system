@@ -1,0 +1,85 @@
+//// COLOR PALETTE
+
+$medium-light-blue: #49A5E6;
+$medium-blue: #1973B8;
+$light-blue: #7ab5df;
+$blue-white: #D4EDFC;
+
+$aqua: #2DCCCD;
+$aqua-medium: #029BA5;
+$aqua-light: #C5E8E8;
+$aqua-white: #EAF9FA;
+
+$white: #FFFFFF;
+$border-color: rgba(0,0,0,0.1);
+
+// Text
+$text-default: #323232;
+$text-secondary: #7C7C7C;
+$text-light: #BDBDBD;
+$text-black: #121212;
+$text-white: $white;
+
+
+// Status colors
+$green: #48AE64;
+$red: #DA3851;
+$red-dark: #B92A45;
+$yellow: #ffda55;
+$orange: #FFA800;
+$orange-medium: #e29500;
+$orange-dark: #C65302;
+$gray-blue: #87A4C2;
+$light-gray: rgba(133, 144, 156, 0.2);
+$light-gray-solid: #e7e9eb;
+
+$highlight: #ffeb3b;
+
+$formfield-tools: $gray-blue;
+
+// Backgrounds
+$bg-gray: #F4F4F4;
+$bg-info: #EEF1F6;
+$bg-warning: #FFF7E2;
+$bg-danger: #FFEDEE;
+$bg-modal: rgba(0,0,0,0.6);
+$bg-info-hightlight: #ddf4ff;
+
+$bg-list-hover: rgba(150,150,150,0.1);
+$bg-list-focus: #ECF3F5;
+
+$bg-menu-hover: $bg-list-hover;
+$bg-menu-selected: $aqua-light;
+
+$bg-segmented-button: #EEEEEE;
+$bg-segmented-button-hover: #E0E0E0;
+
+$bg-gradient-blue: linear-gradient(-225deg,#0094d8 0%, #134994 100%);
+$bg-gradient-aqua: linear-gradient(-225deg,#4aaccc 0%, #2b7790 100%);
+
+// Spacing
+$sp: 20px;
+$sp-half: 10px;
+$sp-small: 5px;
+
+
+// API Colors
+$get-color: #89b8e6;
+$put-color: #61bca3;
+$post-color: #c1c58d;
+$patch-color: #97dee1;
+$delete-color: #bd82b8;
+$head-color: #b7bed4;
+
+:root {
+    --gray-blue: #87A4C2;
+    --medium-blue: #1973B8;
+    --navy: #072146;
+    --white: #fff; 
+    --border-color-solid: #e5e5e5;
+
+    --sp-lg: 24px;
+    --sp-md: 12px;
+    --sp-sm: 8px;
+    --sp-xs: 4px;
+}

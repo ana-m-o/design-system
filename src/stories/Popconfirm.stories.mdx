@@ -1,0 +1,46 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { Popconfirm, message, Button } from 'antd';
+//import EmptyView from '../EmptyView';
+
+
+<Meta title="UX Patterns/Components/PopConfirm" />
+
+
+# PopConfirm
+
+PopConfirm is used to show a medium disruptive notification that provide users with critical information that needs their attention or action. 
+
+Like the modal dialog box, the PopConfirm persists and blocks tasks until the user makes a choice. However, Popconfirm displays the options panel beside the triggering element, it is more comfortable for the user.
+
+
+
+## Props
+
+Information about the properties and implementation of the component can be found at https://ant.design/components/popconfirm/  
+
+
+Example of a PopConfirm application:
+
+<Popconfirm
+    title="Are you sure to destroy the universe?"
+    onConfirm={() => message.success('Click on Yes')}
+    onCancel={() => message.error('Click on No')}
+    okText="Yes, destroy"
+    cancelText="No, not today"
+  >
+    <Button
+    type="primary"
+    >
+    Click here to destroy universe
+    </Button>
+</Popconfirm>
+
+
+## Usage
+
+Recommendations on how to use the PopConfirm component in a user-friendly and understandable way.
+
++ It is recommended to indicate explicitly the action in the text/literal of the button. For example, if the application is going to perform a delete action when we press the button, instead of simply putting "yes" we should put "yes, delete".
++ When the user confirms, the component should execute the action.
+
+

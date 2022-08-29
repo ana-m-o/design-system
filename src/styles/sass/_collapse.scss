@@ -1,0 +1,115 @@
+.ant-collapse {
+    border: none;
+    background-color: transparent;
+
+    // Background color when expanded
+    .ant-collapse-item {
+        background-color: transparent;
+        transition: background-color .2s linear;
+
+        &.ant-collapse-item-active {
+            background-color: $bg-list-hover;
+        }
+
+        .ant-collapse-content-active {
+            background-color: transparent;
+        }
+    }
+
+    
+    // HEADER
+    .ant-collapse-header {
+        align-items: center;
+        display: flex;
+    
+        .dx-default-header,
+        .dx-panel-header {
+            background-color: transparent;
+            border: none;
+            flex: 1;
+            max-width: calc(100% - 22px);
+            padding: 0;
+        }
+    }
+
+    // White Background
+
+    &.white {
+        .ant-collapse-item {
+            &.ant-collapse-item-active,
+            .ant-collapse-content-active {
+                background-color: transparent;
+            }
+        }
+    }
+
+    // Gray Backgorund
+    &.gray {
+        .ant-collapse-item {
+            background-color: $bg-gray;
+            border-radius: 4px;
+            border-bottom: none;
+        }
+
+        .ant-collapse-content {
+            background-color: transparent;
+        }
+    }
+
+    // White Background + gray header
+
+    &.gray-header {
+        .ant-collapse-item {
+            border-bottom: none;
+
+            .ant-collapse-header {
+                background-color: $bg-gray;
+                border-radius: 4px;
+            }
+
+            &.ant-collapse-item-active,
+            .ant-collapse-content-active {
+                background-color: transparent;
+            }
+        }
+    }
+
+    // Transparent Backgorund
+    &.transparent {
+        .ant-collapse-item {
+            background-color: transparent;
+        }
+
+        .ant-collapse-content {
+            background-color: transparent;
+        }
+    }
+
+    // Compact
+    &.compact {
+        .ant-collapse-header {
+            padding: var(--sp-sm) var(--sp-md);
+
+            .ant-collapse-arrow {
+                margin-right: var(--sp-xs);
+            }
+            
+            .dx-default-header {
+                gap: var(--sp-sm);
+            }
+
+            .dx-header-icon {
+                font-size: var(--font-size-bigger)
+            }
+        }
+
+        .ant-collapse-content {
+            border: none;
+
+            .ant-collapse-content-box {
+                padding: var(--sp-xs) var(--sp-md) var(--sp-sm);
+            }
+        }
+    }
+}
+

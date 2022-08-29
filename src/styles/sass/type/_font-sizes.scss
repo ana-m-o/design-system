@@ -1,0 +1,43 @@
+$sizes: (
+    font-size-mini: 10px,
+    font-size-smaller: 11px,
+    font-size-small: 12px,
+    font-size-default: 13px,
+    font-size-big: 16px,
+    font-size-bigger: 20px,
+    
+    font-size-title: 24px,
+    font-size-title-big: 32px,
+    font-size-title-bigger: 42px,
+);
+
+
+@each $size, $value in $sizes {
+    // GAPS (Flex spaces)
+    .#{$size} {
+        font-size: var(--#{$size}) !important;
+    }
+}
+
+// BREAKPOINTs
+$large-bp: 1440px;
+
+
+// Reduction Coefficient for 1400 break point
+$reduction-coefficient: 0.9;
+
+@mixin genCssVars ($array, $reductionCoefficient){
+    :root {
+        @each $name, $value in $array {
+            --#{$name} : #{$value};
+        } 
+    
+        @media all and (max-width: #{$large-bp}) {
+            @each $name, $value in $array {
+                --#{$name} : #{$value * $reductionCoefficient};
+            } 
+        }
+    }
+}
+
+@include genCssVars($sizes, $reduction-coefficient);

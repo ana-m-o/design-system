@@ -1,0 +1,101 @@
+
+@import './dx-icons';
+@import './clarity-fonts';
+@import './font-sizes';
+
+$font-path: '../assets/fonts';
+
+// Lato fuentes globales
+$lato-path: $font-path + '/lato';
+
+@font-face {
+  font-family: 'lato';
+  font-weight: 400; //normal
+  font-style: normal;
+  // Chrome for md does not properly support local 'Roboto' https://code.google.com/p/chromium/issues/detail?id=536928 // Chrome also does not properly respect weights for local fonts https://code.google.com/p/chromium/issues/detail?id=578275
+  src: local('lato Regular'), local('lato-Regular'), url($lato-path + '/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  font-weight: 100;
+  font-style: normal;
+  // Chrome for md does not properly support local 'Roboto' https://code.google.com/p/chromium/issues/detail?id=536928
+  // Chrome also does not properly respect weights for local fonts https://code.google.com/p/chromium/issues/detail?id=578275
+  src: local('lato Light'), local('lato-Light'), url($lato-path + '/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  font-weight: 600;
+  font-style: normal;
+  // Chrome for md does not properly support local 'Roboto' https://code.google.com/p/chromium/issues/detail?id=536928
+  // Chrome also does not properly respect weights for local fonts https://code.google.com/p/chromium/issues/detail?id=578275
+  src: local('lato Medium'), local('lato-Medium'), url($lato-path + '/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  font-weight: 900;
+  font-style: normal;
+  // Chrome for md does not properly support local 'Roboto' https://code.google.com/p/chromium/issues/detail?id=536928
+  // Chrome also does not properly respect weights for local fonts https://code.google.com/p/chromium/issues/detail?id=578275
+  src: local('lato Black'), local('lato-Black'), url($lato-path + '/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lato';
+  font-weight: normal;
+  font-style: italic;
+  // Chrome for md does not properly support local 'Roboto' https://code.google.com/p/chromium/issues/detail?id=536928
+  // Chrome also does not properly respect weights for local fonts https://code.google.com/p/chromium/issues/detail?id=578275
+  src: local('lato Italic'), local('lato-Italic'), url($lato-path + '/Lato-Italic.ttf') format('truetype');
+}
+
+
+
+//clarity fonts
+
+
+$clarity-path: $font-path + '/clarity';
+@font-face {
+  font-family: 'clarity';
+  src:  url($clarity-path + '/clarity.eot?qspnc8');
+  src:  url($clarity-path + '/clarity.eot?qspnc8#iefix') format('embedded-opentype'),
+        url($clarity-path + '/clarity.woff?qspnc8') format('woff'),
+        url($clarity-path + '/clarity.svg?qspnc8#clarity') format('svg'),
+        url($clarity-path + '/clarity.ttf') format('truetype');
+  font-weight: normal;
+}
+
+// DS Icons
+$dx-icons-path: $font-path + '/dx-icons';
+
+@font-face {
+  font-family: 'dx-icons';
+  src:
+    url($dx-icons-path + '/dx-icons.ttf?datqm') format('truetype'),
+    url($dx-icons-path + '/dx-icons.woff?datqm') format('woff'),
+    url($dx-icons-path + '/dx-icons.svg?datqm#dx-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// DEFAULTS
+
+html, body {
+  font-family: 'lato', sans-serif;
+}
+
+a {
+  font-weight: 900;
+
+  .ant-typography {
+    color: inherit;
+  }
+}
+
+ .ant-typography {
+   color: inherit;
+ }
