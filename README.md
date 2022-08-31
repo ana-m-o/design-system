@@ -1,6 +1,8 @@
-# Storybook Design System
+# DX Design System Storybook
 
-Modulo de componentes basados en react 17+ y ant design
+Este proyecto consta de un theme para la librería de componentes Ant Design, componentes propios y documentación sobre patrones de diseño y UX.
+
+Ver Storybook online: https://ana-m-o.github.io/design-system/
 
 ## Instalación
 
