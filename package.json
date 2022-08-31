@@ -1,6 +1,6 @@
 {
-    "name": "design-system",
-    "version": "1.0.70",
+    "name": "dx-design-system",
+    "version": "1.0.0",
     "files": [
         "dist"
     ],
@@ -36,6 +36,7 @@
         "@storybook/addon-essentials": "^6.4.0",
         "@storybook/addon-links": "^6.4.0",
         "@storybook/react": "^6.4.0",
+        "@storybook/storybook-deployer": "^2.8.12",
         "@testing-library/dom": "^8.12.0",
         "@testing-library/jest-dom": "^5.11.4",
         "@testing-library/react": "^11.1.0",
@@ -83,7 +84,8 @@
         "next-ci": "bump --prerelease --tag --push --preid rc --all && npm run build && npm publish --tag next",
         "latest-ci": "bump --patch --tag --push && npm run build && npm publish --tag latest",
         "storybook": "start-storybook -p 6006 --no-manager-cache",
-        "build-storybook": "build-storybook"
+        "build-storybook": "build-storybook",
+        "deploy-storybook": "storybook-to-ghpages"
     },
     "jest": {
         "moduleFileExtensions": [
