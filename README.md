@@ -15,10 +15,15 @@ Node: `brew install node`
 
 ## Proyecto, Documentación y Storybook
 
-Instalación: `npm i`
-Compilación de componentes y css, necesita ejectarse al menos una vez: `npm run build`
-Watch (compilación de componentes y css automática al guardar): `npm run watch`
-Ejecutar Storybook: `npm run storybook`
+Instalación: `npm i`.
+
+Compilación de componentes y css, necesita ejecutarse al menos una vez: `npm run build`.
+
+Watch (compilación de componentes y css automática al guardar): `npm run watch`.
+
+Ejecutar Storybook en local: `npm run storybook`.
+
+Desplegar Storybook en GitHub Pages: `npm run deploy-storybook`. Url: https://ana-m-o.github.io/design-system/
 
 ## UX Docs
 
