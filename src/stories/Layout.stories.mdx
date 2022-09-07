@@ -1,0 +1,102 @@
+
+import layout01 from './assets/content/00-layout-structures.png';
+import layout02 from './assets/content/01-layout-responsive.png';
+import layout03 from './assets/content/02-layout-liquido.png';
+import layout04 from './assets/content/03-layout-fijo.png';
+import layout05 from './assets/content/04-scroll-global.png';
+import layout06 from './assets/content/05-scroll-local.png';
+import layout07 from './assets/content/06-scroll-adaptable.png';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+
+<Meta title="UX Patterns/Patterns/Layout" />
+
+# Layout
+
+Layout is the arrangement of data, information, tools and different elements on a page or screen. 
+
+<img src={layout01} width={'100%'} />
+
+The purpose of the application greatly determines the structure and behaviour of the Layout.
+
+
+## Anatomy
+
+A layout can be configured with different predefined behaviors:
+
++ **Responsive Layout** Usual in applications or websites with content priority.
++ **Fluid Layout** Most commonly used layout for desktop applications.
++ **Fixed-width Layout** Currently only used in small components; date selectors, dropdown panels, etc.
+
+
+-------------------------------------
+
+### Responsive Layout
+
+In a responsive layout design, the different elements that compose the view or layout are repositioned according to the size or space available on the screen. 
+
+<img src={layout02} width={'100%'} />
+
+Normally, a series of basic sizes or resolutions are defined and a differentiated layout is designed for each of them. This series of ranges or base resolutions are resolved translating the different breakpoints, to the code, with media queries.
+
+### Fluid Layout 
+
+In liquid layout design, some layout elements maintain a fixed width while others adjust to the remaining space on the screen. 
+
+<img src={layout03} width={'25%'} />  
+
+Most of the desktop applications we commonly use are built on liquid layouts.
+
+### Fixed Layout 
+
+A fixed-width layout is created from a predefined size on which we are going to build the application. 
+
+<img src={layout04} width={'25%'} />  
+
+Although, nowadays, it is not common to use fixed width for the overall design of an application, we still find fixed-width layouts for small components, for example a calendar that shows a date-picker in the date selection.
+
+## Functionality
+
+Layout is a tool for organising the **distribution of content or utilities** in an application or web page.
+
+It has practically no functionality of its own, however, it is important to provide it with some interaction that allows it **to handle the different volumes of information** it needs to contain.
+
+The most common utility or functionality we need to define and setup in the Layout is the **scroll management**.
+
+### Scroll
+
+Scrolling is used when **data takes up more space than is available** on the screen. 
+
+Some different variations in the use of scrolling are:
+
+-------------------------------------
+
+#### **Global Scroll**
+
+The scroll operates over the entire screen, area or panel.
+
+<img src={layout05} width={'25%'} />  
+
+ It is common in content web portals.
+
+-------------------------------------
+
+#### **Local Scroll**
+
+Partial scroll on the data area that requires it. 
+
+<img src={layout06} width={'25%'} />  
+
+The other areas or panels do not interact with the scroll, keeping their position (header, footer, toolbar, etc.).
+
+-------------------------------------
+
+#### **Multi-block adaptable Scroll**
+
+The behaviour is similar to the previous one with the difference that some elements are scrolled only up to a certain point of the screen where they remain fixed.
+
+<img src={layout07} width={'25%'} />  
+
+For example an alphabetical address book where the headers informing the alphabetical title are fixed once they reach the top of the screen.
+
+-------------------------------------
