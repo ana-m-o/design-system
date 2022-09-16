@@ -7,8 +7,8 @@
         min-height: 16px;
     } 
 
-    .side-a,
-    .side-b {
+    .flip-content__side-a,
+    .flip-content__side-b {
         transition: transform .2s linear;
         position: relative;
         display: inline-flex;
@@ -16,13 +16,13 @@
         justify-content: center;
     }
     
-    .side-a {
+    .flip-content__side-a {
         opacity: 1;
         transform: scaleY(1);
         height: auto;
     }
 
-    .side-b {
+    .flip-content__side-b {
         opacity: 0;
         transform: scaleY(0);
         height: 0;
@@ -30,12 +30,12 @@
 
     &:hover,
     &:focus {
-        .side-a {
+        .flip-content__side-a {
             opacity: 0;
             transform: scaleY(0);
             height: 0;
         }
-        .side-b {
+        .flip-content__side-b {
             opacity: 1;
             transform: scaleY(1);
             height: auto;

@@ -1,18 +1,17 @@
 import React from 'react';
-import { Button } from 'antd';
-import Banner from '../Banner';
-import BannerMdx from './Banner.stories.mdx';
+import { Button, Alert } from 'antd';
+import AlertMdx from './Alert.stories.mdx';
 
 
 export default {
-    title     : 'Notifications/Banner',
-    component : Banner,
+    title     : 'Notifications/Alert (Ant)',
+    component : Alert,
     parameters: {
-        uxDocs: BannerMdx,
+        uxDocs: AlertMdx,
     },
     argTypes: {
         type: {
-            options: [ 'info', 'info-secondary', 'warning', 'error', 'success' ],
+            options: [ 'info', 'warning', 'error', 'success' ],
             control: {
                 type: 'select',
             },
@@ -22,50 +21,46 @@ export default {
 };
 
 const Template = (args) =>
-    <Banner {...args} />;
+    <Alert {...args} />;
 
 export const Info = Template.bind({});
 Info.args = {
-    message    : 'This is the default / info Banner',
+    message    : 'This is the default / info Alert',
     description: '',
     showIcon   : true,
     closable   : false,
     collapsible: false,
-};
-
-export const InfoSecondary = Template.bind({});
-InfoSecondary.args = {
-    ...Info.args,
-    message  : 'This is the secondary info banner',
-    type     : 'info',
-    className: 'secondary',
+    //icon       : <span className="icon-info-standard-solid" />,
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
     ...Info.args,
-    message: 'This is the Warning Banner',
-    type   : 'warning',
+    message: 'This is the Warning Alert',
+    type: 'warning',
+    //icon: <span className="icon-warning-standard-solid" />,
 };
 
 export const Success = Template.bind({});
 Success.args = {
     ...Info.args,
-    message: 'This is the Success Banner',
-    type   : 'success',
+    message: 'This is the Success Alert',
+    type: 'success',
+    //icon: <span className="icon-success-standard-solid" />
 };
 
 export const Error = Template.bind({});
 Error.args = {
     ...Info.args,
-    message: 'This is the Error Banner',
-    type   : 'error',
+    message: 'This is the Error Alert',
+    type: 'error',
+    //icon: <span className="dx-icon-alert-octagon-solid" />,
 };
 
 export const Description = Template.bind({});
 Description.args = {
-    ...Info.args,
-    message    : 'This is the Error Banner',
+    ...Error.args,
+    message    : 'This is the Error Alert',
     description: 'Descriptions turns "message" into a title',
     type       : 'error',
 };
@@ -73,25 +68,16 @@ Description.args = {
 export const Closable = Template.bind({});
 Closable.args = {
     ...Info.args,
-    message : 'Closable banner',
+    message : 'Closable Alert',
     closable: true,
 };
 
 
 export const Actions = Template.bind({});
 Actions.args = {
-    ...Info.args,
+    ...Error.args,
     message    : 'Something went wrong',
     description: 'Error description, click Retry',
     type       : 'error',
     action     : <Button size="small" type="primary" icon={<span className="icon-refresh-line" />}>Retry</Button>,
-
-};
-
-export const Collapsible = Template.bind({});
-Collapsible.args = {
-    message    : 'This is a collapsible banner',
-    showIcon   : true,
-    collapsible: true,
-    description: 'Description is mandatory in collapsible banners',
 };

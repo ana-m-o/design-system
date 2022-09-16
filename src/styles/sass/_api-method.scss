@@ -29,12 +29,12 @@ $api-colors: (
     padding: 0;
     width: 16px;
     
-    .method {
+    .api-method__method {
         display: none;
     }
 }
 
-.dx-api-method {
+.api-method {
     align-items: center;
     border-color: var(--medium-blue);
     color: var(--medium-blue);
@@ -44,26 +44,26 @@ $api-colors: (
     padding: 0 6px;
     position: relative;
 
-    .method {
+    .api-method__method {
         line-height: 1em;
     }
 
-    &.tag {
+    &.api-method--tag {
         @include api-tag;
     }
 
-    &.dot {
+    &.api-method--dot {
         @include api-dot;
     }
 
-    &.transition {
+    &.api-method--transition {
         @include api-dot;
         
         &:hover,
         &:focus {
             @include api-tag;
 
-            .method {
+            .api-method__method {
                 display: inline-flex;
             }
         }
@@ -74,19 +74,19 @@ $api-colors: (
         // default: solid color
         transition: all .2s linear;
 
-        &.#{$method-name} {
+        &.api-method--#{$method-name} {
             background-color: #{$value};
             border-color: #{$value};
             color: darken($value, 45);
             
-            &.outlined,
-            &.wip-outlined,
-            &.alert {
+            &.api-method--outlined,
+            &.api-method--wip-outlined,
+            &.api-method--alert {
                 background-color: transparent;
                 color: #{$value};
             }
             
-            &.half {
+            &.api-method--half {
                 background-color: transparent;
 
                 &:after{
@@ -94,24 +94,24 @@ $api-colors: (
                 }
             }
             
-            &.alert {
+            &.api-method--alert {
                 &:after {
                     background-color: #{$value};
                 }
             }
 
-            &.disabled,
-            &.empty {
+            &.api-method--disabled,
+            &.api-method--empty {
                 background-color: transparent;
                 border-color: $text-light;
                 color: $text-light;
             }
             
-            &.disabled {
+            &.api-method--disabled {
                 border-color: $text-light !important;
             }
 
-            &.forbidden {
+            &.api-method--forbidden {
                 background-color: transparent;
                 border-color: $red;
                 color: $red;
@@ -121,19 +121,19 @@ $api-colors: (
                 }
             }
 
-            &.dot,
-            &.transition {
+            &.api-method--dot,
+            &.api-method--transition {
                 // wip icon color
-                &.wip-solid::after {
+                &.api-method--wip-solid::after {
                     color: #ffffff;
                 }
 
-                &.wip-outlined::after {
+                &.api-method--wip-outlined::after {
                     color: #{$value};
                 }
             }
 
-            &.api-btn {
+            &.api-method--btn {
                 &:hover,
                 &:focus {
                     &:not([disabled]){
@@ -142,7 +142,7 @@ $api-colors: (
                     }
                 }
 
-                &.forbidden {
+                &.api-method--forbidden {
                     &:hover,
                     &:focus {
                         &:not([disabled]){
@@ -152,7 +152,7 @@ $api-colors: (
                     }
                 }
 
-                &.empty {
+                &.api-method--empty {
                     &:hover,
                     &:focus {
                         &:not([disabled]){
@@ -166,7 +166,7 @@ $api-colors: (
     }
 
     // STATUS
-    &.half {
+    &.api-method--half {
         &:after {
             clip-path: polygon(0 0%, 100% 0, 0% 100%);
             content: '';
@@ -178,7 +178,7 @@ $api-colors: (
         }
     }
     
-    &.alert {
+    &.api-method--alert {
         &:after {
             border: 2px solid #fff;
             border-radius: 50%;
@@ -192,7 +192,7 @@ $api-colors: (
         }
     }
 
-    &.forbidden {
+    &.api-method--forbidden {
         &:after {
             content: '';
             display: block;
@@ -204,9 +204,9 @@ $api-colors: (
             transform: rotate(-45deg);
         }
         
-        &.tag,
-        &.transition:hover,
-        &.transition:focus {
+        &.api-method--tag,
+        &.api-method--transition:hover,
+        &.api-method--transition:focus {
             &:after{
                 width: 103%;
                 right: -1px;
@@ -216,11 +216,11 @@ $api-colors: (
         }
     }
 
-    &.dot,
-    &.transition {
+    &.api-method--dot,
+    &.api-method--transition {
         // wip: ellipsis icon
-        &.wip-solid,
-        &.wip-outlined {
+        &.api-method--wip-solid,
+        &.api-method--wip-outlined {
             &::after {
                 content: "\e924";
                 display: block;
@@ -232,14 +232,14 @@ $api-colors: (
             }
         }
 
-        &.empty {
+        &.api-method--empty {
             border-color: transparent;
         }
     }
 
-    &.transition {
-        &.wip-solid,
-        &.wip-outlined {
+    &.api-method--transition {
+        &.api-method--wip-solid,
+        &.api-method--wip-outlined {
             &:hover,
             &:focus {
                 &::after {
@@ -251,7 +251,7 @@ $api-colors: (
     
 
     // CLICKABLE / BUTTON
-    &.api-btn {
+    &.api-method--btn {
         letter-spacing: normal;
 
         span {
@@ -269,40 +269,11 @@ $api-colors: (
             }
         }
 
-        &.tag,
-        &.transition {
+        &.api-method--tag,
+        &.api-method--transition {
             &:before {
                 border-radius: 0;
             }
-        }
-    }
-
-    // NOT APIFIED
-    .not-apified {
-        background-color: var(--navy);
-        border-radius: 2px;
-        color: #fff;
-        font-size: 8px;
-        font-weight: 900;
-        left: -8px;
-        line-height: 1em;
-        padding: 1px;
-        position: absolute;
-        text-align: center;
-        top: -4px;
-        width: 19px;
-        z-index: 1;
-
-        &:after{
-            background-color: #fff;
-            box-shadow: 0 1px 1px var(--navy);
-            content: '';
-            display: block;
-            height: 1px;
-            left: 1px;
-            position: absolute;
-            top: 4px;
-            width: 16px;
         }
     }
 }

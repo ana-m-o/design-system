@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 // Components
-import { Button, Form, Input, Modal, Steps, Radio, Space, Switch, Table } from 'antd';
+import { Button, Form, Input, Modal, Steps, Radio, Space, Switch, Table, Alert } from 'antd';
 import Tag from '../Tag';
 import Header from '../Header';
-import Banner from '../Banner';
 import Divider from '../Divider';
 import EmptyView from '../EmptyView';
 import ModalPopup from '../ModalPopup';
@@ -83,7 +82,7 @@ const Template = (args) => {
 
                         {/* <div className="flex-1 scrollable-content">
                             <div className="section padding-md">
-                                <Banner
+                                <Alert
                                     message="Every LRBA resource must be associated with a Major Version of a Batch Program inventoried in the Catalog"
                                     showIcon
                                     type="info"
@@ -130,7 +129,7 @@ const Template = (args) => {
                         {/* STEP 2 */}
                         <div className="flex-1 scrollable-content">
                             <div className="section padding-md">
-                                <Banner
+                                <Alert
                                     message="This type of version is created by immutably pointing to the selected commit or tag, so the binary that is deployed...."
                                     showIcon
                                     type="info"

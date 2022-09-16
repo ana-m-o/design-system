@@ -1,14 +1,14 @@
 import React from 'react';
-import SelectableButtons from '../SelectableButtons';
+import SegmentedButtons from '../SegmentedButtons';
 
 export default {
-    title    : 'General/Selectable Buttons',
-    component: SelectableButtons,
+    title    : 'General/Segmented Buttons',
+    component: SegmentedButtons,
 };
 
-const SelectableButtonsTemplate = (args) => <SelectableButtons {...args} ></SelectableButtons>;
+const SegmentedButtonsTemplate = (args) => <SegmentedButtons {...args} ></SegmentedButtons>;
 
-export const Default = SelectableButtonsTemplate.bind({});
+export const Default = SegmentedButtonsTemplate.bind({});
 Default.args = {
     onClickHandler: () => {},
     defaultValue  : 'DEV',
@@ -22,7 +22,7 @@ Default.args = {
     ],
 };
 
-export const MultipleSelections = SelectableButtonsTemplate.bind({});
+export const MultipleSelections = SegmentedButtonsTemplate.bind({});
 MultipleSelections.args = {
     onClickHandler: () => {},
     defaultValue  : ['DEV'],
@@ -36,7 +36,7 @@ MultipleSelections.args = {
     ],
 };
 
-export const MultipleGroups = SelectableButtonsTemplate.bind({});
+export const MultipleGroups = SegmentedButtonsTemplate.bind({});
 MultipleGroups.args = {
     onClickHandler: () => {},
     defaultValue  : 'DEV',
@@ -53,7 +53,7 @@ MultipleGroups.args = {
     ],
 };
 
-export const MultipleGroupsAndSelections = SelectableButtonsTemplate.bind({});
+export const MultipleGroupsAndSelections = SegmentedButtonsTemplate.bind({});
 MultipleGroupsAndSelections.args = {
     onClickHandler: () => {},
     defaultValue  : [ 'DEV', 'PIL' ],
@@ -70,7 +70,7 @@ MultipleGroupsAndSelections.args = {
     ],
 };
 
-export const Filter = SelectableButtonsTemplate.bind({});
+export const Filter = SegmentedButtonsTemplate.bind({});
 Filter.args = {
     onClickHandler: () => {},
     defaultValue  : 'DEV',

@@ -6,14 +6,6 @@ import Header from '../Header';
 export default {
     title    : 'Layout/Divider',
     component: Divider,
-    argTypes : {
-        type: {
-            options: [ '', 'dots', 'dot', 'line' ],
-            control: {
-                type: 'select',
-            },
-        },
-    },
 };
 
 const Template = (args) =>
@@ -35,4 +27,11 @@ export const Default = Template.bind({});
 Default.args = {
     type : '',
     width: '',
+};
+
+
+export const Dots = Template.bind({});
+Dots.args = {
+    type : 'dots',
+    width: '10px',
 };

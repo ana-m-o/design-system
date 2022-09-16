@@ -83,7 +83,7 @@ Loading.args = {
     icon     : <span className="dx-icon-loading-alt" />,
     disabled : false,
     children : 'Primary Button',
-    className: 'bg-color-yellow readonly',
+    className: 'bg-color-yellow ant-btn--readonly',
     size     : 'default',
 };
 
@@ -102,12 +102,12 @@ Readonly.args = {
     icon     : <span className="icon-plus-line" />,
     children : 'Primary Button',
     size     : 'default',
-    className: 'readonly',
+    className: 'ant-btn--readonly',
 };
 Readonly.parameters = {
     docs: {
         // The story now contains a description
-        storyDescription: 'The "readonly" class removes all transitions',
+        storyDescription: 'The "ant-btn--readonly" class removes all transitions',
     },
 };
 
@@ -115,7 +115,7 @@ export const FlipButton = Template.bind({});
 FlipButton.args = {
     type    : 'flip',
     icon    : <span className="icon-plus-line" />,
-    children: <div className="flip-content"><div className="side-a">Side A</div><div className="side-b">Side B</div></div>,
+    children: <div className="flip-content"><div className="flip-content__side-a">Side A</div><div className="flip-content__side-b">Side B</div></div>,
     size    : 'default',
 };
 FlipButton.parameters = {
@@ -131,7 +131,7 @@ TagButton.args = {
     icon     : <span className="icon-plus-line" />,
     children : 'Tag Button',
     size     : 'default',
-    className: 'btn-tag',
+    className: 'ant-btn--tag',
 };
 TagButton.parameters = {
     docs: {
@@ -145,7 +145,7 @@ MultipleLines.args = {
     icon     : <span className="icon-plus-line" />,
     children : <div>Button with<br />long text</div>,
     size     : 'default',
-    className: 'btn-multi-line',
+    className: 'ant-btn--multi-line',
 };
 
 export const CustomColor = Template.bind({});

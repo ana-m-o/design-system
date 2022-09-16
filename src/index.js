@@ -2,7 +2,6 @@ import './styles/antd-theme/index.less';
 import './styles/sass/index.scss';
 
 import ApiMethod from './ApiMethod';
-import Banner from './Banner';
 import BorderLayout from './BorderLayout';
 import Counter from './Counter';
 import DrawerPanel from './DrawerPanel';
@@ -17,13 +16,11 @@ import Item from './Item';
 import ModalPopup from './ModalPopup';
 import OperationStatus from './OperationStatus/OperationStatus';
 import StatusIndicator from './StatusIndicator';
-import SelectableButtons from './SelectableButtons';
-import SelectableList from './SelectableList';
+import SegmentedButtons from './SegmentedButtons';
 import Tag from './Tag';
 
 export {
     ApiMethod,
-    Banner,
     BorderLayout,
     Counter,
     DrawerPanel,
@@ -38,7 +35,6 @@ export {
     ModalPopup,
     OperationStatus,
     StatusIndicator,
-    SelectableButtons,
-    SelectableList,
+    SegmentedButtons,
     Tag,
 };

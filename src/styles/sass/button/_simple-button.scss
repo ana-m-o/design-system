@@ -157,7 +157,7 @@
     
 
     // Readonly buttons
-    &.readonly {
+    &.ant-btn--readonly {
         border-color: transparent !important;
         cursor: default;
 
@@ -175,7 +175,7 @@
     }
 
     // Multi-line buttons
-    &.btn-multi-line {
+    &.ant-btn--multi-line {
         line-height: 1em;
         display: flex;
         align-items: center;
@@ -199,12 +199,4 @@
         top: -3px;
         width: 18px;
     }
-}
-
-// OTHERS
-.btn-label {
-    font-size: var(--font-size-mini);
-    line-height: 1em;
-    letter-spacing: 1px;
-    font-weight: 600;
 }

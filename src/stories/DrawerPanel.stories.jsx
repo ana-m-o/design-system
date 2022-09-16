@@ -69,7 +69,7 @@ const Template = (args) => {
                             >
                                 <Button
                                     size="small"
-                                    className="btn-tag bg-color-aqua-medium color-white"
+                                    className="ant-btn--tag bg-color-aqua-medium color-white"
                                 >
                                     v2.0.4
                                     <CaretDownOutlined />

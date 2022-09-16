@@ -25,21 +25,20 @@ const ApiMethod = ({
     const compProps = {
         ...otherProps,
         className:
-            classnames('dx-api-method',
-                status && status,
-                method && method,
-                generic && 'generic',
-                transition ? 'transition' : (type && type),
-                asButton && 'api-btn',
+            classnames('api-method',
+                status && `api-method--${status}`,
+                method && `api-method--${method}`,
+                generic && 'api-method--generic',
+                transition ? 'api-method--transition' : (type && `api-method--${type}`),
+                asButton && 'api-method--btn',
                 className),
     };
 
-    const compInner = status === 'empty' ?
+    const compInner = status === 'api-method--empty' ?
         <span className="dx-icon-dot font-size-bigger"></span>
         :
         <>
-            <span className="method">{method ? method : '--'}</span>
-            {!apified && <span className="not-apified">API</span>}
+            <span className="api-method__method">{method ? method : '--'}</span>
         </>;
 
     if (asButton) {

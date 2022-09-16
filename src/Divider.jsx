@@ -26,7 +26,7 @@ const Divider = ({
             style={width ? { 'width': width, 'flex': 'unset' } : null}
             className={
                 classnames('dx-divider',
-                    type,
+                    `dx-divider--${type}`,
                     className)
             }
         >
@@ -38,7 +38,7 @@ Divider.propTypes = {
     /**
      * Type of the Divider. Flex, dots, dot or line
      */
-    type     : PropTypes.oneOf([ '', 'dots', 'dot', 'line' ]),
+    type     : PropTypes.oneOf([ 'default', 'dots', 'line' ]),
     /**
      * Optional width in px
      */
@@ -50,7 +50,7 @@ Divider.propTypes = {
 };
 
 Divider.defaultProps = {
-    type : '',
+    type : 'default',
     width: '',
 };
 

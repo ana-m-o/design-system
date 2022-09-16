@@ -1,11 +1,10 @@
 // Core
 import React from 'react';
-import { Collapse } from 'antd';
+import { Collapse, Alert } from 'antd';
 import Header from '../Header';
 import StatusIndicator from '../StatusIndicator';
 import Divider from '../Divider';
 import { statusMap } from './consts';
-import Banner from '../Banner';
 
 // Utils
 import PropTypes from 'prop-types';
@@ -100,7 +99,7 @@ const OperationStatus = ({
                                             >
                                                 {
                                                     (item.status === 'warning' || item.status === 'error') ?
-                                                        <Banner
+                                                        <Alert
                                                             type={item.status}
                                                             showIcon
                                                             message={item.error_reason}

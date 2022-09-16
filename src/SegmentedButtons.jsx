@@ -8,7 +8,7 @@ import { Checkbox, Radio } from 'antd';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-const SelectableButtons = ({
+const SegmentedButtons = ({
     onClickHandler,
     data,
     defaultValue,
@@ -72,7 +72,7 @@ const SelectableButtons = ({
                         size={size}
                         buttonStyle={buttonStyle}
                         optionType="button"
-                        className={classnames('selectable-buttons', className)}
+                        className={classnames('segmented-buttons', className)}
                     >
                     </Radio.Group>
                 ))}
@@ -86,7 +86,7 @@ const SelectableButtons = ({
                         defaultValue={activeValue}
                         options={options}
                         disabled={disabled}
-                        className={classnames('selectable-buttons', `size-${size}`, className)}
+                        className={classnames('segmented-buttons', `size-${size}`, className)}
                         buttonStyle={buttonStyle}
                     >
                     </Checkbox.Group>
@@ -97,7 +97,7 @@ const SelectableButtons = ({
 };
 
 
-SelectableButtons.propTypes = {
+SegmentedButtons.propTypes = {
     onClickHandler: PropTypes.func,
     data          : PropTypes.arrayOf(PropTypes.object),
     defaultValue  : PropTypes.oneOfType([
@@ -118,7 +118,7 @@ SelectableButtons.propTypes = {
     multiSelect: PropTypes.bool,
 };
 
-SelectableButtons.defaultProps = {
+SegmentedButtons.defaultProps = {
     onClickHandler: () => {},
     data          : [[]],
     defaultValue  : undefined,
@@ -129,4 +129,4 @@ SelectableButtons.defaultProps = {
     multiSelect   : false,
 };
 
-export default SelectableButtons;
+export default SegmentedButtons;
