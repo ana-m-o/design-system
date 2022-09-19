@@ -60,7 +60,6 @@ const OperationStatus = ({
                                 status={statusMap[generalStatus]?.color}
                                 iconCls={statusMap[generalStatus]?.icon}
                                 text={generalStatusText ? generalStatusText : generalStatus}
-                                bold={true}
                                 className="padding-right-md"
                             />
                         </Header>
@@ -112,19 +111,6 @@ const OperationStatus = ({
                                             </Panel>);
                                     })
                                 }
-
-
-                                {/*   <div className="wait-item">
-                                    <Header title="Waiting to implantation scheduled date" docked={false}>
-                                        <Tag shape="circle" color="gray-blue" className="timeline-item" bold iconCls="dx-icon-sand-clock"></Tag>
-
-                                        <Divider />
-                                        <span className="time">20/07/2021 · window 1 (10:00 AM)</span>
-                                        <StatusIndicator status="disabled" iconCls="icon-ellipsis-horizontal-line" />
-                                    </Header>
-
-                                </div> */}
-
                             </Collapse>
 
                             :

@@ -48,7 +48,7 @@ const OperationStage = ({
     }, [status]);
 
     return <Header title={stage} docked={false}>
-        { showNumbers && <Tag shape="circle" color="gray-blue" className="timeline-item" bold>{index}</Tag> }
+        { showNumbers && <Tag shape="circle" color="gray-blue" className="timeline-item">{index}</Tag> }
 
         { extra && extra }
 

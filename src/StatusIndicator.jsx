@@ -18,12 +18,10 @@ const StatusIndicator = ({
     status,
     text,
     textAlign,
-    bold,
     iconCls,
     colorCls,
     iconText,
     hideIcon,
-    border,
     className,
     ...otherProps
 }) => {
@@ -34,11 +32,7 @@ const StatusIndicator = ({
         'ko'          : { color: 'red', icon: 'dx-icon-exclamation' },
         'wip'         : { color: 'orange', icon: 'dx-icon-loading-alt' },
         'active'      : { color: 'blue', icon: 'dx-icon-play' },
-        'disabled'    : { color: 'light-gray', icon: 'dx-icon-dot' },
-        'available'   : { color: 'navy', icon: null },
-        'implementing': { color: 'navy', icon: 'icon-ellipsis-horizontal-line font-weight-black' },
-        'defined'     : { color: 'gray-blue-line', icon: null },
-        'not-defined' : { color: 'white', icon: 'dx-icon-dot' },
+        'disabled'    : { color: 'light-gray', icon: 'dx-icon-dot' }
     };
 
     return (
@@ -46,18 +40,14 @@ const StatusIndicator = ({
             {...otherProps}
             className={
                 classnames('dx-status-indicator',
-                    size && size,
-                    textAlign && `text-${textAlign}`,
-                    border && 'border',
+                    size && `dx-status-indicator--${size}`,
+                    textAlign && `dx-status-indicator--text-${textAlign}`,
                     className)
             }
         >
 
             {text &&
-                <span className={
-                    classnames('dx-status-label', bold && 'font-weight-black')
-                }
-                >
+                <span className="dx-status-indicator__label">
                     {text}
                 </span>}
 
@@ -65,7 +55,7 @@ const StatusIndicator = ({
                 size={size}
                 shape="circle"
                 color={statusClasses[status] ? statusClasses[status].color : statusClasses['not-defined'].color}
-                className={classnames('dx-status-tag', colorCls)}
+                className={classnames('dx-status-indicator__tag', colorCls)}
                 iconCls={
                     !hideIcon && !iconText ?
                         iconCls ? iconCls : statusClasses[status] ? statusClasses[status].icon : statusClasses['not-defined'].icon
@@ -86,11 +76,11 @@ StatusIndicator.propTypes = {
     /**
      * The size of the tag. It supports the usual sizes.
      */
-    size     : PropTypes.oneOf([ 'default', 'small', 'medium' ]),
+    size     : PropTypes.oneOf([ 'default', 'small', 'large' ]),
     /**
      * The shape of the tag.
      */
-    status   : PropTypes.oneOf([ 'idle', 'ok', 'ko', 'wip', 'active', 'disabled', 'available', 'implementing', 'defined', 'not-defined' ]),
+    status   : PropTypes.oneOf([ 'idle', 'ok', 'ko', 'wip', 'active', 'disabled' ]),
     /**
      * Optional text
      */
@@ -99,14 +89,6 @@ StatusIndicator.propTypes = {
      * Text position.
      */
     textAlign: PropTypes.oneOf([ 'left', 'right' ]),
-    /**
-     * Bold status text
-     */
-    bold     : PropTypes.bool,
-    /**
-     * Grey border around icon
-     */
-    border   : PropTypes.bool,
     /**
      * Optional icon inside the indicator
      */
@@ -134,7 +116,6 @@ StatusIndicator.defaultProps = {
     status   : 'disabled',
     text     : '',
     textAlign: 'left',
-    bold     : false,
     iconCls  : '',
     colorCls : '',
     iconText : '',

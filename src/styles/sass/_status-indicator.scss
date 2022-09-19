@@ -3,21 +3,21 @@
     display: inline-flex;
     gap: var(--sp-xs);
 
-    .dx-status-tag {
+    .dx-status-indicator__tag {
         padding: 0;
+    }
+    
+    .dx-status-indicator__label {
+        text-transform: capitalize;
     }
 
     .dx-icon-loading-alt:before {
         height: 12px;
         width: 12px;
     }
-
-    .dx-status-label {
-        text-transform: capitalize;
-    }
-
-    &.size-small {
-        .dx-status-tag {
+    
+    &.dx-status-indicator--small {
+        .dx-status-indicator__tag {
             height: 12px;
             width: 12px;
             font-size: 9px;
@@ -25,25 +25,14 @@
         }
     }
 
-    &.border {
-        .dx-status-tag {
-            border: 1px solid $border-color;
-        }
-    }
-
-    &.medium {
-        .dx-status-tag {
+    &.dx-status-indicator--large {
+        .dx-status-indicator__tag {
             font-size: 16px;
         }
-        &.border {
-            .dx-status-tag {
-                border-width: 2px;
-            }
-        }
     }
 
-    &.text-right {
-        .dx-status-label {
+    &.dx-status-indicator--text-right {
+        .dx-status-indicator__label {
             order: 2;
         }
     }

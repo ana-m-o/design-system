@@ -26,20 +26,18 @@ const Template = (args) =>
         <Divider />
 
         <Tag
-            bold
             color="navy"
             shape="round"
-            size="medium"
+            size="large"
             iconCls="dx-icon-location-solid"
         >
             GLO
         </Tag>
 
         <Tag
-            bold
             color="blue"
             shape="round"
-            size="medium"
+            size="large"
         >
             DEV
         </Tag>
@@ -110,7 +108,6 @@ const PanelHeaderTemplate = (args) =>
     <Header {...args} >
         <Divider />
         <Tag
-            bold
             color="blue"
             shape="round"
         >

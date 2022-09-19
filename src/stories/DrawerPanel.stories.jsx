@@ -78,7 +78,7 @@ const Template = (args) => {
                         }
                     />
                     <Divider />
-                    <Tag size="medium" bold color="navy">ABCD</Tag>
+                    <Tag size="large" color="navy">ABCD</Tag>
                 </Header>
                 <div className="padding-md scrollable-content flex-1">
                     <p>Some contents...</p>

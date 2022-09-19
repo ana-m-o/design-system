@@ -13,7 +13,6 @@ const Tag = ({
     size,
     shape,
     color,
-    bold,
     children,
     className,
     iconCls,
@@ -28,15 +27,14 @@ const Tag = ({
             style={style || width ? { ...style, ...(width && { 'width': width }) } : null}
             className={
                 classnames('dx-tag',
-                    size && `dx-tag-${size}`,
-                    shape && `dx-tag-${shape}`,
-                    color && `dx-tag-${color}`,
-                    bold && 'font-weight-black',
+                    size && `dx-tag--${size}`,
+                    shape && `dx-tag--${shape}`,
+                    color && `dx-tag--${color}`,
                     className)
             }
         >
             {iconCls ?
-                <div className={`dx-tag-icon ${iconCls} ${bold && 'font-weight-black'}`}></div>
+                <div className={`dx-tag__icon ${iconCls}`}></div>
                 : null}
             {children}
         </div>
@@ -47,7 +45,7 @@ Tag.propTypes = {
     /**
      * The size of the tag. It supports the usual sizes.
      */
-    size     : PropTypes.oneOf([ 'small', 'default', 'medium' ]),
+    size     : PropTypes.oneOf([ 'small', 'default', 'large' ]),
     /**
      * The shape of the tag.
      */
@@ -56,10 +54,6 @@ Tag.propTypes = {
      * The color of the tag.
      */
     color    : PropTypes.oneOf([ 'light-blue', 'blue', 'navy', 'aqua', 'aqua-medium', 'green', 'orange', 'red', 'gray-blue', 'light-gray', 'yellow', 'white', 'gray-blue-line' ]),
-    /**
-     * Bold text.
-     */
-    bold     : PropTypes.bool,
     /**
      * Tag content, it can be text, html or other components
      */
@@ -86,7 +80,6 @@ Tag.defaultProps = {
     size   : 'default',
     shape  : 'rectangle',
     color  : 'light-blue',
-    bold   : false,
     width  : '',
     iconCls: '',
 };

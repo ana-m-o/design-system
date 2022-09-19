@@ -48,7 +48,7 @@ const stagesDefault = [{
     'status'     : 'pending',
     'percent'    : 0,
     'time'       : '',
-    'extra'      : [ <Tag size="medium" key="request">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>, 'Other extra' ],
+    'extra'      : [ <Tag size="large" key="request">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>, 'Other extra' ],
 }];
 
 const stagesWarning = [{
@@ -79,7 +79,7 @@ const stagesWarning = [{
     'status'     : 'pending',
     'percent'    : 0,
     'time'       : '',
-    'extra'      : <Tag size="medium">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
+    'extra'      : <Tag size="large">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
 }];
 
 
@@ -111,7 +111,7 @@ const stagesError = [{
     'status'     : 'pending',
     'percent'    : 0,
     'time'       : '',
-    'extra'      : <Tag size="medium">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
+    'extra'      : <Tag size="large">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
 }];
 
 const stagesCancel = [{
@@ -142,7 +142,7 @@ const stagesCancel = [{
     'status'     : 'pending',
     'percent'    : 0,
     'time'       : '',
-    'extra'      : <Tag size="medium">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
+    'extra'      : <Tag size="large">Request ID: <span className="font-weight-black">123092345763284527634</span></Tag>,
 }];
 
 const Template = (args) => <OperationStatus {...args} />;

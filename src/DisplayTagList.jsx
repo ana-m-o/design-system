@@ -21,7 +21,6 @@ function DisplayTagListRenderer(props) {
             'size'   : 'default',
             'shape'  : 'rectangle',
             'color'  : 'light-blue',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         };

@@ -72,7 +72,7 @@ const Template = (args) => {
                             <Tag
                                 color="navy"
                                 shape="round"
-                                size="medium"
+                                size="large"
                             >
                                 LRBA
                             </Tag>

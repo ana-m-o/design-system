@@ -53,8 +53,7 @@ $status-label-width: 80px;
                 padding-left: 40px;
             }
 
-            .ant-collapse-item,
-            .wait-item {
+            .ant-collapse-item {
                 position: relative;
 
                 // dotted line
@@ -86,21 +85,5 @@ $status-label-width: 80px;
             }
 
         }
-    }
-}
-
-// Stage Wainting
-.wait-item{
-    background-color: transparent;
-
-    .dx-panel-header {
-        padding-left: 34px;
-    }
-    
-    .dx-panel-header-title {
-        font-size: var(--font-size-default);
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
     }
 }

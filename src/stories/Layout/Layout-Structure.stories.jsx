@@ -39,19 +39,17 @@ const Template = () =>
             />
             <Divider />
             <Tag
-                bold
                 color="navy"
                 iconCls="dx-icon-location-solid"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 GLO
             </Tag>
             <Tag
-                bold
                 color="blue"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 DEV
             </Tag>
@@ -108,19 +106,17 @@ const SimpleTemplate = () =>
             title="Toolbar title"
         >
             <Tag
-                bold
                 color="navy"
                 iconCls="dx-icon-location-solid"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 GLO
             </Tag>
             <Tag
-                bold
                 color="blue"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 DEV
             </Tag>
@@ -333,19 +329,17 @@ const TemplateFull = () => {
                                 />
                                 <Divider />
                                 <Tag
-                                    bold
                                     color="navy"
                                     iconCls="dx-icon-location-solid"
                                     shape="round"
-                                    size="medium"
+                                    size="large"
                                 >
                                     GLO
                                 </Tag>
                                 <Tag
-                                    bold
                                     color="blue"
                                     shape="round"
-                                    size="medium"
+                                    size="large"
                                 >
                                     DEV
                                 </Tag>
