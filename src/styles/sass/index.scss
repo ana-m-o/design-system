@@ -1,33 +1,40 @@
 @import './variables';
 @import './type/fonts.scss';
 
-@import './api-method.scss';
-@import './button/button.scss';
-@import './collapse';
-@import './counter.scss';
-@import './data-refresh';
-@import './divider';
-@import './dockedLayout';
-@import './drawer/drawer.scss';
-@import './dropdown';
-@import './empty-view';
-@import './footer';
-@import './form/form';
-@import './header';
-@import './item/item.scss';
-@import './json-view';
+@import './components/api-method';
+@import './components/button/button';
+@import './components/collapse';
+@import './components/counter';
+@import './components/data-refresh';
+@import './components/divider';
+@import './components/drawer/drawer';
+@import './components/dropdown';
+@import './components/empty-view';
+@import './components/footer';
+@import './components/form/form';
+@import './components/header';
+@import './components/item/item';
+@import './components/loading';
+@import './components/menu/menu';
+@import './components/message-toast';
+@import './components/operation-status';
+@import './components/progress';
+@import './components/spin';
+@import './components/status-indicator';
+@import './components/tabs';
+@import './components/table';
+@import './components/tags';
+@import './components/taskbar';
+@import './components/tooltip';
+@import './components/wizard';
+
+
+// Plugins overides
+@import './plugins/dockedLayout';
+@import './plugins/json-view';
+
+//Layout
 @import './layouts';
-@import './loading';
-@import './menu/menu.scss';
-@import './message-toast';
-@import './operation-status';
-@import './progress';
-@import './spin';
-@import './status-indicator';
-@import './tabs';
-@import './table';
-@import './tags';
-@import './taskbar';
-@import './tooltip';
+
+// Utils
 @import './utils/utils.scss';
-@import './wizard';
