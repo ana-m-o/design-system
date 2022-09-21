@@ -1,5 +1,5 @@
 import React from 'react';
-import SegmentedButtons from '../SegmentedButtons';
+import SegmentedButtons from '../components/SegmentedButtons';
 
 export default {
     title    : 'General/Segmented Buttons',

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 // Antd Components
 import { Button } from 'antd';
 // Components
-import DockedLayout from '../DockedLayout';
-import DockedLayoutDivider from '../DockedLayoutDivider';
-import DOCKED_LAYOUT_TEMPLATES from '../DockedLayoutTemplates';
+import DockedLayout from '../components/DockedLayout';
+import DockedLayoutDivider from '../components/DockedLayoutDivider';
+import DOCKED_LAYOUT_TEMPLATES from '../components/DockedLayoutTemplates';
 
 export default {
     title    : '🧪 Lab/DockedLayout',

@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import { Form, Tooltip } from 'antd';
 // Local components
-import DisplayTagList from '../../DisplayTagList';
+import DisplayTagList from '../../components/DisplayTagList';
 
 export default {
     title    : 'Forms/DisplayFields/DisplayTagList',

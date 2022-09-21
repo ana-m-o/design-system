@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component
-import EmptyView from '../EmptyView';
+import EmptyView from '../components/EmptyView';
 import { Button } from 'antd';
 // Documentation
 import EmptyViewMdx from './EmptyView.stories.mdx';

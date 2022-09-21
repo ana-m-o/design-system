@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Tabs, Menu, Button } from 'antd';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
-import Header from '../../Header.jsx';
-import Footer from '../../Footer.jsx';
-import Item from '../../Item.jsx';
-import Tag from '../../Tag.jsx';
-import Divider from '../../Divider.jsx';
-import StatusIndicator from '../../StatusIndicator.jsx';
+import Header from '../../components/Header.jsx';
+import Footer from '../../components/Footer.jsx';
+import Item from '../../components/Item.jsx';
+import Tag from '../../components/Tag.jsx';
+import Divider from '../../components/Divider.jsx';
+import StatusIndicator from '../../components/StatusIndicator.jsx';
 
 const { TabPane } = Tabs;
 

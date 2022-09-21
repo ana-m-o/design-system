@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import { Form, Tooltip } from 'antd';
 // Local components
-import DisplayField from '../../DisplayField';
+import DisplayField from '../../components/DisplayField';
 
 export default {
     title    : 'Forms/DisplayFields/DisplayField',

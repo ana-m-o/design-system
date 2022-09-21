@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 // Components
-import { Button, Form, Input, Modal, Steps, Radio, Space, Switch, Table, Alert } from 'antd';
-import Tag from '../Tag';
-import Header from '../Header';
-import Divider from '../Divider';
-import EmptyView from '../EmptyView';
-import ModalPopup from '../ModalPopup';
+import { Button, Form, Input, Steps, Radio, Space, Alert } from 'antd';
+import Tag from '../components/Tag';
+import Header from '../components/Header';
+import ModalPopup from '../components/ModalPopup';
 
 // images
 import ResourceImgDefault from './assets/images/logo-default.png';

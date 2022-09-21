@@ -1,6 +1,6 @@
-import Header from '../Header';
 import React from 'react';
-import DataRefreshToolbar from '../DataRefreshToolbar';
+import DataRefreshToolbar from '../components/DataRefreshToolbar';
+import Header from '../components/Header';
 
 export default {
     title    : 'Data Source/DataRefreshToolbar',

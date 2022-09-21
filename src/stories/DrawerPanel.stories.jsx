@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import { Button, Dropdown, Menu, Drawer } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
 
-import Header from '../Header';
-import Divider from '../Divider';
-import Footer from '../Footer';
-import Item from '../Item';
-import Tag from '../Tag';
-import DrawerPanel from '../DrawerPanel';
+import Header from '../components/Header';
+import Divider from '../components/Divider';
+import Footer from '../components/Footer';
+import Item from '../components/Item';
+import Tag from '../components/Tag';
+import DrawerPanel from '../components/DrawerPanel';
 
 export default {
     title    : '🧪 Lab/DrawerPanel',

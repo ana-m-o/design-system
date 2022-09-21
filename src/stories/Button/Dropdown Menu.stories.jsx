@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button, Dropdown, Menu, Tooltip } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
-import Divider from '../../Divider';
+import Divider from '../../components/Divider';
 
 export default {
     title     : 'General/Button (Ant)/Dropdown Menu',

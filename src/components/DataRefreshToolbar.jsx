@@ -7,7 +7,7 @@ import classnames from 'classnames';
 
 import { Button, Tooltip, Progress } from 'antd';
 import Divider from './Divider';
-import { useInterval } from './hooks/useInterval';
+import { useInterval } from '../hooks/useInterval';
 
 const DataRefreshToolbar = (props) => {
 

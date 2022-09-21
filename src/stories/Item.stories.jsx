@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Item from '../Item';
-import Tag from '../Tag';
-import StatusIndicator from '../StatusIndicator';
+import Item from '../components/Item';
+import Tag from '../components/Tag';
+import StatusIndicator from '../components/StatusIndicator';
 
 export default {
     title    : 'Data Display/Item',

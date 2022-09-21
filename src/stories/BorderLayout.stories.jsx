@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Button } from 'antd';
-import BorderLayout from '../BorderLayout';
+import BorderLayout from '../components/BorderLayout';
 
 export default {
     title    : '🧪 Lab/BorderLayout',

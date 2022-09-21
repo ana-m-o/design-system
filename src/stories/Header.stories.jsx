@@ -1,9 +1,9 @@
 import React from 'react';
-import Item from '../Item';
-import Tag from '../Tag';
-import Divider from '../Divider';
-import StatusIndicator from '../StatusIndicator';
-import Header from '../Header';
+import Item from '../components/Item';
+import Tag from '../components/Tag';
+import Divider from '../components/Divider';
+import StatusIndicator from '../components/StatusIndicator';
+import Header from '../components/Header';
 import { Button } from 'antd';
 
 export default {

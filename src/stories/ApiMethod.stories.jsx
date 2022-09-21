@@ -1,7 +1,7 @@
 import { message } from 'antd';
 import React from 'react';
 
-import ApiMethod from '../ApiMethod';
+import ApiMethod from '../components/ApiMethod';
 
 export default {
     title    : 'Data Display/ApiMethod',

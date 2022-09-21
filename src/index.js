@@ -1,23 +1,23 @@
 import './styles/antd-theme/index.less';
 import './styles/sass/index.scss';
 
-import ApiMethod from './ApiMethod';
-import BorderLayout from './BorderLayout';
-import Counter from './Counter';
-import DrawerPanel from './DrawerPanel';
-import DataRefreshToolbar from './DataRefreshToolbar';
-import DisplayField from './DisplayField';
-import DisplayTagList from './DisplayTagList';
-import Divider from './Divider';
-import EmptyView from './EmptyView';
-import Footer from './Footer';
-import Header from './Header';
-import Item from './Item';
-import ModalPopup from './ModalPopup';
-import OperationStatus from './OperationStatus/OperationStatus';
-import StatusIndicator from './StatusIndicator';
-import SegmentedButtons from './SegmentedButtons';
-import Tag from './Tag';
+import ApiMethod from './components/ApiMethod';
+import BorderLayout from './components/BorderLayout';
+import Counter from './components/Counter';
+import DrawerPanel from './components/DrawerPanel';
+import DataRefreshToolbar from './components/DataRefreshToolbar';
+import DisplayField from './components/DisplayField';
+import DisplayTagList from './components/DisplayTagList';
+import Divider from './components/Divider';
+import EmptyView from './components/EmptyView';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Item from './components/Item';
+import ModalPopup from './components/ModalPopup';
+import OperationStatus from './components/OperationStatus/OperationStatus';
+import StatusIndicator from './components/StatusIndicator';
+import SegmentedButtons from './components/SegmentedButtons';
+import Tag from './components/Tag';
 
 export {
     ApiMethod,

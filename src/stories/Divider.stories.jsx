@@ -1,7 +1,7 @@
 import React from 'react';
-import Tag from '../Tag';
-import Divider from '../Divider';
-import Header from '../Header';
+import Tag from '../components/Tag';
+import Divider from '../components/Divider';
+import Header from '../components/Header';
 
 export default {
     title    : 'Layout/Divider',

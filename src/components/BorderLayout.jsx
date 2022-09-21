@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 // Components
 import Divider from './Divider';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 // Utils
 import PropTypes from 'prop-types';
 import classnames from 'classnames';

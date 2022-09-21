@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StatusIndicator from '../StatusIndicator';
+import StatusIndicator from '../components/StatusIndicator';
 
 export default {
     title    : 'Data display/StatusIndicator',

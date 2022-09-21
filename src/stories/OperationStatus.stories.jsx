@@ -1,6 +1,6 @@
 import React from 'react';
-import OperationStatus from '../OperationStatus/OperationStatus';
-import Tag from '../Tag';
+import OperationStatus from '../components/OperationStatus/OperationStatus';
+import Tag from '../components/Tag';
 
 export default {
     title    : 'Data Display/OperationStatus',
