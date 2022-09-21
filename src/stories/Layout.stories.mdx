@@ -6,12 +6,20 @@ import layout04 from './assets/content/03-layout-fijo.png';
 import layout05 from './assets/content/04-scroll-global.png';
 import layout06 from './assets/content/05-scroll-local.png';
 import layout07 from './assets/content/06-scroll-adaptable.png';
+import layout08 from './assets/content/07-layout-tools-collapse.png';
+import layout09 from './assets/content/08-layout-tools-drag.png';
+import layout10 from './assets/content/09-layout-tools-minMax.png';
+import layout11 from './assets/content/10-layout-tools-pin.png';
+import layout12 from './assets/content/11-layout-tools-float.png';
+import layout13 from './assets/content/12-layout-tools-scroll.png';
+import layout14 from './assets/content/13-layout-tools-split.png';
+import layout15 from './assets/content/14-layout-tools-stack.png';
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 
 
-<Meta title="UX Patterns/Patterns/Layout" />
+<Meta title="UX Patterns/Patterns/Basic Layout" />
 
-# Layout
+# Basic Layout
 
 Layout is the arrangement of data, information, tools and different elements on a page or screen. 
 
@@ -98,5 +106,102 @@ The behaviour is similar to the previous one with the difference that some eleme
 <img src={layout07} width={'25%'} />  
 
 For example an alphabetical address book where the headers informing the alphabetical title are fixed once they reach the top of the screen.
+
+-------------------------------------
+
+
+### Layout settings
+
+
+The layout can be configured in different ways, depending on the interaction requirements, context of use or information management.
+
+-------------------------------------
+**SCROLL**
+<img src={layout13} width={'100%'} />
+
+**Basic Properties**
++ Scrollable (true/false)
+
+-------------------------------------
+
+**SPLIT**
+
+<img src={layout14} width={'100%'} />
+
+**Basic Properties**
++ Default width
++ Min width
++ Max width
++ Split Direction: (top/left/bottom/right)
+
+-------------------------------------
+
+**COLLAPSE**
+
+<img src={layout08} width={'100%'} />
+
+**Basic Properties**
++ Collapsed: (true/false)
++ Collapse Direction: (top/left/bottom/right)
+-------------------------------------
+
+**PIN**
+
+<img src={layout11} width={'100%'} />
+
+**Basic Properties**
++ Pinned (true/false) (*) Pinned > Floated
++ Pinned Width
++ Floated width
+
+-------------------------------------
+
+**RESIZE**
+
+<img src={layout12} width={'100%'} />
+
+**Basic Properties**
++ Default width
++ Default height
++ Min width
++ Min height
++ Max width
++ Min height
++ Resize Constrain: (width, height, none)
+
+
+-------------------------------------
+
+**STACK**
+
+
+<img src={layout15} width={'100%'} />
+
+**Basic Properties**
++ Stack mode: (floating, embedded)
++ Closable (true, false)
++ Collapsable (true, false)
++ Resizable (true, false)
++ Default width
++ Min width
++ Max width
+
+-------------------------------------
+
+**MAXIMIZE/MINIMIZE**
+
+<img src={layout10} width={'100%'} />
+
+**Basic Properties**
++ Status (Maximized, minimized, restored)
+
+-------------------------------------
+
+**DRAG**
+
+<img src={layout09} width={'100%'} />
+
+**Basic Properties**
++ Dragable (true, false)
 
 -------------------------------------
