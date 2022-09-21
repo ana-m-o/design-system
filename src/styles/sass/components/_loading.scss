@@ -1,0 +1,45 @@
+// Pulse loading animation
+.dx-loading {
+    position: relative;
+    
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 50%;
+        border-color: $aqua;
+        width: 25px;
+        height: 25px;
+        top: -4px;
+        left: -30px;
+    }
+
+    &::before {
+        animation: loading-scale 1.5s linear 0s infinite;
+    }
+
+    &:after {
+        opacity: 0;
+        animation: loading-scale 1.5s linear 0.5s infinite;
+    }
+}
+
+
+@keyframes loading-scale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

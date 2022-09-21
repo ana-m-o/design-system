@@ -1,0 +1,65 @@
+.ant-collapse {
+    border: none;
+
+    // HEADER
+    .ant-collapse-header {
+        align-items: center;
+        display: flex;
+    
+        .dx-header--default,
+        .dx-header--panel {
+            background-color: transparent;
+            border: none;
+            flex: 1;
+            max-width: calc(100% - 22px);
+            padding: 0;
+        }
+    }
+
+    // White Background
+
+    &.ant-collapse--white {
+        background-color: #fff;
+    }
+
+    // Gray Backgorund
+    &.ant-collapse--gray {
+        .ant-collapse-item {
+            background-color: $bg-gray;
+            border-radius: 4px;
+            border-bottom: none;
+        }
+
+        .ant-collapse-content {
+            background-color: transparent;
+        }
+    }
+
+    // Compact
+    &.ant-collapse--compact {
+        .ant-collapse-header {
+            padding: var(--sp-sm) var(--sp-md);
+
+            .ant-collapse-arrow {
+                margin-right: var(--sp-xs);
+            }
+            
+            .dx-header--default {
+                gap: var(--sp-sm);
+            }
+
+            .dx-header__icon {
+                font-size: var(--font-size-bigger)
+            }
+        }
+
+        .ant-collapse-content {
+            border: none;
+
+            .ant-collapse-content-box {
+                padding: var(--sp-xs) var(--sp-md) var(--sp-sm);
+            }
+        }
+    }
+}
+

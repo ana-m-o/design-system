@@ -1,19 +1,19 @@
 import React from 'react';
 
-import StatusIndicator from '../StatusIndicator';
+import StatusIndicator from '../components/StatusIndicator';
 
 export default {
     title    : 'Data display/StatusIndicator',
     component: StatusIndicator,
     argTypes : {
         size: {
-            options: [ 'default', 'small', 'medium' ],
+            options: [ 'default', 'small', 'large' ],
             control: {
                 type: 'select',
             },
         },
         status: {
-            options: [ 'idle', 'ok', 'ko', 'wip', 'active', 'disabled', 'available', 'implementing', 'defined', 'not-defined' ],
+            options: [ 'ok', 'ko', 'wip', 'active', 'idle', 'disabled' ],
             control: {
                 type: 'select',
             },
@@ -24,29 +24,51 @@ export default {
                 type: 'inline-radio',
             },
         },
-        bold: {
-            options: [ true, false ],
-            control: {
-                type: 'boolean',
-            },
-        },
-        border: {
-            options: [ true, false ],
-            control: {
-                type: 'boolean',
-            },
-        },
     },
 };
 
 const Template = (args) => <StatusIndicator {...args}></StatusIndicator>;
 
-export const Default = Template.bind({});
-Default.args = {
+export const OK = Template.bind({});
+OK.args = {
     status   : 'ok',
     text     : 'Status',
-    textAlign: 'left',
-    bold     : false,
+    textAlign: 'right',
     hideIcon : false,
-    border   : false,
+};
+
+export const KO = Template.bind({});
+KO.args = {
+    ...OK.args,
+    status   : 'ko',
+};
+
+export const WIPLoading = Template.bind({});
+WIPLoading.args = {
+    ...OK.args,
+    status   : 'wip',
+};
+
+export const Active = Template.bind({});
+Active.args = {
+    ...OK.args,
+    status   : 'active',
+};
+
+export const Idle = Template.bind({});
+Idle.args = {
+    ...OK.args,
+    status   : 'idle',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    ...OK.args,
+    status   : 'disabled',
+};
+
+export const TextAlignLeft = Template.bind({});
+TextAlignLeft.args = {
+    ...OK.args,
+    textAlign   : 'left',
 };

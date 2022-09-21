@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Counter from '../Counter';
+import Counter from '../components/Counter';
 
 
 export default {
@@ -13,5 +13,4 @@ const Template = (args) => <Counter {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     children: 12,
-    bold    : true,
 };

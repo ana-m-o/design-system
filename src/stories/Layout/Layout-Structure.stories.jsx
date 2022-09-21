@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Tabs, Menu, Button } from 'antd';
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
-import Header from '../../Header.jsx';
-import Footer from '../../Footer.jsx';
-import Item from '../../Item.jsx';
-import Tag from '../../Tag.jsx';
-import Divider from '../../Divider.jsx';
-import StatusIndicator from '../../StatusIndicator.jsx';
+import Header from '../../components/Header.jsx';
+import Footer from '../../components/Footer.jsx';
+import Item from '../../components/Item.jsx';
+import Tag from '../../components/Tag.jsx';
+import Divider from '../../components/Divider.jsx';
+import StatusIndicator from '../../components/StatusIndicator.jsx';
 
 const { TabPane } = Tabs;
 
@@ -39,19 +39,17 @@ const Template = () =>
             />
             <Divider />
             <Tag
-                bold
                 color="navy"
                 iconCls="dx-icon-location-solid"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 GLO
             </Tag>
             <Tag
-                bold
                 color="blue"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 DEV
             </Tag>
@@ -108,19 +106,17 @@ const SimpleTemplate = () =>
             title="Toolbar title"
         >
             <Tag
-                bold
                 color="navy"
                 iconCls="dx-icon-location-solid"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 GLO
             </Tag>
             <Tag
-                bold
                 color="blue"
                 shape="round"
-                size="medium"
+                size="large"
             >
                 DEV
             </Tag>
@@ -167,7 +163,7 @@ Simple.args = {
 
 /* Lined Layout */
 const LinedLayoutTemplate = () =>
-    <div className="vbox lined-layout" style={{ height: '300px', border: '2px solid #ccc' }}>
+    <div className="vbox layout--lined" style={{ height: '300px', border: '2px solid #ccc' }}>
         <div className="padding-md">Lined Layout Example</div>
 
         <div className="hbox">
@@ -178,13 +174,13 @@ const LinedLayoutTemplate = () =>
             <div className="vbox flex-1">
                 <div className="padding-md">
                     <ul>
-                        <li>Todos los vbox y hbox dentro de un div con clase "lined-layout" tendrán una línea de separación.</li>
+                        <li>Todos los vbox y hbox dentro de un div con clase "layout--lined" tendrán una línea de separación.</li>
                         <li>Los paddings, scrolls, flex, etc, dentro de este layout deben especificarse con las clases pertinentes en cada div (padding-md, scrollable-content, flex-1, etc)</li>
                         <li>La clase "section" sirve para que un div que no es hijo directo de un hbox/vbox tenga línea de separación horizontal</li>
                     </ul>
                 </div>
 
-                <div class="vbox">
+                <div className="vbox">
                     <Header type="toolbar" title="TOOLBAR">
                         <Divider />
                         <Button type="primary">Action 1</Button>
@@ -333,19 +329,17 @@ const TemplateFull = () => {
                                 />
                                 <Divider />
                                 <Tag
-                                    bold
                                     color="navy"
                                     iconCls="dx-icon-location-solid"
                                     shape="round"
-                                    size="medium"
+                                    size="large"
                                 >
                                     GLO
                                 </Tag>
                                 <Tag
-                                    bold
                                     color="blue"
                                     shape="round"
-                                    size="medium"
+                                    size="large"
                                 >
                                     DEV
                                 </Tag>

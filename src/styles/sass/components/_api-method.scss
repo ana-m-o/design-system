@@ -1,0 +1,280 @@
+$api-colors: (
+    get: $get-color,
+    put: $put-color,
+    post: $post-color,
+    patch: $patch-color,
+    delete: $delete-color,
+    head: $head-color,
+    generic: $blue
+);
+
+@mixin api-tag {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: var(--font-size-small);
+    font-weight: 900;
+    gap: var(--sp-xs);
+    height: 18px;
+    text-transform: uppercase;
+    width: 50px;
+}
+
+@mixin api-dot {
+    border-radius: 3px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    height: 16px;
+    padding: 0;
+    width: 16px;
+    
+    .api-method__method {
+        display: none;
+    }
+}
+
+.api-method {
+    align-items: center;
+    border-color: $medium-blue;
+    color: $medium-blue;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 0 6px;
+    position: relative;
+
+    .api-method__method {
+        line-height: 1em;
+    }
+
+    &.api-method--tag {
+        @include api-tag;
+    }
+
+    &.api-method--dot {
+        @include api-dot;
+    }
+
+    &.api-method--transition {
+        @include api-dot;
+        
+        &:hover,
+        &:focus {
+            @include api-tag;
+
+            .api-method__method {
+                display: inline-flex;
+            }
+        }
+    }
+
+    // COLORS
+    @each $method-name, $value in $api-colors {
+        // default: solid color
+        transition: all .2s linear;
+
+        &.api-method--#{$method-name} {
+            background-color: #{$value};
+            border-color: #{$value};
+            color: darken($value, 45);
+            
+            &.api-method--outlined,
+            &.api-method--wip-outlined,
+            &.api-method--alert {
+                background-color: transparent;
+                color: #{$value};
+            }
+            
+            &.api-method--half {
+                background-color: transparent;
+
+                &:after{
+                    background-color: #{$value};
+                }
+            }
+            
+            &.api-method--alert {
+                &:after {
+                    background-color: #{$value};
+                }
+            }
+
+            &.api-method--disabled,
+            &.api-method--empty {
+                background-color: transparent;
+                border-color: $text-light;
+                color: $text-light;
+            }
+            
+            &.api-method--disabled {
+                border-color: $text-light !important;
+            }
+
+            &.api-method--forbidden {
+                background-color: transparent;
+                border-color: $red;
+                color: $red;
+
+                &:after {
+                    background-color: $red;
+                }
+            }
+
+            &.api-method--dot,
+            &.api-method--transition {
+                // wip icon color
+                &.api-method--wip-solid::after {
+                    color: #ffffff;
+                }
+
+                &.api-method--wip-outlined::after {
+                    color: #{$value};
+                }
+            }
+
+            &.api-method--btn {
+                &:hover,
+                &:focus {
+                    &:not([disabled]){
+                        border-color: darken($value, 35);
+                        color: darken($value, 35);
+                    }
+                }
+
+                &.api-method--forbidden {
+                    &:hover,
+                    &:focus {
+                        &:not([disabled]){
+                            border-color: $red-dark;
+                            color: $red-dark;
+                        }
+                    }
+                }
+
+                &.api-method--empty {
+                    &:hover,
+                    &:focus {
+                        &:not([disabled]){
+                            border-color: $text-secondary;
+                            color: $text-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // STATUS
+    &.api-method--half {
+        &:after {
+            clip-path: polygon(0 0%, 100% 0, 0% 100%);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    
+    &.api-method--alert {
+        &:after {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            height: 9px;
+            position: absolute;
+            top: -4px;
+            width: 9px;
+            right: -5px;
+        }
+    }
+
+    &.api-method--forbidden {
+        &:after {
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            right: 0px;
+            transform: rotate(-45deg);
+        }
+        
+        &.api-method--tag,
+        &.api-method--transition:hover,
+        &.api-method--transition:focus {
+            &:after{
+                width: 103%;
+                right: -1px;
+                top: 6px;
+                transform: rotate(-19deg);
+            }
+        }
+    }
+
+    &.api-method--dot,
+    &.api-method--transition {
+        // wip: ellipsis icon
+        &.api-method--wip-solid,
+        &.api-method--wip-outlined {
+            &::after {
+                content: "\e924";
+                display: block;
+                font-family: 'Clarity';
+                font-size: 10px;
+                line-height: 16px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        &.api-method--empty {
+            border-color: transparent;
+        }
+    }
+
+    &.api-method--transition {
+        &.api-method--wip-solid,
+        &.api-method--wip-outlined {
+            &:hover,
+            &:focus {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+
+    // CLICKABLE / BUTTON
+    &.api-method--btn {
+        letter-spacing: normal;
+
+        span {
+            margin: 0;
+        }
+
+        &:before {
+            background-color: rgba(0,0,0,0.0);
+        }
+
+        &:hover,
+        &:focus {
+            &:before {
+                background-color: rgba(0,0,0,0.1);
+            }
+        }
+
+        &.api-method--tag,
+        &.api-method--transition {
+            &:before {
+                border-radius: 0;
+            }
+        }
+    }
+}
+

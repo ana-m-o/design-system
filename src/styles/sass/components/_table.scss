@@ -1,0 +1,77 @@
+
+// Ant Table
+.ant-table-thead > tr > th {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ant-table--noborder {
+    .ant-table {
+        .ant-table-cell {
+            border-color: transparent;
+        }
+    }
+}
+
+.ant-table--nohover {
+    .ant-table {
+        .ant-table-tbody > tr.ant-table-row:hover > td {
+            background: inherit;
+        }
+    }
+}
+
+.ant-table-cell--lined-bg {
+    background-image: url(../assets/images/bg-lined.png);
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+// Header icons
+.ant-table-cell__header-icon {
+    font-size: var(--font-size-big);
+    margin-right: var(--sp-xs);
+    vertical-align: text-top;
+}
+
+// Cell renderers
+.main-text {
+    font-weight: 700;
+}
+
+.date-text {
+    color: $medium-blue;
+}
+
+.secondary-text {
+    color: $text-secondary;
+    font-weight: 400;
+}
+
+.code-text {
+    color: $text-secondary;
+    font-weight: 400;
+    font-family: monospace !important;
+    font-size: var(--font-size-small);
+}
+
+// Show on hover
+// For action buttons or elements to show only on row hover/focus
+.show-on-hover {
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.ant-table-row:hover,
+.ant-table-cell-row-hover {
+    .show-on-hover {
+        opacity: 1
+    }
+}

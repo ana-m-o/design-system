@@ -1,9 +1,9 @@
 import React from 'react';
-import Item from '../Item';
-import Tag from '../Tag';
-import Divider from '../Divider';
-import StatusIndicator from '../StatusIndicator';
-import Header from '../Header';
+import Item from '../components/Item';
+import Tag from '../components/Tag';
+import Divider from '../components/Divider';
+import StatusIndicator from '../components/StatusIndicator';
+import Header from '../components/Header';
 import { Button } from 'antd';
 
 export default {
@@ -26,20 +26,18 @@ const Template = (args) =>
         <Divider />
 
         <Tag
-            bold
             color="navy"
             shape="round"
-            size="medium"
+            size="large"
             iconCls="dx-icon-location-solid"
         >
             GLO
         </Tag>
 
         <Tag
-            bold
             color="blue"
             shape="round"
-            size="medium"
+            size="large"
         >
             DEV
         </Tag>
@@ -95,14 +93,9 @@ Toolbar.args = {
     type: 'toolbar',
 };
 
-export const ToolbarAlt = TemplateToolbar.bind({});
-ToolbarAlt.args = {
-    type: 'toolbar-alt',
-};
-
 export const Compact = TemplateCompact.bind({});
 Compact.args = {
-    type   : 'toolbar-alt',
+    type   : 'toolbar',
     compact: true,
 };
 
@@ -110,7 +103,6 @@ const PanelHeaderTemplate = (args) =>
     <Header {...args} >
         <Divider />
         <Tag
-            bold
             color="blue"
             shape="round"
         >

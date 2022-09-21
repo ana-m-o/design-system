@@ -1,0 +1,161 @@
+.ant-form {
+    padding: var(--sp-md) 0 var(--sp-md) var(--sp-md);
+
+    ::placeholder {
+        font-style: italic;
+      }
+
+    // LABELS
+    .ant-form-item-label {
+        line-height: 1.1;
+    }
+
+    label {
+        color: $text-secondary;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        // checkbox/radio label
+        &.ant-checkbox-wrapper,
+        &.ant-radio-wrapper {
+            text-transform: none;
+            letter-spacing: normal;
+            
+            // checked
+            .ant-checkbox-checked:not(.ant-checkbox-disabled) + span,
+            .ant-radio-checked:not(.ant-radio-disabled) + span{
+                color: $text-default;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .wrap-label {
+        label {
+            white-space: normal;
+            text-align: left;
+        }
+    }
+
+    legend {
+        font-size: var(--font-size-smaller);
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: $text-default;
+    }
+
+    // Small size
+    &.ant-form-small {
+        .ant-form-item {
+            margin-bottom: var(--sp-xs);
+        }
+
+        legend {
+            margin-bottom: var(--sp-sm);
+        }
+    }
+}
+
+// Required indicator
+.ant-form-item-label {
+    overflow: visible;
+
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional) {
+        &:before {
+            position: absolute;
+            font-size: 16px;
+            content: "●";
+            left: -14px;
+        }
+    }
+}
+
+// Hover & focus states
+@mixin focus-border {
+    border-color: $navy !important;
+    box-shadow: inset 0 -1px 0 0 $navy !important;
+}
+
+.ant-input-affix-wrapper,
+.ant-input,
+.ant-input-text-area,
+.ant-picker,
+.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-input-number {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover {
+        &.readonly, &.disabled {
+            border-color: $border-color;
+        }
+    }
+
+    &:focus,
+    &:hover:focus,
+    &.ant-input-affix-wrapper-focused,
+    &.ant-input-number-focused {
+        @include focus-border;
+    }
+}
+
+.ant-select-focused  .ant-select-selector,
+.ant-picker-focused {
+    @include focus-border;
+}
+
+
+// Readonly
+.ant-form {
+    .ant-input-affix-wrapper.ant-input-affix-wrapper-readonly,
+    .ant-input.readonly {
+        &:hover,
+        &:focus,
+        &.ant-input-affix-wrapper-focused {
+            border-bottom: 1px solid $border-color !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+// Transparent backgrounds
+.bg-color-transparent {
+    .ant-input {
+        background-color: transparent !important;
+    }
+}
+
+
+// URL field
+.url-field {
+    background-color: transparent;
+}
+
+// Forms in headers
+.dx-header--default,
+.dx-header--main,
+.dx-header--toolbar,
+.dx-header--panel {
+    .ant-form,
+    .ant-row {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+// Text area character counter
+.ant-input-textarea-show-count::after {
+    font-size: var(--font-size-small);
+    line-height: 1.1em;
+}
+
+@import './check-radio-switch';
+@import './display';
+@import './input';
+@import './select';
+@import './extra-form-styles';

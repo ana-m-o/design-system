@@ -1,0 +1,41 @@
+.dx-divider {
+    display: flex;
+    flex: 1;
+
+    &.dx-divider--dots,
+    &.dx-divider--line {
+        width: 10px;
+        height: 20px;
+        flex: unset;
+    }
+
+    &.dx-divider--dots {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='4' height='50' viewBox='0 0 4 50'%3E%3Cmetadata%3E%3C?xpacket begin=' ' id='W5M0MpCehiHzreSzNTczkc9d'?%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C?xpacket end='w'?%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 { fill: %233c4042; fill-rule: evenodd; opacity: 0.2; filter: url(%23filter); } %3C/style%3E%3Cfilter id='filter' x='424' y='8' width='4' height='44' filterUnits='userSpaceOnUse'%3E%3CfeFlood result='flood' flood-color='%231e4283'/%3E%3CfeComposite result='composite' operator='in' in2='SourceGraphic'/%3E%3CfeBlend result='blend' in2='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cpath id='sep_dotted_copia' data-name='sep dotted copia' class='cls-1' d='M426,18a2,2,0,1,1-2,2A2,2,0,0,1,426,18Zm0-10a2,2,0,1,1-2,2A2,2,0,0,1,426,8Zm0,20a2,2,0,1,1-2,2A2,2,0,0,1,426,28Zm0,10a2,2,0,1,1-2,2A2,2,0,0,1,426,38Zm0,10a2,2,0,1,1-2,2A2,2,0,0,1,426,48Z' transform='translate(-424 -8)'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 2px;
+        background-position: center;
+        display: inline-block;
+    }
+
+    &.dx-divider--line {
+        // vertical line in the middle of the spacer
+        position: relative;
+
+        // overide theme styles
+        // TO-DO remove when theme migration is complete
+        margin: unset;
+        background-color: unset;
+        opacity: unset;
+
+        &:after {
+            background-color: #3c4042;
+            opacity: 0.2;
+            content: "";
+            display: block;
+            position: relative;
+            right: -50%;
+            height: 100%;
+            width: 1px;
+        }
+    }
+}

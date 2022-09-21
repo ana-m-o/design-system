@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import { Form, Tooltip } from 'antd';
 // Local components
-import DisplayTagList from '../../DisplayTagList';
+import DisplayTagList from '../../components/DisplayTagList';
 
 export default {
     title    : 'Forms/DisplayFields/DisplayTagList',
@@ -18,10 +18,9 @@ Default.args = {
     value   : [ 'Tag 1', 'Tag 2', 'Tag 3' ],
     tagprops: [
         {
-            'size'   : 'medium',
+            'size'   : 'large',
             'shape'  : 'rectangle',
             'color'  : 'light-blue',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
@@ -29,7 +28,6 @@ Default.args = {
             'size'   : 'default',
             'shape'  : 'rectangle',
             'color'  : 'blue',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
@@ -37,7 +35,6 @@ Default.args = {
             'size'   : 'small',
             'shape'  : 'rectangle',
             'color'  : 'red',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
@@ -72,10 +69,9 @@ SingleTagStyle.args = {
     value   : [ 'Tag 1', 'Tag 2', 'Tag 3' ],
     tagprops: [
         {
-            'size'   : 'medium',
+            'size'   : 'large',
             'shape'  : 'rectangle',
             'color'  : 'navy',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
@@ -88,26 +84,23 @@ MultipleTagStyles.args = {
     value   : [ 'Tag 1', 'Tag 2', 'Tag 3' ],
     tagprops: [
         {
-            'size'   : 'medium',
+            'size'   : 'large',
             'shape'  : 'rectangle',
             'color'  : 'light-blue',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
         {
-            'size'   : 'medium',
+            'size'   : 'large',
             'shape'  : 'rectangle',
             'color'  : 'blue',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },
         {
-            'size'   : 'medium',
+            'size'   : 'large',
             'shape'  : 'rectangle',
             'color'  : 'red',
-            'bold'   : false,
             'width'  : '',
             'iconCls': '',
         },

@@ -12,8 +12,6 @@ Read [Ant Documentation]([https://ant.design/components/spin/) for props and use
 
 The Spin usually wraps the content like `<Spin>Content of the page</Spin>`
 
-By default the layout is horizontal for an empty `<Spin />`. In order to use a vertical layout use `className="dx-vertical-spin"`
-
 export const Template = (args) => <Spin {...args}></Spin>;
 
 <Canvas>
@@ -30,15 +28,6 @@ export const Template = (args) => <Spin {...args}></Spin>;
         name="Empty"
         args={{
             tip: "Loading parameters...",
-        }}
-    >
-        {Template.bind({})}
-    </Story>
-    <Story
-        name="Empty Vertical"
-        args={{
-            tip: "Loading parameters...",
-            className: "dx-vertical-spin",
         }}
     >
         {Template.bind({})}

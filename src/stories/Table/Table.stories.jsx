@@ -42,7 +42,7 @@ const Template = (args) =>
     width={60}
   />
   <Column
-    title={[<span className="dx-icon-location-solid header-icn" />, "Address"]}
+    title={[<span className="dx-icon-location-solid ant-table-cell__header-icon" />, "Address"]}
     dataIndex='address'
     key='address'
     render={text => <Text ellipsis={true, { tooltip: text }} className="secondary-text">{ text }</Text>}
@@ -76,7 +76,7 @@ NoHover.args = {
   dataSource: dataSource,
   pagination: false,
   tableLayout: 'fixed',
-  className: 'nohover'
+  className: 'ant-table--nohover'
 };
 
 export const NoBorder = Template.bind({});
@@ -84,13 +84,5 @@ NoBorder.args = {
   dataSource: dataSource,
   pagination: false,
   tableLayout: 'fixed',
-  className: 'noborder'
-};
-
-export const Striped = Template.bind({});
-Striped.args = {
-  dataSource: dataSource,
-  pagination: false,
-  tableLayout: 'fixed',
-  className: 'striped-grid'
+  className: 'ant-table--noborder'
 };

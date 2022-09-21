@@ -6,7 +6,7 @@ describe('EmptyView component', () => {
     it('must render show a default empty text', () => {
         render(<EmptyView uppercase={false} />);
         const emptyView = screen.getByText('No elements found matching your criteria');
-        expect(emptyView).toHaveClass('message-text');
+        expect(emptyView).toHaveClass('dx-emptyview__message-text');
         expect(emptyView).toBeInTheDocument();
     });
 
@@ -32,7 +32,7 @@ describe('EmptyView component', () => {
         const emptyView = screen.getByText(text);
         const root = emptyView.closest('.dx-emptyview');
         expect(root).toBeInTheDocument();
-        expect(root).toHaveClass('large');
+        expect(root).toHaveClass('dx-emptyview--large');
     });
 
     it('must have error404 css class when type=error404', () => {
@@ -41,7 +41,7 @@ describe('EmptyView component', () => {
         const emptyView = screen.getByText(text);
         const root = emptyView.closest('.dx-emptyview');
         expect(root).toBeInTheDocument();
-        expect(root).toHaveClass('error404');
+        expect(root).toHaveClass('dx-emptyview--error404');
     });
 
     it('must have empty css class when type=empty', () => {
@@ -50,7 +50,7 @@ describe('EmptyView component', () => {
         const emptyView = screen.getByText(text);
         const root = emptyView.closest('.dx-emptyview');
         expect(root).toBeInTheDocument();
-        expect(root).toHaveClass('empty');
+        expect(root).toHaveClass('dx-emptyview--empty');
     });
 
     it('must have empty and medium css class when type=empty and size=medium', () => {
@@ -69,7 +69,7 @@ describe('EmptyView component', () => {
         const emptyView = screen.getByText(text);
         const root = emptyView.closest('.dx-emptyview');
         expect(root).toBeInTheDocument();
-        expect(root).toHaveClass('error');
+        expect(root).toHaveClass('dx-emptyview--error');
     });
 
     it('must have filter css class when type=filter', () => {
@@ -78,7 +78,7 @@ describe('EmptyView component', () => {
         const emptyView = screen.getByText(text);
         const root = emptyView.closest('.dx-emptyview');
         expect(root).toBeInTheDocument();
-        expect(root).toHaveClass('filter');
+        expect(root).toHaveClass('dx-emptyview--filter');
     });
 
     it.skip('must be aligned at center when filter, error or desertmini are true', () => {
@@ -115,17 +115,17 @@ describe('EmptyView component', () => {
         const text = 'empty text';
         render(<EmptyView text={text} layout="vertical" type="error" uppercase={false} />);
         let emptyView = screen.getByText(text);
-        let parent = emptyView.closest('.vertical');
+        let parent = emptyView.closest('.dx-emptyview--vertical');
         expect(parent).toBeInTheDocument();
-        expect(parent).not.toHaveClass('horizontal');
+        expect(parent).not.toHaveClass('dx-emptyview--horizontal');
 
         cleanup();
 
         render(<EmptyView text={text} layout="vertical" type="empty" uppercase={false} />);
         emptyView = screen.getByText(text);
-        parent = emptyView.closest('.vertical');
+        parent = emptyView.closest('.dx-emptyview--vertical');
         expect(parent).toBeInTheDocument();
-        expect(parent).not.toHaveClass('horizontal');
+        expect(parent).not.toHaveClass('dx-emptyview--horizontal');
 
     });
 });

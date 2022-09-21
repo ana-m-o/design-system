@@ -1,6 +1,6 @@
 import React from 'react';
-import Divider from '../Divider';
-import Footer from '../Footer';
+import Divider from '../components/Divider';
+import Footer from '../components/Footer';
 import { Button } from 'antd';
 
 export default {

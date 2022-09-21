@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button, Dropdown, Menu, Tooltip } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
-import Divider from '../../Divider';
+import Divider from '../../components/Divider';
 
 export default {
     title     : 'General/Button (Ant)/Dropdown Menu',
@@ -101,7 +101,7 @@ const TemplateDropdown2 = (args) =>
             <Tooltip title="Close this version and return to resource detail">
                 <Button
                     size="small"
-                    className="btn-tag bg-color-aqua-medium color-white"
+                    className="ant-btn--tag bg-color-aqua-medium color-white"
                     icon={<span className="icon-times-line"></span>}
                 >
                 </Button>
@@ -138,7 +138,7 @@ TagDopdown.args = {
     children : [ 'Filter', <CaretDownOutlined key="icon" /> ],
     disabled : false,
     size     : 'default',
-    className: 'btn-tag bg-color-orange color-white',
+    className: 'ant-btn--tag bg-color-orange color-white',
 };
 TagDopdown.parameters = {
     docs: {
@@ -151,5 +151,5 @@ export const ClosableTagDopdown = TemplateDropdown2.bind({});
 ClosableTagDopdown.args = {
     size     : 'small',
     disabled : false,
-    className: 'btn-tag bg-color-aqua-medium color-white',
+    className: 'ant-btn--tag bg-color-aqua-medium color-white',
 };

@@ -4,7 +4,7 @@ export default {
     title    : 'Forms/Select (Ant)',
     component: Select,
 };
-const options = [{ label: 'APX', value: 1 }, { label: 'ASO LINK', value: 2 }, { label: 'ASO LITE', value: 3 }, { label: 'DATAPROC JOBS', value: 4 }];
+const options = [{ label: 'Option 1', value: 1 }, { label: 'Option 2', value: 2 }, { label: 'Option 3', value: 3 }, { label: 'Option 4', value: 4 }];
 
 const Template = (args) => {
 

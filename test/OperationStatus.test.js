@@ -30,7 +30,7 @@ const stagesDefault = [{
     'status'     : 'pending',
     'percent'    : 0,
     'time'       : '',
-    'extra'      : [ <Tag size="medium" key="id">Request ID: <span className="dx-font-black">123092345763284527634</span></Tag>, 'Other extra' ],
+    'extra'      : [ <Tag size="large" key="id">Request ID: <span className="dx-font-black">123092345763284527634</span></Tag>, 'Other extra' ],
 }];
 
 describe('OperationStatus component', () => {
@@ -38,7 +38,7 @@ describe('OperationStatus component', () => {
         render(<OperationStatus />);
         const os = screen.getByText('Operation status'); // Default header text
         expect(os).toBeInTheDocument();
-        expect(os).toHaveClass('title-text');
+        expect(os).toHaveClass('panel-title__title');
     });
 
 

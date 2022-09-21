@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import { Button, Dropdown, Menu, Drawer } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
 
-import Header from '../Header';
-import Divider from '../Divider';
-import Footer from '../Footer';
-import Item from '../Item';
-import Tag from '../Tag';
-import DrawerPanel from '../DrawerPanel';
+import Header from '../components/Header';
+import Divider from '../components/Divider';
+import Footer from '../components/Footer';
+import Item from '../components/Item';
+import Tag from '../components/Tag';
+import DrawerPanel from '../components/DrawerPanel';
 
 export default {
     title    : '🧪 Lab/DrawerPanel',
@@ -69,7 +69,7 @@ const Template = (args) => {
                             >
                                 <Button
                                     size="small"
-                                    className="btn-tag bg-color-aqua-medium color-white"
+                                    className="ant-btn--tag bg-color-aqua-medium color-white"
                                 >
                                     v2.0.4
                                     <CaretDownOutlined />
@@ -78,7 +78,7 @@ const Template = (args) => {
                         }
                     />
                     <Divider />
-                    <Tag size="medium" bold color="navy">ABCD</Tag>
+                    <Tag size="large" color="navy">ABCD</Tag>
                 </Header>
                 <div className="padding-md scrollable-content flex-1">
                     <p>Some contents...</p>

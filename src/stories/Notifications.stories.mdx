@@ -1,9 +1,7 @@
-
-import notifications01 from './assets/content/notifications-types.png';
-import notifications02 from './assets/content/notifications-critically-level.png';
-import notifications03 from './assets/content/notifications-usage.png';
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
-
+import notifications01 from "./assets/content/notifications-types.png";
+import notifications02 from "./assets/content/notifications-critically-level.png";
+import notifications03 from "./assets/content/notifications-usage.png";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 
 <Meta title="UX Patterns/Patterns/Notifications" />
 
@@ -11,22 +9,20 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 
 Notifications allow you to **communicate with users** and provide them with **information at important or necessary moments**. Notifications can be presented visually in different ways and classified according to the importance or criticality of the message.
 
-**Critically  Level**
+**Critically Level**
 
-+ Informational
-+ Success
-+ Warning
-+ Error
+-   Informational
+-   Success
+-   Warning
+-   Error
 
 **Visual Representation**
 
-+ Inline
-+ Modal 
-+ Banner
-+ Notification panel
-+ Toast
-
-
+-   Inline
+-   Modal
+-   Banner
+-   Notification panel
+-   Toast
 
 ## Anatomy
 
@@ -34,21 +30,19 @@ They can be classified based on two dimensions: The **criticality level** and it
 
 ### Critically Levels
 
-<img src={notifications02} width={'100%'} />
+<img src={notifications02} width={"100%"} />
 
 ### Visual Representation
 
-<img src={notifications01} width={'100%'} />
+<img src={notifications01} width={"100%"} />
 
-
-
--------------------------------------
+---
 
 ## Functionality
 
 Based on functional criteria, it is important to classify notifications according to the criticality of the event we need to notify users.
 
-<img src={notifications02} width={'100%'} />
+<img src={notifications02} width={"100%"} />
 
 ### Info
 
@@ -70,30 +64,28 @@ They usually persist until the **user dismisses the notification**.
 
 ### Error
 
-Inform users of a **critical error or failure** and, when necessary, block the user from continuing the process. 
+Inform users of a **critical error or failure** and, when necessary, block the user from continuing the process.
 
 They always **persist until the user dismisses the warning or resolves the error**.
-
 
 ## Usage
 
 We will use different notifications format (components) depending on the use requirements.
 
-<img src={notifications03} width={'100%'} />
+<img src={notifications03} width={"100%"} />
 
-| TYPE | USAGE | DURATION |
-| ----- | ----- | ----- |
-| **Inline** | Provide users with information on the status of a current action | Persists until resolved or discarded by the user and can include a hide/close button |
-| **Toast** | Short messages that slide in and out of a page and provide information that does not require user action | It disappears automatically or can be discarded by the user |
-| **Banner** | System or product notifications specifics to a task | It persists until discarded by the user and may include a close button, link to extended information or retry button |
-| **Notification Panel** | Notification center providing users with system-generated messages | It opens and closes by user action.  Usually allows to delete or archive notifications |
-| **Modal** | Intrusive notifications that provide users with critical information that requires attention or action | They persist and block tasks until the user discards them |
-
+| TYPE                   | USAGE                                                                                                    | DURATION                                                                                                             |
+| ---------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Inline**             | Provide users with information on the status of a current action                                         | Persists until resolved or discarded by the user and can include a hide/close button                                 |
+| **Toast**              | Short messages that slide in and out of a page and provide information that does not require user action | It disappears automatically or can be discarded by the user                                                          |
+| **Banner**             | System or product notifications specifics to a task                                                      | It persists until discarded by the user and may include a close button, link to extended information or retry button |
+| **Notification Panel** | Notification center providing users with system-generated messages                                       | It opens and closes by user action. Usually allows to delete or archive notifications                                |
+| **Modal**              | Intrusive notifications that provide users with critical information that requires attention or action   | They persist and block tasks until the user discards them                                                            |
 
 ## General recommendations
 
 Notifications should be:
 
-+ **Relevants** The notifications will be related to the process being performed by the user and will be presented in the context of that process.
-+ **Timely** It is important that the user receives information at the right time and critical notifications are seen immediately.
-+ **Meaningful** In addition to the reported event, the notification will provide the user with context and facilitate possible actions when necessary. 
+-   **Relevants** The notifications will be related to the process being performed by the user and will be presented in the context of that process.
+-   **Timely** It is important that the user receives information at the right time and critical notifications are seen immediately.
+-   **Meaningful** In addition to the reported event, the notification will provide the user with context and facilitate possible actions when necessary.

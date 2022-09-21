@@ -1,7 +1,8 @@
 //// COLOR PALETTE
 
-$medium-light-blue: #49A5E6;
+$navy: #072146;
 $medium-blue: #1973B8;
+$blue: #49A5E6;
 $light-blue: #7ab5df;
 $blue-white: #D4EDFC;
 
@@ -57,12 +58,6 @@ $bg-segmented-button-hover: #E0E0E0;
 $bg-gradient-blue: linear-gradient(-225deg,#0094d8 0%, #134994 100%);
 $bg-gradient-aqua: linear-gradient(-225deg,#4aaccc 0%, #2b7790 100%);
 
-// Spacing
-$sp: 20px;
-$sp-half: 10px;
-$sp-small: 5px;
-
-
 // API Colors
 $get-color: #89b8e6;
 $put-color: #61bca3;
@@ -71,13 +66,8 @@ $patch-color: #97dee1;
 $delete-color: #bd82b8;
 $head-color: #b7bed4;
 
+// Spacing
 :root {
-    --gray-blue: #87A4C2;
-    --medium-blue: #1973B8;
-    --navy: #072146;
-    --white: #fff; 
-    --border-color-solid: #e5e5e5;
-
     --sp-lg: 24px;
     --sp-md: 12px;
     --sp-sm: 8px;

@@ -1,0 +1,8 @@
+.dx-footer {
+    align-items: center;
+    background-color: $white;
+    border-top: 1px solid $border-color;
+    display: flex;
+    gap: var(--sp-md);
+    padding: var(--sp-md);
+}

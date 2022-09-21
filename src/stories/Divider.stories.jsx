@@ -1,19 +1,11 @@
 import React from 'react';
-import Tag from '../Tag';
-import Divider from '../Divider';
-import Header from '../Header';
+import Tag from '../components/Tag';
+import Divider from '../components/Divider';
+import Header from '../components/Header';
 
 export default {
     title    : 'Layout/Divider',
     component: Divider,
-    argTypes : {
-        type: {
-            options: [ '', 'dots', 'dot', 'line' ],
-            control: {
-                type: 'select',
-            },
-        },
-    },
 };
 
 const Template = (args) =>
@@ -35,4 +27,16 @@ export const Default = Template.bind({});
 Default.args = {
     type : '',
     width: '',
+};
+
+export const Dots = Template.bind({});
+Dots.args = {
+    type : 'dots',
+    width: '10px',
+};
+
+export const Line = Template.bind({});
+Line.args = {
+    type : 'line',
+    width: '10px',
 };

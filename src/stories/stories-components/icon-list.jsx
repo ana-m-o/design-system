@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Tag from '../../Tag';
+import Tag from '../../components/Tag';
 
 export default class Icon extends Component {
 

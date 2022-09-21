@@ -1,0 +1,39 @@
+.dx-status-indicator {
+    align-items: center;
+    display: inline-flex;
+    gap: var(--sp-xs);
+
+    .dx-status-indicator__tag {
+        padding: 0;
+    }
+    
+    .dx-status-indicator__label {
+        text-transform: capitalize;
+    }
+
+    .dx-icon-loading-alt:before {
+        height: 12px;
+        width: 12px;
+    }
+    
+    &.dx-status-indicator--small {
+        .dx-status-indicator__tag {
+            height: 12px;
+            width: 12px;
+            font-size: 9px;
+            font-weight: 600;
+        }
+    }
+
+    &.dx-status-indicator--large {
+        .dx-status-indicator__tag {
+            font-size: 16px;
+        }
+    }
+
+    &.dx-status-indicator--text-right {
+        .dx-status-indicator__label {
+            order: 2;
+        }
+    }
+}

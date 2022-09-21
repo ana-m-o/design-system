@@ -1,9 +1,8 @@
-import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
-import { Button } from 'antd';
-import EmptyView from '../EmptyView';
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { Button } from "antd";
+import EmptyView from "../components/EmptyView";
 
 <Meta title="UX Patterns/Components/EmptyView" />
-
 
 # Empty View
 
@@ -17,12 +16,11 @@ All lists, grids and in general entity enumerations can appear empty, either bec
 
 In the use of the Empty View component we find 3 different cases:
 
-+ **Case 1. There are no records in the list**: When the empty view is caused by the absence of records for that scope and user. For example when we have no products assigned and the view appears empty. In this case a special treatment will be given with an illustration in the style of the main products screen.
-+ **Case 2. No results in a search or filtering**: When the empty view is caused by display conditions derived from navigation, filtering or user actions. For example when we do a search and no results are returned. In this case we will apply a literal that specifies the reason that originate an empty list (For example: There is no record that matches the applied filters, There are no results for the search, etc).
-+ **Case 3. Connectivity or data access error**: When the empty list is caused by a data access error (services down or lack of connectivity), in this case if we can recover the error we must show a message to the user as specific as possible
+-   **Case 1. There are no records in the list**: When the empty view is caused by the absence of records for that scope and user. For example when we have no products assigned and the view appears empty. In this case a special treatment will be given with an illustration in the style of the main products screen.
+-   **Case 2. No results in a search or filtering**: When the empty view is caused by display conditions derived from navigation, filtering or user actions. For example when we do a search and no results are returned. In this case we will apply a literal that specifies the reason that originate an empty list (For example: There is no record that matches the applied filters, There are no results for the search, etc).
+-   **Case 3. Connectivity or data access error**: When the empty list is caused by a data access error (services down or lack of connectivity), in this case if we can recover the error we must show a message to the user as specific as possible
 
 ### Case 1: There are no records in the list
-
 
 This case occurs when the empty view is caused by the absence of records for that scope and user, that is, when we do not have records in a list, either because they have not yet been generated or because they have been deleted. If necessary, we include the button to add a new entity.
 
@@ -30,82 +28,116 @@ _"Your {entity name} list is empty"_
 
 For this type of Empty View, three different formats are contemplated, depending on the arrangement of the list in the layout.
 
-
 #### Large Empty View
 
 This format will be used on main entity listings, always in views that occupy the entire viewport, as is the case with full screen listings (grid, cards, etc.), for example on the Ether console home page (Products or Applications).
 
-<div style={{height: '300px'}}>
+<div style={{ height: "300px" }}>
     <EmptyView
-    size="large"
-    text="Your Product list is empty"
-    type="empty"
-    height="100%"
+        size="large"
+        text="Your Product list is empty"
+        type="empty"
+        height="100%"
     >
-         <Button icon={<span className="icon-plus-line" />} size="default" type="icon-primary" > Create Product... </Button>
+        <Button
+            icon={<span className="icon-plus-line" />}
+            size="default"
+            type="icon-primary"
+        >
+            {" "}
+            Create Product...{" "}
+        </Button>
     </EmptyView>
 </div>
-
 
 #### Medium Empty View
 
 We will use this format in main entities represented on large listings that partially occupy the view. For example, the listings that usually appear in detail views sharing space with their corresponding master listing.
 
-<div style={{height: '400px' , border : '1px solid #FAFAFA', borderRadius : '4px' }}>
+<div
+    style={{
+        height: "400px",
+        border: "1px solid #FAFAFA",
+        borderRadius: "4px",
+    }}
+>
     <EmptyView
-    size="medium"
-    text="Your Product list is empty"
-    type="empty"
-    height="100%"
+        size="medium"
+        text="Your Product list is empty"
+        type="empty"
+        height="100%"
     >
-        <Button icon={<span className="icon-plus-line" />} size="default" type="icon-primary" > Create Product... </Button>
+        <Button
+            icon={<span className="icon-plus-line" />}
+            size="default"
+            type="icon-primary"
+        >
+            {" "}
+            Create Product...{" "}
+        </Button>
     </EmptyView>
 </div>
 
 #### Mini Empty View
 
-This type of empty view will be used in main entities, but on small lists. For example, in floating panels or lists that have little space in the layout. 
+This type of empty view will be used in main entities, but on small lists. For example, in floating panels or lists that have little space in the layout.
 
 Depending on the aspect (width / height) of the panel, we will use the horizontal or vertical version of the component.
 
 **Horizontal Version**
 
-<div style={{height: '120px' , border : '1px solid #FAFAFA',  borderRadius : '4px' }}>
+<div
+    style={{
+        height: "120px",
+        border: "1px solid #FAFAFA",
+        borderRadius: "4px",
+    }}
+>
     <EmptyView
-    text="Your Product list is empty"
-    type="empty"
-    height="100%"
-    >
-    </EmptyView>
+        text="Your Product list is empty"
+        type="empty"
+        height="100%"
+    ></EmptyView>
 </div>
 
 **Vertical Version**
 
-<div style={{width : '300px' , height: '120px' , border : '1px solid #FAFAFA', borderRadius : '4px', margin: 'auto' }}>
+<div
+    style={{
+        width: "300px",
+        height: "120px",
+        border: "1px solid #FAFAFA",
+        borderRadius: "4px",
+        margin: "auto",
+    }}
+>
     <EmptyView
-    layout="vertical"
-    text="Your Product list is empty"
-    type="empty"
-    height="100%"
-    >
-    </EmptyView>
+        layout="vertical"
+        text="Your Product list is empty"
+        type="empty"
+        height="100%"
+    ></EmptyView>
 </div>
 
-
-### Case 2: No results in a search or filtering  
+### Case 2: No results in a search or filtering
 
 This type of empty view will be used to alert the user when a search or filtering performed on the list does not return any records.
 
 _"The requested search does not return results"_
 
-<div style={{height: '120px' , border : '1px solid #FAFAFA', borderRadius : '4px' }}>
+<div
+    style={{
+        height: "120px",
+        border: "1px solid #FAFAFA",
+        borderRadius: "4px",
+    }}
+>
     <EmptyView
-    layout="horizontal"
-    text="The requested search does not return results"
-    type="empty"
-    height="100%"
-    >
-    </EmptyView>
+        layout="horizontal"
+        text="The requested search does not return results"
+        type="empty"
+        height="100%"
+    ></EmptyView>
 </div>
 
 ### Case 3: Connectivity or data access error
@@ -114,13 +146,18 @@ This type of empty view will be used to indicate errors in the retrieval of reco
 
 _"The requested information can not be displayed at this moment, please try again later."_
 
-<div style={{height: '120px' , padding: '12px' , border : '1px solid #FAFAFA', borderRadius : '4px' }}>
+<div
+    style={{
+        height: "120px",
+        padding: "12px",
+        border: "1px solid #FAFAFA",
+        borderRadius: "4px",
+    }}
+>
     <EmptyView
-    layout="horizontal"
-    text="The requested information can not be displayed at this moment, please try again later."
-    type="error"
-    height="100%"
-    >
-    </EmptyView>
+        layout="horizontal"
+        text="The requested information can not be displayed at this moment, please try again later."
+        type="error"
+        height="100%"
+    ></EmptyView>
 </div>
-

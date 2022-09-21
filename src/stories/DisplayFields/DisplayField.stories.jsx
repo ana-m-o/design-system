@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import { Form, Tooltip } from 'antd';
 // Local components
-import DisplayField from '../../DisplayField';
+import DisplayField from '../../components/DisplayField';
 
 export default {
     title    : 'Forms/DisplayFields/DisplayField',
@@ -16,6 +16,7 @@ const Template = (args) =>
 export const Default = Template.bind({});
 Default.args = {
     type: 'input',
+    value: 'Readonly input'
 };
 
 const TemplateForm = (args) =>
@@ -46,6 +47,6 @@ const TemplateForm = (args) =>
 export const AsFormItem = TemplateForm.bind({});
 AsFormItem.args = {
     type     : 'input',
-    value    : 'Example value',
+    value    : 'Readonly value',
     className: 'none',
 };
