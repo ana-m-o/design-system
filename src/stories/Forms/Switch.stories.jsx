@@ -26,7 +26,7 @@ export default {
             },
         },
         className: {
-            options     : [ 'readonly', 'locked', 'vertical', 'filter' ],
+            options     : [ 'readonly', 'locked', 'filter' ],
             defaultValue: 'none',
             control     : {
                 type: 'inline-check',
@@ -56,17 +56,6 @@ const Template = (args) => {
     );
 };
 
-const TemplateVertical = (args) => {
-    return (
-        <div>
-            <Tooltip title="Hello world!">
-                <Switch {...args} />
-            </Tooltip>
-        </div>
-    );
-};
-
-
 export const Default = Template.bind({});
 Default.args = {
     checked  : true,
@@ -74,6 +63,15 @@ Default.args = {
     disabled : false,
     loading  : false,
     className: '',
+};
+
+export const Filter = Template.bind({});
+Filter.args = {
+    checked  : true,
+    size     : 'small',
+    disabled : false,
+    loading  : false,
+    className: 'filter',
 };
 
 export const Disabled = Template.bind({});
@@ -111,22 +109,4 @@ Locked.parameters = {
     docs: {
         storyDescription: 'Locked class needs "disabled" to be true (removes interactivity)',
     },
-};
-
-export const Vertical = TemplateVertical.bind({});
-Vertical.args = {
-    checked  : true,
-    size     : 'small',
-    disabled : false,
-    loading  : false,
-    className: 'vertical',
-};
-
-export const VerticalFilter = TemplateVertical.bind({});
-VerticalFilter.args = {
-    checked  : true,
-    size     : 'small',
-    disabled : false,
-    loading  : false,
-    className: 'vertical filter',
 };

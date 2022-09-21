@@ -51,7 +51,7 @@ function DisplayTagListRenderer(props) {
         {
             ...props,
             value             : globalTagLabelList,
-            className         : `displayfield displayfield-taglist readonly ${props.className}`,
+            className         : `displayfield displayfield--taglist readonly ${props.className}`,
             mode              : 'multiple',
             tagRender         : tagRender,
             onMouseMoveCapture: onPreventUserEvent,

@@ -40,7 +40,7 @@ function DrawerPanel(props) {
             height={props.size}
             placement={props.placement}
             mask={props.mask}
-            className={`drawer-panel ${!isCollapsed || !props.showCollapsed ? 'dp-expanded' : 'dp-collapsed'}`}
+            className={`drawer-panel ${!isCollapsed || !props.showCollapsed ? 'dp-expanded' : 'ant-drawer--collapsed'}`}
             visible={isVisible}
             closable={false} // Hides default close button
             bodyStyle={{ padding: 0 }}
@@ -51,7 +51,7 @@ function DrawerPanel(props) {
                 type="panel"
                 title={props.title}
                 uppercaseTitle
-                className="drawer-panel-title"
+                className="ant-drawer__title"
                 counter={props.counter}
                 titleExtra={props.titleExtra}
             >

@@ -6,7 +6,7 @@
     text-transform: uppercase;
 }
 
-.noborder {
+.ant-table--noborder {
     .ant-table {
         .ant-table-cell {
             border-color: transparent;
@@ -14,7 +14,7 @@
     }
 }
 
-.nohover {
+.ant-table--nohover {
     .ant-table {
         .ant-table-tbody > tr.ant-table-row:hover > td {
             background: inherit;
@@ -22,7 +22,7 @@
     }
 }
 
-.lined-bg {
+.ant-table-cell--lined-bg {
     background-image: url(../assets/images/bg-lined.png);
     align-items: center;
     display: flex;
@@ -35,7 +35,7 @@
 }
 
 // Header icons
-.header-icn {
+.ant-table-cell__header-icon {
     font-size: var(--font-size-big);
     margin-right: var(--sp-xs);
     vertical-align: text-top;

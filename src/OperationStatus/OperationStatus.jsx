@@ -47,7 +47,7 @@ const OperationStatus = ({
             }
         >
             <Collapse
-                className="gray compact"
+                className="ant-collapse--white"
                 defaultActiveKey={!collapsed ? 'main' : ''}
                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                 collapsible={!collapsible && 'disabled'}
@@ -67,7 +67,7 @@ const OperationStatus = ({
                     type="panel"
                     key="main"
                     showArrow={collapsible}
-                    className="main-panel"
+                    className="dx-operation-status__main-panel"
                 >
                     {
                         type === 'accordion' ?
@@ -75,7 +75,7 @@ const OperationStatus = ({
                             <Collapse
                                 defaultActiveKey={expandedPanel ? expandedPanel : null}
                                 accordion
-                                className="gray compact"
+                                className={'ant-collapse--white'}
                                 expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
                             >
                                 {/* Por cada stage */}

@@ -27,7 +27,7 @@ function DisplayFieldRenderer(props) {
         refObject,
         {
             ...props,
-            className         : `displayfield displayfield-${props.type} readonly ${props.className}`,
+            className         : `displayfield displayfield--${props.type} readonly ${props.className}`,
             maxLength         : 0,
             autoComplete      : 'off',
             readOnly          : true,

@@ -3,8 +3,8 @@
 }
 
 .readonly {
-    &.displayfield-input,
-    &.displayfield-textarea {
+    &.displayfield--input,
+    &.displayfield--textarea {
         &.ant-input-affix-wrapper,
         &.ant-input,
         &.ant-input-text-area {
@@ -17,7 +17,7 @@
             }
         }
     }
-    &.displayfield-taglist {
+    &.displayfield--taglist {
         .ant-select-selector {
             border-color: $border-color !important;
             border-width: 1px !important;

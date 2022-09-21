@@ -49,9 +49,9 @@ export const cellRenderersData = [
   {
     key: '4',
     style: 'Lined Background',
-    className: 'lined-bg hbox pack-center secondary-text',
+    className: 'ant-table-cell--lined-bg hbox pack-center secondary-text',
     example: ' n/a ',
-    renderer : '{text => <div className="lined-bg hbox pack-center secondary-text">{ text }</div>}',
+    renderer : '{text => <div className="ant-table-cell--lined-bg hbox pack-center secondary-text">{ text }</div>}',
     use: 'Celda en la que los datos no aplican',
   },
   {

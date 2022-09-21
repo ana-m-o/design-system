@@ -19,7 +19,7 @@ function ModalPopup(props) {
 
             { props.isDraggable ? (
                 <DraggableModalProvider>
-                    <DraggableModal {...props} className="modal-wizard draggable-modal-sizes">
+                    <DraggableModal {...props} className="dx-modal-wizard draggable-modal-sizes">
                         {props.children}
                     </DraggableModal>
                 </DraggableModalProvider>

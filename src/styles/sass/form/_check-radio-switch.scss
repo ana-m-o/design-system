@@ -121,16 +121,4 @@
             background-color: $orange;
         }
     }
-
-    &.vertical {
-        transform: rotate(-90deg);
-        
-        .ant-switch-inner {
-            display: none;
-        }
-    }
-}
-
-.ant-tooltip-disabled-compatible-wrapper.vertical {
-    transform: rotate(-90deg);
 }

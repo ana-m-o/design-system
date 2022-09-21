@@ -137,12 +137,10 @@
 }
 
 // Forms in headers
-.dx-default-header,
-.dx-main-header,
-.dx-toolbar-header,
-.dx-toolbar-alt-header,
-.dx-panel-header,
-.dx-table-header {
+.dx-header--default,
+.dx-header--main,
+.dx-header--toolbar,
+.dx-header--panel {
     .ant-form,
     .ant-row {
         padding: 0;

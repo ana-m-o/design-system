@@ -16,6 +16,7 @@ const Template = (args) =>
 export const Default = Template.bind({});
 Default.args = {
     type: 'input',
+    value: 'Readonly input'
 };
 
 const TemplateForm = (args) =>
@@ -46,6 +47,6 @@ const TemplateForm = (args) =>
 export const AsFormItem = TemplateForm.bind({});
 AsFormItem.args = {
     type     : 'input',
-    value    : 'Example value',
+    value    : 'Readonly value',
     className: 'none',
 };

@@ -25,17 +25,17 @@ const EmptyView = ({
         <div
             className={
                 classnames('dx-emptyview',
-                    type && type,
-                    layout && layout,
-                    size && size,
+                    type && `dx-emptyview--${type}`,
+                    layout && `dx-emptyview--${layout}`,
+                    size && `dx-emptyview--${size}`,
                     className)
             }
             style={{ 'height': height }}
             {...otherProps}
         >
-            <div className="message">
-                <div className="message-icon"></div>
-                <div className="message-text">{
+            <div className="dx-emptyview__message">
+                <div className="dx-emptyview__message-icon"></div>
+                <div className="dx-emptyview__message-text">{
                     uppercase ?
                         text.toUpperCase()
                         :

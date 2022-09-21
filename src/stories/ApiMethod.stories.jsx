@@ -54,7 +54,7 @@ HtmlLink.args = {
     target  : '_blank',
     rel     : 'noopener noreferrer',
     key     : 'link',
-    href    : 'https://catalogs.platform.bbva.com/#',
+    href    : 'https://#',
 };
 
 export const Transition = Template.bind({});
@@ -62,14 +62,6 @@ Transition.args = {
     method    : 'post',
     status    : 'outlined',
     transition: true,
-};
-
-
-export const NotApified = Template.bind({});
-NotApified.args = {
-    method : 'post',
-    status : 'outlined',
-    apified: false,
 };
 
 const TemplateAll = (args) =>

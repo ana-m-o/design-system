@@ -1,29 +1,13 @@
 .ant-collapse {
     border: none;
-    background-color: transparent;
 
-    // Background color when expanded
-    .ant-collapse-item {
-        background-color: transparent;
-        transition: background-color .2s linear;
-
-        &.ant-collapse-item-active {
-            background-color: $bg-list-hover;
-        }
-
-        .ant-collapse-content-active {
-            background-color: transparent;
-        }
-    }
-
-    
     // HEADER
     .ant-collapse-header {
         align-items: center;
         display: flex;
     
-        .dx-default-header,
-        .dx-panel-header {
+        .dx-header--default,
+        .dx-header--panel {
             background-color: transparent;
             border: none;
             flex: 1;
@@ -34,17 +18,12 @@
 
     // White Background
 
-    &.white {
-        .ant-collapse-item {
-            &.ant-collapse-item-active,
-            .ant-collapse-content-active {
-                background-color: transparent;
-            }
-        }
+    &.ant-collapse--white {
+        background-color: #fff;
     }
 
     // Gray Backgorund
-    &.gray {
+    &.ant-collapse--gray {
         .ant-collapse-item {
             background-color: $bg-gray;
             border-radius: 4px;
@@ -56,37 +35,8 @@
         }
     }
 
-    // White Background + gray header
-
-    &.gray-header {
-        .ant-collapse-item {
-            border-bottom: none;
-
-            .ant-collapse-header {
-                background-color: $bg-gray;
-                border-radius: 4px;
-            }
-
-            &.ant-collapse-item-active,
-            .ant-collapse-content-active {
-                background-color: transparent;
-            }
-        }
-    }
-
-    // Transparent Backgorund
-    &.transparent {
-        .ant-collapse-item {
-            background-color: transparent;
-        }
-
-        .ant-collapse-content {
-            background-color: transparent;
-        }
-    }
-
     // Compact
-    &.compact {
+    &.ant-collapse--compact {
         .ant-collapse-header {
             padding: var(--sp-sm) var(--sp-md);
 
@@ -94,11 +44,11 @@
                 margin-right: var(--sp-xs);
             }
             
-            .dx-default-header {
+            .dx-header--default {
                 gap: var(--sp-sm);
             }
 
-            .dx-header-icon {
+            .dx-header__icon {
                 font-size: var(--font-size-bigger)
             }
         }

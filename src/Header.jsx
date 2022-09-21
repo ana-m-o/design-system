@@ -29,22 +29,22 @@ const Header = ({
     return (
         <div
             className={
-                classnames(`dx-${type}-header`,
-                    compact && 'compact',
+                classnames(`dx-header dx-header--${type}`,
+                    compact && 'dx-header--compact',
                     className,
                     docked && 'docked-top')
             }
             {...otherProps}
         >
             {navButtons}
-            {iconCls && <span className={`dx-header-icon ${iconCls}`}></span> }
+            {iconCls && <span className={`dx-header__icon ${iconCls}`}></span> }
 
             {title &&
-                <span className={`dx-panel-header-title ${uppercaseTitle && 'font-uppercase'}`}>
-                    <span className="title-text">{title}</span>
+                <span className={`dx-header__panel-title ${uppercaseTitle && 'font-uppercase'}`}>
+                    <span className="panel-title__title">{title}</span>
                     {counter && <Counter>{counter}</Counter>}
-                    {description && <span className="description-text">{description}</span>}
-                    {titleExtra && <span className="title-extra">{titleExtra}</span>}
+                    {description && <span className="panel-title__description">{description}</span>}
+                    {titleExtra && <span className="panel-title__extra">{titleExtra}</span>}
                 </span>}
 
             {children}
@@ -56,7 +56,7 @@ Header.propTypes = {
     /**
      * Where the header is placed o how is it used
      */
-    type          : PropTypes.oneOf([ 'default', 'main', 'toolbar', 'toolbar-alt', 'panel', 'table', 'illustration' ]),
+    type          : PropTypes.oneOf([ 'default', 'main', 'toolbar', 'panel', 'illustration' ]),
     /**
      * Navigation buttons and other components. Will render before title
      */

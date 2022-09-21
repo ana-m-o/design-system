@@ -1,6 +1,6 @@
 // ICONS
 .dx-item {
-    .item-icon {
+    .dx-item__icon {
         background-image: url(../assets/images/ico-entity.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -26,14 +26,14 @@
             }
 
             // medium size-icon
-            &.medium{
+            &.dx-item__icon--medium{
                 &:before {
                     font-size: calc(var(--font-size-title-big) - 2px);
                 }
             }
 
             // small size-icon
-            &.small {
+            &.dx-item__icon--small {
                 &:before {
                     font-size: calc(var(--font-size-bigger) + 5px);
                 }
@@ -41,7 +41,7 @@
         }
 
         // SHAPES
-        &.circle {
+        &.dx-item__icon--circle {
             background-color: rgba(0, 0, 0, 0.1);
             background-image: none;
             border-radius: 50%;
@@ -54,10 +54,6 @@
                 text-shadow: none;
                 color: unset;
             }
-        }
-
-        &.hex {
-            //to-do
         }
     }
 }

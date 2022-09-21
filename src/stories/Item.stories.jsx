@@ -8,7 +8,7 @@ export default {
     title    : 'Data Display/Item',
     component: Item,
     argTypes : {
-        size               : { defaultValue: 'medium' },
+        size               : { defaultValue: 'large' },
         iconSize           : { defaultValue: 'medium' },
         iconShape          : { defaultValue: 'default-hex' },
         descriptionEllipsis: { defaultValue: true },
@@ -43,30 +43,15 @@ Hex.args = {
     titleChildren      : null,
 };
 
+export const Medium = Template.bind({});
+Medium.args = {
+    title      : 'Item title',
+    size       : 'medium',
+    description: 'Ant Design, a design language for background applications, is refined by Ant UED TeamAnt Design, a design language for background applications, is refined by Ant UED Team.Ant Design, a design language for background applications, is refined by Ant UED TeamAnt Design, a design language for background applications, is refined by Ant UED Team.',
+};
+
 export const Small = Template.bind({});
 Small.args = {
-    ...Default.args,
-    size         : 'small',
-    titleChildren: null,
-};
-
-export const XSmall = Template.bind({});
-XSmall.args = {
-    ...Default.args,
-    iconCls      : null,
-    size         : 'x-small',
-    pretitle     : null,
-    description  : null,
-    titleChildren: null,
-};
-
-export const AlignIconWithTitle = Template.bind({});
-AlignIconWithTitle.args = {
-    ...Default.args,
-    size              : 'small',
-    iconShape         : 'circle',
-    iconCls           : 'dx-icon-resource',
-    titleChildren     : null,
-    pretitle          : null,
-    alignIconWithTitle: true,
+    size : 'small',
+    title: 'Item title',
 };

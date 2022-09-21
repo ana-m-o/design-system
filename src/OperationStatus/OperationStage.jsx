@@ -56,7 +56,7 @@ const OperationStage = ({
 
         {status == 'warning' && <span className="icon-warning-standard-solid color-orange"></span>}
 
-        {time ? <Tooltip title="Average completion time for this stage"><span className="time">{time}</span></Tooltip> : <span className="time empty">·</span> }
+        {time ? <Tooltip title="Average completion time for this stage"><span className="timeline-item__time">{time}</span></Tooltip> : <span className="timeline-item__time timeline-item__time--empty">·</span> }
 
 
         {/* Completed */}

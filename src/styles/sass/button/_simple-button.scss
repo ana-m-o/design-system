@@ -90,7 +90,7 @@
     }
 
     &.ant-btn-danger{
-        &.readonly {
+        &.ant-btn--readonly {
             &:hover,
             &:focus {
                 background-color: $red;

@@ -93,14 +93,9 @@ Toolbar.args = {
     type: 'toolbar',
 };
 
-export const ToolbarAlt = TemplateToolbar.bind({});
-ToolbarAlt.args = {
-    type: 'toolbar-alt',
-};
-
 export const Compact = TemplateCompact.bind({});
 Compact.args = {
-    type   : 'toolbar-alt',
+    type   : 'toolbar',
     compact: true,
 };
 

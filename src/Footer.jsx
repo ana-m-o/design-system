@@ -18,7 +18,7 @@ const Footer = ({
     return (
         <div
             className={
-                classnames('dx-panel-footer',
+                classnames('dx-footer',
                     className)
             }
             {...otherProps}

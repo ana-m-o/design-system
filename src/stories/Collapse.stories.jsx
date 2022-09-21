@@ -30,25 +30,18 @@ Default.args = {
 export const White = Template.bind({});
 White.args = {
     defaultActiveKey: 1,
-    className       : 'white',
+    className       : 'ant-collapse--white',
 };
 
 export const Gray = Template.bind({});
 Gray.args = {
     defaultActiveKey: 1,
-    className       : 'gray',
+    className       : 'ant-collapse--gray',
 };
 
 export const GrayCompact = Template.bind({});
 GrayCompact.args = {
     defaultActiveKey: 1,
-    className       : 'gray compact',
-    expandIcon      : ({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />,
-};
-
-export const GrayHeaderCompact = Template.bind({});
-GrayHeaderCompact.args = {
-    defaultActiveKey: 1,
-    className       : 'gray-header compact',
+    className       : 'ant-collapse--gray ant-collapse--compact',
     expandIcon      : ({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />,
 };

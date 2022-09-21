@@ -110,10 +110,10 @@ const DataRefreshToolbar = (props) => {
     return (
         <div
             {...otherProps}
-            className={classnames('data-refresh-toolbar', className)}
+            className={classnames('dx-data-refresh', className)}
         >
             { showDataReceivedLabel &&
-                <div className="hbox align-center gap-sm drt-label">
+                <div className="hbox align-center gap-sm dx-data-refresh__label">
                     <div className="font-weight-light">Data Obtained</div>
                     { paused ?
                         <div>{formatDate(lastUpdateDate)}</div>
@@ -161,13 +161,13 @@ const DataRefreshToolbar = (props) => {
                     <span className="inline-hbox align-center gap-xs">
                         Refresh
                         { !paused && showCountdown ?
-                            <span className="drt-countdown">[{formatTime(counterState.nextUpdate)}]</span>
+                            <span className="dx-data-refresh__countdown">[{formatTime(counterState.nextUpdate)}]</span>
                             : null}
                     </span>}
 
                     { showProgressBar && !paused &&
                     <Progress
-                        className="refresh-progress-bar"
+                        className="dx-data-refresh__progress-bar"
                         type="dashboard"
                         percent={getPercent(counterState.lastUpdate)}
                         gapDegree={70}

@@ -38,7 +38,7 @@ function BorderLayout(props) {
     const sizeStyles = !isCollapsed ? { minHeight: props.size, maxHeight: props.size } : {};
 
     return (
-        <div style={{ display: isVisible ? 'block' : 'none', ...sizeStyles, ...styles }} className={classnames('border-layout-panel', className)}>
+        <div style={{ display: isVisible ? 'block' : 'none', ...sizeStyles, ...styles }} className={classnames('border-layout__panel', className)}>
             <div className="vbox height-100">
                 <Header
                     type="panel"

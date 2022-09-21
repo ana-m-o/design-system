@@ -12,12 +12,11 @@ import Divider from './Divider';
 
 const Counter = ({
     children,
-    bold,
     className,
 }) => {
 
     return (
-        <div className={classnames('counter hbox align-center gap-xs', bold && 'font-weight-black', className)} >
+        <div className={classnames('dx-counter hbox align-center gap-xs', className)} >
             <Divider type="line" />
             {children}
         </div>
@@ -30,17 +29,12 @@ Counter.propTypes = {
     */
     children : PropTypes.node,
     /**
-     * Bold text.
-     */
-    bold     : PropTypes.bool,
-    /**
      * Additional classes
      */
     className: PropTypes.string,
 };
 
 Counter.defaultProps = {
-    bold    : true,
     children: 0,
 };
 

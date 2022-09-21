@@ -95,7 +95,6 @@ class Item extends Component {
             copy,
             size,
             className,
-            alignIconWithTitle,
             descriptionEllipsis,
         } = this.props;
 
@@ -107,8 +106,8 @@ class Item extends Component {
             <div
                 className={classnames(
                     'dx-item',
-                    { 'align-icon-with-title': alignIconWithTitle },
-                    className, size && size)}
+                    className,
+                    size && `dx-item--${size}`)}
                 onClick={this.props.onItemClick}
             >
 
@@ -121,32 +120,32 @@ class Item extends Component {
                         ) : (
                             <div
                                 className={classnames(
-                                    'item-icon',
-                                    iconSize,
+                                    'dx-item__icon',
+                                    `dx-item__icon--${iconSize}`,
                                     iconCls,
-                                    iconShape && iconShape)}
+                                    iconShape && `dx-item__icon--${iconShape}`)}
                                 style={iconStyles}
                             />
                         )
 
                     }
                     { iconBadge ?
-                        <span className="item-badge">{iconBadge}</span> :
+                        <span className="dx-item__badge">{iconBadge}</span> :
                         null }
                 </div>
                 <div
                     className={classnames(
-                        'body',
+                        'dx-item__body',
                         { 'has-pretitle': pretitle },
                     )}
                 >
 
-                    {pretitle && <div className="pretitle">{pretitle}</div>}
+                    {pretitle && <div className="dx-item__pretitle">{pretitle}</div>}
 
                     <div
-                        className="item-title"
+                        className="dx-item__title"
                     >
-                        <span className={`item-name ${titleCls && titleCls}`}>
+                        <span className={`dx-item__name ${titleCls && titleCls}`}>
                             <Text ellipsis={{ tooltip: title }} >{title}</Text>
                         </span>
 
@@ -162,7 +161,7 @@ class Item extends Component {
                         />}
                     </div>
 
-                    <div className="description">
+                    <div className="dx-item__description">
                         <Paragraph ellipsis={descriptionEllipsis ? { rows: 1, expandable: false, tooltip: description } : false} >{description}</Paragraph>
                     </div>
                 </div>
@@ -175,7 +174,7 @@ Item.propTypes = {
     /**
      * Size of the component. Small and x-small are better for grids.
      */
-    size               : PropTypes.oneOf([ 'medium', 'small', 'x-small' ]),
+    size               : PropTypes.oneOf([ 'large', 'medium', 'small' ]),
     /**
      * Item icon class
      */
@@ -183,7 +182,7 @@ Item.propTypes = {
     /**
      * Item icon size. Use this for visual adjustments
      */
-    iconSize           : PropTypes.oneOf([ 'small', 'medium', 'big' ]),
+    iconSize           : PropTypes.oneOf([ 'large', 'medium', 'small' ]),
     /**
      * Icon background shape
      */
@@ -250,11 +249,6 @@ Item.propTypes = {
      */
     onItemClick        : PropTypes.func, // Algunos iconos tienen texto
     /**
-     * Vertically align item icon with main title. When false, icon and all content will be vertically centered.
-     *
-     */
-    alignIconWithTitle : PropTypes.bool,
-    /**
      * @ignore
      *
      */
@@ -263,12 +257,11 @@ Item.propTypes = {
 
 Item.defaultProps = {
     title              : 'Item Title',
-    size               : 'medium',
+    size               : 'large',
     iconShape          : 'default-hex',
     iconSize           : 'big',
     iconComponent      : null,
     descriptionEllipsis: true,
-    alignIconWithTitle : false,
 };
 
 export default Item;

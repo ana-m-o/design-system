@@ -115,7 +115,7 @@ export const FlipButton = Template.bind({});
 FlipButton.args = {
     type    : 'flip',
     icon    : <span className="icon-plus-line" />,
-    children: <div className="flip-content"><div className="flip-content__side-a">Side A</div><div className="flip-content__side-b">Side B</div></div>,
+    children: <div className="ant-btn__flip-content"><div className="flip-content__side-a">Side A</div><div className="flip-content__side-b">Side B</div></div>,
     size    : 'default',
 };
 FlipButton.parameters = {

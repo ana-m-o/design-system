@@ -38,7 +38,7 @@ describe('OperationStatus component', () => {
         render(<OperationStatus />);
         const os = screen.getByText('Operation status'); // Default header text
         expect(os).toBeInTheDocument();
-        expect(os).toHaveClass('title-text');
+        expect(os).toHaveClass('panel-title__title');
     });
 
 

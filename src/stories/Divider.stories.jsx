@@ -29,9 +29,14 @@ Default.args = {
     width: '',
 };
 
-
 export const Dots = Template.bind({});
 Dots.args = {
     type : 'dots',
+    width: '10px',
+};
+
+export const Line = Template.bind({});
+Line.args = {
+    type : 'line',
     width: '10px',
 };

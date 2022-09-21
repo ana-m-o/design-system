@@ -5,7 +5,7 @@ $status-label-width: 80px;
         width: 100%;
     }
     
-    .ant-collapse .ant-collapse-header .dx-default-header {
+    .ant-collapse .ant-collapse-header .dx-header--default {
         max-width: 100%;
     }
 
@@ -17,16 +17,17 @@ $status-label-width: 80px;
     }
 
     // stage
-    .ant-collapse.gray .ant-collapse-item.stage-item {
-        background-color: rgba(0, 0, 0, 0.04);
-        margin-bottom: var(--sp-xs);
+    .dx-operation-status__main-panel {
+        .ant-collapse-item-active,
+        .ant-collapse-item-active .ant-collapse-content {
+            background-color: #f8f8f8;
+        }
     }
 
-
-    .time {
+    .timeline-item__time {
         color: $text-secondary;
 
-        &.empty {
+        &.timeline-item__time--empty {
             min-width: 55px;
             text-align: center;
         }
@@ -39,7 +40,7 @@ $status-label-width: 80px;
     .dx-status-indicator {
         gap: $sp-half;
 
-        .dx-status-label {
+        .dx-status-indicator__label {
             text-align: right;
             width: $status-label-width;
         }
@@ -49,8 +50,8 @@ $status-label-width: 80px;
         
         &.show-numbers {
 
-            .main-panel > .ant-collapse-content > .ant-collapse-content-box {
-                padding-left: 40px;
+            .dx-operation-status__main-panel > .ant-collapse-content > .ant-collapse-content-box {
+                padding: 0 0 0 40px;
             }
 
             .ant-collapse-item {
