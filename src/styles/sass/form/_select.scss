@@ -5,11 +5,11 @@
 .ant-select-multiple {
     .ant-select-selection-item {
         background-color: $blue-white;
-        color: var(--medium-blue);
+        color: $medium-blue;
         border: none;
     }
     .ant-select-selection-item-remove {
-        color: var(--medium-blue);
+        color: $medium-blue;
     }
     .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
         color: $aqua;

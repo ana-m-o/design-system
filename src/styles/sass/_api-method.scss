@@ -5,7 +5,7 @@ $api-colors: (
     patch: $patch-color,
     delete: $delete-color,
     head: $head-color,
-    generic: $medium-light-blue
+    generic: $blue
 );
 
 @mixin api-tag {
@@ -36,8 +36,8 @@ $api-colors: (
 
 .api-method {
     align-items: center;
-    border-color: var(--medium-blue);
-    color: var(--medium-blue);
+    border-color: $medium-blue;
+    color: $medium-blue;
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;

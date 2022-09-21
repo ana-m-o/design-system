@@ -19,8 +19,8 @@
 
         &.ant-radio-button-wrapper-checked,
         &.ant-checkbox-wrapper-checked {
-            background: var(--navy);
-            border-color: var(--navy);
+            background: $navy;
+            border-color: $navy;
             color: #fff;
 
             + .ant-checkbox-wrapper-checked {

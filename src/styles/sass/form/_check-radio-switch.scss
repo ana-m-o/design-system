@@ -42,7 +42,7 @@
         }
 
         .ant-checkbox-inner {
-            background-color: var(--white);
+            background-color: $white;
 
             &:after {
                 content: "";
@@ -63,7 +63,7 @@
 
         .ant-checkbox-checked {
             .ant-checkbox-inner {
-                background-color: var(--navy);
+                background-color: $navy;
 
                 &:after {
                     filter: brightness(4);
@@ -99,15 +99,15 @@
         }
 
         .ant-checkbox-inner {
-            background-color: var(--white);
+            background-color: $white;
         }
 
         .ant-checkbox-checked {
             .ant-checkbox-inner {
-                background-color: var(--navy);
+                background-color: $navy;
 
                 &:after {
-                    border-color: var(--white);
+                    border-color: $white;
                 }
             }
         }

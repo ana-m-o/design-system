@@ -14,15 +14,15 @@
 
     //default
     background-color: $blue-white;
-    color: var(--medium-blue);
+    color: $medium-blue;
 
     &.dx-tag--blue{
-        background-color: var(--medium-blue);
+        background-color: $medium-blue;
         color: $white;
     }
     
     &.dx-tag--navy{
-        background-color: var(--navy);
+        background-color: $navy;
         color: $white;
     }
     

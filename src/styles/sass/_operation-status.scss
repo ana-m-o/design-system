@@ -38,7 +38,7 @@ $status-label-width: 80px;
     }
     
     .dx-status-indicator {
-        gap: $sp-half;
+        gap: var(--sp-md);
 
         .dx-status-indicator__label {
             text-align: right;
